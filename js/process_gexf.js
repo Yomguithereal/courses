@@ -4,6 +4,16 @@ var gexf = require('gexf'),
 
 var writer = gexf.create();
 
+writer.addNodeAttribute({
+  id: 'cdp',
+  type: 'string'
+});
+
+writer.addNodeAttribute({
+  id: 'promo',
+  type: 'string'
+});
+
 var palette = [
   '#534640',
   '#98BF54',
@@ -18,14 +28,27 @@ projects.nodes.forEach(function(node) {
   writer.addNode({
     id: node.id,
     label: node.name + ' ' + node.surname,
+    attributes: {
+      promo: node.promo,
+      cdp: node.cdp ? 'oui' : 'non'
+    },
     viz: {
+      position: {
+        x: Math.random(),
+        y: Math.random()
+      },
+      size: node.nb_projects,
       color: palette[promoNb]
     }
   });
 });
 
 projects.edges.forEach(function(edge) {
-  writer.addEdge(edge);
+  writer.addEdge({
+    source: edge.source,
+    target: edge.target,
+    weight: edge.weight
+  });
 });
 
 fs.writeFileSync('projects.gexf', writer.serialize());

@@ -16,12 +16,17 @@ identifiers.forEach(function(identifier, i) {
     name: {
       sel: 'td:nth-child(2)',
       method: trim
+    },
+    id: {
+      sel: 'td:nth-child(1) > a',
+      method: function($) {
+        return +$(this).attr('href').split('&id=')[1];
+      }
     }
   });
 
   promoStudents.forEach(function(s, j) {
     s.promo = 'h' + (i + 1);
-    s.id = s.promo + '_' + j;
     students[s.name + ' ' + s.surname] = s;
   });
 });
