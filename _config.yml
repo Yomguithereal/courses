@@ -1,9 +1,0 @@
-# Site settings
-title: Courses
-baseurl: "/courses"
-author: Yomguithereal
-
-# Build settings
-markdown: redcarpet
-highlighter: pygments
-permalink: pretty
