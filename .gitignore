@@ -1,5 +1,4 @@
 .DS_Store
 _site
-js/node_modules
-js/*.json
-js/*.gexf
+scripts/node_modules
+scripts/*.gexf

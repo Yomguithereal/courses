@@ -20,7 +20,7 @@ identifiers.forEach(function(identifier, i) {
     id: {
       sel: 'td:nth-child(1) > a',
       method: function($) {
-        return +$(this).attr('href').split('&id=')[1];
+        return 's' + $(this).attr('href').split('&id=')[1];
       }
     }
   });
