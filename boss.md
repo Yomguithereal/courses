@@ -170,3 +170,9 @@ app.control.get('mainSigma').settings('maxEdgeSize', 6)
 ### 8) Pour les feignants:
 
 * Fichier [gexf]({{ site.baseurl }}/resources/students.gexf).
+
+---
+
+### 9) Bonus: Gephi
+
+* Utiliser [gephi](http://gephi.github.io/).
