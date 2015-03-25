@@ -31,13 +31,13 @@ title:  "Final Boss"
 * Se trouver.
 
 ```cypher
-MATCH (s:Student {surname: 'MY_NAME'}) RETURN s;
+MATCH (s:Student {surname: "MY_NAME"}) RETURN s;
 ```
 
 * Trouver les projets sur lesquels vous avez travaillé.
 
 ```cypher
-MATCH (s:Student {surname: 'MY_NAME'})-[r:WORKED_ON]->(p:Project) RETURN s,r,p;
+MATCH (s:Student {surname: "MY_NAME"})-[r:WORKED_ON]->(p:Project) RETURN s,r,p;
 ```
 
 * Un graph **bipartite**.
