@@ -28,6 +28,18 @@ title:  "Final Boss"
 
 ### 3) Visualiser des données simples
 
+* Se trouver.
+
+```cypher
+MATCH (s:Student {surname: 'MY_NAME'}) RETURN s;
+```
+
+* Trouver les projets sur lesquels vous avez travaillé.
+
+```cypher
+MATCH (s:Student {surname: 'MY_NAME'})-[r:WORKED_ON]->(p:Project) RETURN s,r,p;
+```
+
 * Un graph **bipartite**.
 
 ```cypher
