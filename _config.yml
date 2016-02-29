@@ -5,4 +5,3 @@ url: 'https://yomguithereal.github.io/courses'
 baseurl: '/courses'
 
 highlighter: pygments
-markdown: redcarpet
