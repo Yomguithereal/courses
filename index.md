@@ -1,12 +1,6 @@
 ---
 layout: page
-title:  "Un Monde de Données"
+title: Summary
 ---
 
-<header>
-  <h1 class="static-title">Un Monde de Données</h1>
-</header>
-
----
-
-Support du cours.
+* [Data 2016]({{ site.baseurl }}/data/2016/) (HETIC P2017)

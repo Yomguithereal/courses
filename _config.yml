@@ -1,9 +1,8 @@
-# Site settings
-title: Courses
-baseurl: "/courses"
-author: Yomguithereal
+# Basic information
+title: "Courses"
+tagline: 'Just some pages needed to be served.'
+url: 'https://yomguithereal.github.io/courses'
+baseurl: '/courses'
 
-# Build settings
-markdown: redcarpet
 highlighter: pygments
-permalink: pretty
+markdown: redcarpet

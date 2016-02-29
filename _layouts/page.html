@@ -1,15 +1,16 @@
-<!DOCTYPE HTML>
-<html lang="fr">
-  <head>
-    {% include head.html %}
-  </head>
-  <body>
-   <div id="content" class="fade-in">
-      <div class="row">
-         {{ content }}
-      </div>
-      {% include footer.html %}
-    </div>
-  </body>
-</html>
-
+{% include header.html %}
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article class="post hentry">
+        <header class="entry-header">
+          <h1 class="entry-title">{{ page.title }}</h1>
+        </header>
+        <div class="entry-content">
+          <p>
+            {{ content }}
+          </p>
+        </div>
+      </article>
+    </main>
+  </div>
+{% include footer.html %}

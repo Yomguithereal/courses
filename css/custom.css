@@ -1,0 +1,57 @@
+/* Some addenda */
+h2 {
+  margin-bottom: 20px !important;
+}
+
+code {
+  background-color: rgba(0,0,0,0.04);
+}
+
+pre code {
+  background: none;
+}
+
+#main {
+  padding: 4%;
+}
+
+.bird {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  height: 150px;
+  display: none;
+}
+
+@media screen and (min-width: 59.6875em) {
+  .bird {
+    display: block;
+  }
+}
+
+.site-title, .site-description {
+  text-align: center;
+}
+
+.post-title {
+  text-align: center;
+  font-weight: 400;
+}
+
+.entry-date {
+  text-align: center;
+  font-size: 0.8em;
+  color: gray;
+}
+
+.post-date {
+  color: gray;
+  font-size: 0.8em;
+}
+
+.entry-description {
+  text-align: center;
+  font-style: italic;
+}
+
+.posts-list {
+  list-style-type: none;
+}
