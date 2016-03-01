@@ -19,6 +19,11 @@ body {
   font-weight: normal;
   color: #545454; }
 
+.reveal section[reversed=true] {
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
 ::selection {
   color: #fff;
   background: rgba(0, 0, 0, 0.99);
@@ -27,7 +32,8 @@ body {
 .reveal .slides > section,
 .reveal .slides > section > section {
   line-height: 1.3;
-  font-weight: inherit; }
+  font-weight: inherit;
+  text-align: left; }
 
 /*********************************************
  * HEADERS
@@ -38,7 +44,7 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  margin: 0 0 20px 0;
+  margin: 20px 0 20px 0;
   color: #000;
   font-family: "Open Sans", Impact, sans-serif;
   font-weight: 600;
@@ -46,14 +52,26 @@ body {
   letter-spacing: normal;
   text-transform: none;
   text-shadow: none;
+  text-align: left;
   word-wrap: break-word; }
+
+.reveal section[reversed=true] h1,
+.reveal section[reversed=true] h2,
+.reveal section[reversed=true] h3,
+.reveal section[reversed=true] h4,
+.reveal section[reversed=true] h5,
+.reveal section[reversed=true] h6 {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
 
 .reveal h1 {
   font-size: 3em;
-  color: #CB0015; }
+  color: #CB0015;
+  text-align: center; }
 
 .reveal h2 {
-  font-size: 2em; }
+  font-size: 2em;
+  color: #CB0015; }
 
 .reveal h3 {
   font-size: 1.55em; }
@@ -91,7 +109,7 @@ body {
 .reveal ul {
   display: inline-block;
   text-align: left;
-  margin: 0 0 0 1em; }
+  margin: 0 0 0 1.5em; }
 
 .reveal ol {
   list-style-type: decimal; }

@@ -13,6 +13,9 @@
 * Les niveaux de langage informatique (métaphore de l'interprète)
 * Wrap up O(n) et différence entre la liste et le dictionnaire
 * Le parallèlisme, la concurrence, l'asynchronie
+* Partiels
+* Racolleur
+* Le LISP et le code comme données (la notation polonaise)
 
 ## Cours n°2
 
