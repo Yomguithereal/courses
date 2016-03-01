@@ -37,3 +37,10 @@
 * Refaire le graph si possible
 * Le singe photographe et la propriété intellectuelle (de l'interprétation)
 * Les oeuvres composites etc.
+
+## TP
+
+* Cypher
+* Open Refine
+* Scraping
+* Réseau
