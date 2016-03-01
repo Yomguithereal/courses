@@ -38,7 +38,7 @@ function CYPHER_MODE(hljs) {
   return {
     cI: true, //TODO: Why isn't this working?
       k: {
-        keyword: 'start match return with limit skip create merge where unique union remove delete set constaint assert is case unique optional',
+        keyword: 'start match return with limit skip create merge where unique union remove delete set constaint assert is case unique optional order by',
         literal: 'true false'
       },
       c: [hljs.CLCM, hljs.ASM, hljs.QSM, nodeMode, relationshipMode]

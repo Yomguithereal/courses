@@ -209,7 +209,7 @@ Donc, trivialement, pas la table SQL de 1000 lignes de tata Lucienne.
 Le nombre de données collectées croit aujourd'hui de manière **exponentielle** (cf. loi de Moore).
 
 <p align="center">
-  ![exponent](img/exponent.png)
+  <img src="img/exponent.png" class="plain" />
 </p>
 
 ===
@@ -402,7 +402,7 @@ Ou utiliser un dictionnaire?
 # Les rainbow attacks
 
 <p align="center">
-  ![rainbow](img/rainbow.jpeg)
+  <img src="img/rainbow.jpeg" class="plain" />
 </p>
 
 ===
@@ -449,6 +449,10 @@ Trois axes (choisis arbitrairement):  
 
 ===
 
+# 1. Le stockage des données
+
+===
+
 ## Ye Olde SQL
 
 Structured Query Language (pas BDD)  
@@ -477,7 +481,7 @@ Problèmes: sur-architecturation, problèmes de scalabilité.
 # Le paradigme NoSQL
 
 <p align="center">
-  ![nosql](img/nosql.jpeg)
+  <img src="img/nosql.jpeg" class="plain" />
 </p>
 
 ===
@@ -633,111 +637,171 @@ Il convient de bien choisir le format adapté à votre cas.
 
 ## Le paradigme NoSQL
 
-* Le NoSQL procède du même effort d’adaptation d’un outil à son usage.
-* Le NoSQL représente donc tous les systèmes de base de données qui ne se basent pas sur SQL.
-* Mais, le risque ici est de considérer que le NoSQL comme UN seul nouveau standard.
-* Le NoSQL est plutôt une myriade de nouveaux standards.
-* Le NoSQL c’est le far west.
+Le NoSQL procède du même effort d’adaptation d’un outil à son usage.
+
+Le NoSQL représente donc tous les systèmes de base de données qui ne se basent pas sur SQL.
+
+Mais, le risque ici est de considérer que le NoSQL comme UN seul nouveau standard.
+
+Le NoSQL est plutôt une myriade de nouveaux standards.
+
+Le NoSQL c’est le far west.
 
 ===
 
 ## Le paradigme NoSQL
 
-* Le NoSQL est doublement varié:
-* 1) Les usages ciblés et les formats de données sont extrêmement divers.
-* 2) Les standards ne sont pas établis et il n’est pas rare de trouver plusieurs systèmes de base de données en concurrence sur la même mouvance NoSQL.
+Le NoSQL est doublement varié:
+
+1. Les usages ciblés et les formats de données sont extrêmement divers.
+2. Les standards ne sont pas établis et il n’est pas rare de trouver plusieurs systèmes de base de données en concurrence sur la même mouvance NoSQL.
 
 ===
 
 ## Le paradigme NoSQL
 
-* Pour résumer, le NoSQL c’est:  - Un usage = un outil. - Une structure de données souvent plus proche du développeur. - Pas le SQL (sinon on appelle ça le SQL)
-* Faisons un bref tour des systèmes NoSQL existants (volontairement non-exhaustif tant la variété de systèmes différents est grande).
+Pour résumer, le NoSQL c’est:  
+
+* Un usage = un outil. 
+* Une structure de données souvent plus proche du développeur. 
+* Pas le SQL (sinon on appelle ça le SQL)
+
+Faisons un bref tour du propriétaire
 
 ===
 
 ## Orientées colonnes
 
-* Problème à résoudre: la scalabilité.            Exemples: Cassandra, Accumulo
+Problème à résoudre: la scalabilité. 
+
+**Exemples**: Cassandra, Accumulo
 
 ===
 
 ## Orientées documents
 
-* Problèmes à résoudre:   - Surarchitecturation du SQL   - Rigidité des schemas
-* Analogie développement: Un array JavaScript
-* Exemples: MongoDB,CouchDB
+Problèmes à résoudre: 
+
+1. Surarchitecturation du SQL 
+2. Rigidité des schemas
+
+Analogie développement:  un array JavaScript
+
+**Exemples**: MongoDB, CouchDB
 
 ===
 
-#
+## Interlude - Le graphe
 
-* Le graphe comme structure de données:
-* Des noeuds (type)
-* Des arcs (prédicat)
+Le graphe est une structure structure de données.
+
+Noeuds & arcs.
+
+<p align="center">
+  <img src="img/graph.png" class="plain" />
+</p>
 
 ===
 
 ## Orientées graphe
 
-* Problème à résoudre: Gestion des données ultra-relationnelles.
-* Exemples: Neo4j, Titan
+Problème à résoudre:  Gestion de données ultra-relationnelles.
+
+**Exemples**:  Neo4j, TitanDB
 
 ===
 
 ## Le Cypher
 
-* Exemple de langage de requêtage de graphe utilisé par Neo4j. (Matrix)
-* MATCH (u:User)-[:LIKES]->(m:Movies) RETURN u,m LIMIT 30 ORDER BY m.title;
+Exemple de langage de requêtage de graphe utilisé par Neo4j. (Matrix)
+
+```cypher
+MATCH (u:User)-[:LIKES]->(m:Movies)
+ RETURN u,m 
+LIMIT 30 
+ORDER BY m.title;
+```
+
+On en fera un peu en TP à la fin du cours si on a le temps.
 
 ===
 
 ## Orientées clé-valeur / RAM
 
-* Problèmes à résoudre:   - I/O, temps d’accès aux données   - Rigidité des schemas
-* Analogie développement: Un objet JavaScript
-* Exemples:    Redis, Memcache, Riak, Couchbase
+Problèmes à résoudre: 
+
+* I/O, temps d’accès aux données 
+* Rigidité des schemas
+
+Analogie développement:  Un objet JavaScript
+
+**Exemples**:  Redis, Memcache, Riak, Couchbase
 
 ===
 
 ## Orientées whatever
 
-* Problèmes à résoudre:   - Besoin de plusieurs paradigmes en un.
-* Exemples:    ArangoDB, OrientDB
+Problèmes à résoudre:  Besoin de plusieurs paradigmes à la fois
+
+**Exemples**:  ArangoDB, OrientDB
 
 ===
 
 ## Dans le navigateur
 
-* Il y a aussi du NoSQL dans le navigateur:  - localStorage (clé-valeur) - IndexedDB (clé-valeur & documents)
-* Le WebSQL a été déprécié en faveur d’IndexedDB.
-* PouchDB (synchronisation client-serveur)
+Il y a aussi du NoSQL dans le navigateur:  
+
+* `localStorage` (clé-valeur) 
+* `IndexedDB` (clé-valeur & documents)
+
+Le WebSQL a été déprécié en faveur d’IndexedDB.
+
+PouchDB (synchronisation client-serveur)
 
 ===
 
 ## Suite & Fin?
 
-* Quand il n’y en a plus, il y en a encore:   - Les bases orientées Flux   - Les bases serverless (SQLite en NoSQL)
-* Le NoSQL arrive même dans certains bastions du SQL comme Postgre (Support du requêtage json etc.)
-* Le NoSQL est un monde fabuleux. N’ayez pas peur de l’explorer pour découvrir de nouvelles solutions techniques à vos problèmes.
+Nope: 
+
+1. Les bases orientées Flux 
+2. Les bases serverless (SQLite en NoSQL)
+
+Le NoSQL arrive même dans certains bastions du SQL comme Postgre (Support du requêtage json etc.)
+
+Le NoSQL est un monde fabuleux. N’ayez pas peur de l’explorer pour découvrir de nouvelles solutions techniques à vos problèmes.
+
+===
+
+# 2. La parallélisation
+
+===
+
+TODO: CPU / GPU procs etc., l'asynchone (exemple setTimeout tricky)
+
+TODO: besoin de beacoup de bécannes
 
 ===
 
 ## La parallélisation
 
-* Un des grands enjeux techniques du Big data.
-* Le concept est cela dit loin d’être neuf et une bonne partie des calculs scientifiques complexes sont d’ores et déjà distribués.
-* Divide & conquer
-* Limitée aux algorithmes pouvant découper leur calculs. Exemple: une somme.
+Un des grands enjeux techniques du Big data.
+
+Le concept est loin d’être neuf et une bonne partie des calculs scientifiques complexes sont d’ores et déjà distribués.
+
+Divide & conquer
+
+Limitée aux algorithmes pouvant découper leur calculs.  Exemple: une somme.
 
 ===
 
 ## La programmation fonctionnelle
 
-* Il est coutume de dire qu’il existe trois paradigmes majeurs concernant la programmation:
-* 1) Le paradigme impératif
-* 2) Le paradigme objet
-* 3) Le paradigme déclaratif
+Il est coutume de dire qu’il existe trois paradigmes majeurs concernant la programmation:
+
+1. Le paradigme impératif
+2. Le paradigme objet
+3. Le paradigme déclaratif
 
 ===
 
@@ -745,228 +809,407 @@ Il convient de bien choisir le format adapté à votre cas.
 
 * Système inventé par Alonzo Church dans les années 1930 (les fonctions récursives, c’est lui).
 
+<p align="center">
+  <img src="img/lambda.png" class="plain" width="400px" />
+</p>
+
 ===
 
 ## Pureté
 
-* Une fonction est dite pure lorsque que l’on est certain qu’elle est libre de tout effet de bord et qu’aucun élément extérieur ne peut affecter son exécution (et inversement).
-* En d’autres termes, une fonction est pure lorsque l’on est certain que si l’on passe un jeu d’argument donné à la fonction, celle-ci renverra toujours, quoi qu’il arrive, la même chose.
+Une fonction est dite pure lorsque que l’on est certain qu’elle est libre de tout effet de bord et qu’aucun élément extérieur ne peut affecter son exécution (et inversement).
+
+En d’autres termes, une fonction est pure lorsque l’on est certain que si l’on passe un jeu d’argument donné à la fonction, celle-ci renverra toujours, quoi qu’il arrive, la même chose (bijection).
 
 ===
 
-## Exemple
+## Pureté - Exemple
+
+TODO:
 
 ===
 
 ## Immutabilité
 
-* En programmation fonctionnelle, la mutabilité n’existe pas.
-* Cela veut dire qu’une variable ne peut jamais, muter, changer.
-* Ainsi, pour « changer » une variable, il faut en créer une nouvelle différente.
-* Cela abolit toute forme d’incertitude concernant la valeur d’une variable au prix d’une plus grande rigueur.
-* A ce titre, la notion de pointeur ou de référence est absente de la programmation fonctionnelle et toutes les variables sont passées par valeur.
+En programmation fonctionnelle, les variables sont des valeurs et non des pointeurs (clarifier JS).
+
+Cela veut dire qu’une "variable" ne peut jamais, muter, changer.
+
+Ainsi, pour « changer » une variable, il faut en créer une nouvelle différente.
+
+Cela abolit toute forme d’incertitude concernant la valeur d’une variable au prix d’une plus grande rigueur.
 
 ===
 
-## Exemple
+## Immutabilité - Exemple
+
+TODO:
 
 ===
 
 ## Fonctions de premier ordre
 
-* En programmation fonctionnelle, les fonctions sont considérées comme des valeurs à part entière et non pas comme des raccourcis syntaxiques.
-* Cela veut dire que l’on peut très bien passer des fonctions comme arguments à d’autres fonctions et agir sur les fonctions elles-mêmes (Yo dawg…).
-* On appelle donc fonctions de premier ordre des fonctions prenant des fonctions comme argument.
+En programmation fonctionnelle (hint), les fonctions sont considérées comme des valeurs à part entière et non pas comme des raccourcis syntaxiques (goto).
+
+Cela veut dire que l’on peut très bien passer des fonctions comme arguments à d’autres fonctions et agir sur les fonctions elles-mêmes (Yo dawg…).
+
+On appelle donc fonctions de premier ordre des fonctions prenant des fonctions comme argument.
 
 ===
 
-## Exemple
+## Premier ordre - Exemple
+
+TODO: map / reduce / filter / partial / composition
 
 ===
 
 ## Les langages fonctionnels
 
-* Lisp (le plus ancien, 1958), Clojure etc.
-* Haskell, Erlang etc.
+Lisp (le plus ancien, 1958), Clojure etc.
+
+Haskell, Erlang etc.
+
+<p align="center">
+  <img src="img/lisp.png" class="plain" width="400px" />
+</p>
 
 ===
 
 ## Un peu de Clojure?
 
+```clojure
+(defn slice
+  "Slice a [string] from [start] and up to [length]."
+  [string start length]
+  (let [offset (if (neg? start) (+ (count string) start) start)]
+    (apply str (take length (drop offset string)))))
+
+(defn chop
+  "Drop the last character of a [string]."
+  [string]
+  (subs string 0 (dec (count string))))
+
+(defn eat
+  "Drop the first letter of a [string]."
+  [string]
+  (apply str (drop 1 string)))
+```
+
+===
+
+## Un peu de Haskell?
+
+```haskell
+import qualified Char
+
+main = putStr $ concat
+   [up (bob n) ++ wall ++ ", " ++ bob n ++ ".\n" ++
+    pass n ++ bob (n - 1) ++ wall ++ ".\n\n" |
+    n <- [99, 98 .. 0]]
+   where bob n = (num n) ++ " bottle" ++ (s n) ++ " of beer"
+         wall = " on the wall"
+         pass 0 = "Go to the store and buy some more, "
+         pass _ = "Take one down and pass it around, "
+         up (x : xs) = Char.toUpper x : xs
+         num (-1) = "99"
+         num 0    = "no more"
+         num n    = show n
+         s 1 = ""
+         s _ = "s"
+```
+
+===
+
+## Un peu de Erlang?
+
+```erlang
+-module(beersong).
+-export([sing/0]).
+
+sing_verse(Bottle) ->
+    receive
+        {_, Verse} when Bottle == 0 ->
+            io:format(Verse);
+        {N, Verse} when Bottle == N ->
+            io:format(Verse),
+            sing_verse(Bottle-1)
+    after
+        3000 ->
+            io:format("Verse not received - re-starting singer~n"),
+            spawn_singer(Bottle),
+            sing_verse(Bottle)
+    end.
+```
+
 ===
 
 ## Je m’en sers déjà?
 
-* En réalité, la plupart des langages de haut niveau utilisent aujourd’hui plusieurs paradigmes à la fois.
-* Le JavaScript, le python, le ruby et même le php (sigh.) utilisent déjà beaucoup de concepts de la programmation fonctionnelle tout en restant près de l’objet et de l’impératif.
-* Pourquoi cette longue digression?: MapReduce
+En réalité, la plupart des langages de haut niveau utilisent aujourd’hui plusieurs paradigmes à la fois.
+
+Le JavaScript, le python, le ruby et même le php (sigh.) utilisent déjà beaucoup de concepts de la programmation fonctionnelle tout en restant près de l’objet et de l’impératif.
+
+Pourquoi cette longue digression?
 
 ===
 
 ## MapReduce
 
-* Processus permettant de paralléliser des calculs/traitements concernant de grandes masses de données.
-* « Inventé » par Google.
-* Démocratisation via Hadoop.
-* GFS (64mb chunks), HDFS.
-* Comme son nom l’indique: map, puis reduce.
+Processus permettant de paralléliser des calculs/traitements concernant de grandes masses de données.
+
+"Inventé" par Google.
+
+Démocratisation via **Hadoop**.
+
+GFS (64mb chunks), HDFS.
+
+Comme son nom l’indique: applique map, puis reduce.
 
 ===
 
-## L’explication en image
+## L'explication en image
 
-* Processus permettant de paralléliser des calculs/traitements concernant de grandes masses de données.
-* « Inventé » par Google.
-* Démocratisation via Hadoop.
-* GFS (65mb chunks), HDFS.
-* Comme son nom l’indique: map, puis reduce.
+<p align="center">
+  <img src="img/mapreduce.jpeg" class="plain" />
+</p>
 
 ===
 
 ## MapReduce
 
-* La granularité des tâche permet de rendre le tout fiable et scalable. (Tolérance à l’erreur)
-* Son objectif est de rendre les problématiques de parallélisation invisibles à l’auteur du calcul.
-* Nombreuses implémentations existantes, plus un concept qu’une technologie précise.
+La granularité des tâche permet de rendre le tout fiable et scalable. (Tolérance à l’erreur)
+
+Son objectif est de rendre les problématiques de parallélisation invisibles à l’auteur du calcul.
+
+Nombreuses implémentations existantes, plus un concept qu’une technologie précise.
 
 ===
 
 ## Limites
 
-* Certains calculs ne sont pas parallélisables. Exemple: Suite de Fibonacci
-* MapReduce utilise difficilement des index.
+Certains calculs ne sont pas parallélisables. 
+
+**Exemple**: Suite de Fibonacci
+
+MapReduce utilise difficilement des index.
+
+TODO: explain what is an index
+
+===
+
+# 3. Le machine learning
 
 ===
 
 ## Le machine learning
 
-* But du jeu: faire « apprendre » la machine.
-* N’est possible que lorsque l’on possède énormément de données concernant un problème.
-* (Il existe des moyens d’estimer le seuil critique à atteindre mais nous n’en discuterons pas ici).
+But du jeu: faire « apprendre » la machine.
+
+N’est possible que lorsque l’on possède énormément de données concernant un problème.
+
+(Il existe des moyens d’estimer le seuil critique à atteindre mais nous n’en discuterons pas ici).
 
 ===
 
 ## Le machine learning
 
-* En machine learning, nous n’avons qu’une masse impressionnante d’inputs et d’outputs:  x1 -> y1 x2 -> y2 x3 -> y3 (…)
-* Et l’on cherche à trouver la fonction qui permet de passer de x à y:  f(x) = y -> Que fait f?
+En machine learning, nous n’avons qu’une masse impressionnante d’inputs et d’outputs:  
+
+```
+x1 -> y1 ,
+x2 -> y2 ,
+x3 -> y3 ,
+(…)
+```
+
+Et l’on cherche à trouver la fonction qui permet de passer de x à y:   `f(x) = y`.
+
+Que fait `f`?
 
 ===
 
 ## Le machine learning
 
-* Exemple:  x1 = 3 -> y1 = 5, x2 = 1 -> y2 = 3, x3 = 7 -> y3 = 9. 
-* Sans challenge: f(x) = x + 2
-* Imaginons cela sur des données mille fois plus complexes et nombreuses et nous aurons une idée à peu près correcte de ce qu’est le machine learning dans sa plus simple expression.
+```
+x1 = 3 -> y1 = 5,
+x2 = 1 -> y2 = 3,
+x3 = 7 -> y3 = 9. 
+```
+
+Sans challenge: `f(x) = x + 2`
+
+Imaginons cela sur des données plus complexes et plus nombreuses et nous aurons une idée à peu près correcte de ce qu’est le machine learning.
 
 ===
 
 ## Le perceptron
 
-* Inventé en 1957 par Franck Rosenblatt.
-* Le plus ‘simple’ des algorithmes de machine learning (pondération linéaire).
-* Il est dit « itératif » car il fonctionne par itérations successives jusqu’à ce que l’on considère son résultat satisfaisant (ce qui peut potentiellement ne jamais arriver).
-* Contrairement à un algorithme déterministe qui a une fin (qui peut être très longue à atteindre, par ailleurs).
+Inventé en 1957 par Franck Rosenblatt.
+
+Le plus "simple" des algorithmes de machine learning (pondération linéaire).
+
+Il est dit **itératif** car il fonctionne par itérations successives jusqu’à ce que l’on considère son résultat satisfaisant (ce qui peut potentiellement ne jamais arriver).
+
+Contrairement à un algorithme déterministe qui a une fin (qui peut être très longue à atteindre, par ailleurs).
 
 ===
 
-## Le perceptron
+<p align="center">
+  <img src="img/perceptron.png" class="plain" />
+</p>
 
 ===
 
-## Exemple
+## L'anamnèse
 
-* L’OCR (Optical Character Recognition)
-* 1) Séparer les charactères
-* 2) Analyser leur structure.
+TODO: explain + messe
 
 ===
 
-## Encore des exemples?
+## L’OCR (Optical Character Recognition)
 
-* 1) La banque et les prêts.
-* 2) Netflix et son système de recommandation.
+1. Séparer les charactères
+2. Analyser leur structure.
+
+<p align="center">
+  <img src="img/ocr.jpeg" class="plain" />
+</p>
+
+Note: jeu de données entrainé à la main, essayant de formaliser ce qu'est une lettre
+
+===
+
+## Exemples
+
+1. La banque et les prêts.
+2. Netflix et son système de recommandation.
 
 ===
 
 ## Le deep learning
 
-* Famille d’algorithme appartenant aussi à la famille du machine learning.
-* S’inspirer du fonctionnement du cerveau humain.
-* Certains considèrent que ce ne sont que des réseaux de neurones en embuscade (retour sur le perceptron).
-* Algorithme DQN (DeepMind).
-* Encore une fois, itératif contre déterministe (plus ignorance des règles).
+TODO: on n'a pas les données d'entrées parfois (DQN => chiffres)
+
+Famille d’algorithme appartenant aussi à la famille du machine learning.
+
+S’inspirer du fonctionnement du cerveau humain.
+
+Certains considèrent que ce ne sont que des réseaux de neurones en embuscade (retour sur le perceptron).
+
+Algorithme DQN (DeepMind).
+
+===
+
+# Post-Scriptum
 
 ===
 
 ## Quelques outils
 
-* OpenOffice, Excel, Tableau, Stata, OpenRefine, Gephi
-* AWS, Google BigQuery (étonnant, non?)
+OpenOffice, Excel, Tableau, Stata, OpenRefine, Gephi
+
+AWS, Google BigQuery (étonnant, non?)
 
 ===
 
 ## Marché du travail
 
-* Profils recherchés:  - Data scientists  - Développeurs barbus  - CDP spécialisés
-* Pour le design, on verra dans les prochains cours.
+Profils recherchés:  
+
+1. Data scientists  
+2. Développeurs / Ingénieur
+3. CDP spécialisés
+
+Pour le design, on verra dans les prochains cours.
 
 ===
 
 ## Data scientist
 
-* Métier aux contours encore très flou.
-* Tout le monde cherche des data scientists sans toujours savoir ce que c’est.
-* Charactéristique d’un bon data scientist: - Bonne bases en développement backend/script - Mathématiques et statistiques - Sensibilité business (logique métier du client)
-* Souvent proche des métiers en analytics mais avec la programmation en plus.
+Métier aux contours encore très flou.
+
+Tout le monde cherche des data scientists sans toujours savoir ce que c’est.
+
+Charactéristique d’un bon data scientist: 
+
+* Bonne bases en développement backend/script 
+* Mathématiques et statistiques 
+* Sensibilité business (logique métier du client)
+
+Souvent proche des métiers en analytics mais avec la programmation en plus.
 
 ===
 
 ## Programmation
 
-* PHP? Non.
-* Langages de script: Python, Ruby, Node/Io.js
-* Java ou un langage compilant vers la JVM: Clojure, Scala, Groovy.
-* Langages ‘scientifiques’: Matlab, R, Julia etc.
-* Langages compilés: C, C++, Go etc.
-* Langage fonctionnel: Lisp, Clojure, Haskell, Erlang etc.
-* Développer pour le Big Data, c’est être fiable  et, évidemment, scalable.
+**PHP?** Non, essaye encore.
+
+**Langages de script**: Python, Ruby, Node.js...
+
+**Java/JVM**:  Java, Clojure, Scala, Groovy...
+
+**Langages ‘scientifiques’**: Matlab, R, Julia...
+
+**Langages compilés**: C, C++, Rust, Go...
+
+**Langage fonctionnel**: Lisp, Clojure, Haskell, Erlang...
+
+Note: maîtriser au moins deux univers.
+
+===
+
+## Programmation
+
+Développer pour le Big Data c'est:
+
+* Etre fiable
+* Etre scalable
+* Maîtriser l'algorithmie
 
 ===
 
 ## Beware!
 
-* Le métier de data scientist peut paraître sexy mais:
-* Avez-vous déjà passé un mois à nettoyer des données immondes pour ne rien y trouver au final?
+Le métier de data scientist peut paraître sexy mais:
+
+* Nettoyer des données immondes pour un résultat final nul peut en décourager plus d'un.
 * Inutile de vous dire que si vous n’aimez pas le traitement de données, vous n’êtes pas fait pour ça.
 
 ===
 
 ## Entreprises
 
-* Laboratoires de recherche
-* Linkfluence, MFG Labs, Orange innovation.
-* Géants de l’Internet.
+Laboratoires de recherche
+
+Linkfluence, MFG Labs, Orange innovation.
+
+Géants de l’Internet.
 
 ===
 
 ## Teaser
 
-* Dans les prochaines semaines, nous allons nous pencher sur:  - Le web mining, le crawling, le scraping etc. - La collecte et le traitement de données. - L’Open Data - La visualisation de données.
+Dans les prochaines semaines, nous allons nous pencher sur:  
+
+1. Le web mining, le crawling, le scraping etc. 
+2. La collecte et le traitement de données. 
+3. La visualisation de données.
+4. L'Open Data
 
 ===
 
 ## Quelle orientation?
 
-* Des sujets vous intéressent-ils particulièrement?
-* Souhaitez-vous faire un TP concernant une technologie ou une pratique en particulier?
+Des sujets vous intéressent-ils particulièrement?
+
+Souhaitez-vous faire un TP concernant une technologie ou une pratique en particulier (indice: pour le Big Data ce n'est pas possible à proprement parler)?
 
 ===
 
 ## Contact
 
-* N’hésitez pas si vous avez des questions ou des difficultés, notamment en programmation dans des projets concernant les sujets du cours:
-* Mail: guillaume.plique@sciencespo.fr
-* Github: @Yomguithereal
+N’hésitez pas si vous avez des questions ou des difficultés, notamment en programmation/algorithmie dans des projets concernant les sujets du cours:
 
+**Mail**: guillaumeplique // gmail.com
 
+**Github**: [Yomguithereal](https://github.com/Yomguithereal)

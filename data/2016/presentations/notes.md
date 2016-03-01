@@ -16,9 +16,10 @@
 * Partiels
 * Racolleur
 * Le LISP et le code comme données (la notation polonaise)
-* Les réseaux de neurones
+* Les réseaux de neurones (retour sur la notion de construit)
 * Le matriciel et le vectoriel
 * Le prolog
+* Les algos génétiques (gif)
 
 ## Cours n°2
 
@@ -29,6 +30,7 @@
 
 * Example du FOSDEM pour faire comprendre la viz de graphe
 * Des différences entre l'art et la dataviz (design & graphisme)
+* Rappelons nous du perceptron pour comprendre le layout
 
 ## Cours n°4
 
