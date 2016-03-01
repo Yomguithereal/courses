@@ -42,7 +42,7 @@
 
         <section data-markdown="{{ site.baseurl }}/{{ page.presentation }}"
                  data-separator="^==="
-                 data-separator-vertical="^---"
+                 data-separator-vertical="^----"
                  data-separator-notes="^Note:"
                  data-charset="utf8">
         </section>
@@ -53,6 +53,7 @@
 
     <script src="{{ site.baseurl }}/reveal/lib/js/head.min.js"></script>
     <script src="{{ site.baseurl }}/reveal/js/reveal.js"></script>
+    <script src="{{ site.baseurl }}/reveal/js/cypher.mode.js"></script>
 
     <script>
 
@@ -71,7 +72,10 @@
           { src: '{{ site.baseurl }}/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
           { src: '{{ site.baseurl }}/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           { src: '{{ site.baseurl }}/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '{{ site.baseurl }}/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '{{ site.baseurl }}/reveal/plugin/highlight/highlight.js', async: true, callback: function() {
+            hljs.registerLanguage('cypher', CYPHER_MODE);
+            hljs.initHighlightingOnLoad();
+          } },
           { src: '{{ site.baseurl }}/reveal/plugin/zoom-js/zoom.js', async: true },
           { src: '{{ site.baseurl }}/reveal/plugin/notes/notes.js', async: true }
         ]

@@ -18,6 +18,7 @@
 * Le LISP et le code comme données (la notation polonaise)
 * Les réseaux de neurones
 * Le matriciel et le vectoriel
+* Le prolog
 
 ## Cours n°2
 
