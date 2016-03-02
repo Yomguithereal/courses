@@ -1626,6 +1626,8 @@ Fonctionne sans données préalables mais grâce à un système de stimuli.
 
 Son objectif est de faire grimper les nombres (littéralement).
 
+(Leurs yeux vous regardent)
+
 ===
 
 ## L'anamnèse
