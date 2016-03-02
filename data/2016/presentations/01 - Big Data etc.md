@@ -193,7 +193,7 @@ Tout un pan de la science informatique consiste à **structurer** la donnée (sp
 
 ===
 
-## Donnée vs. construit
+## Donné vs. construit
 
 De nombreux intellectuels hargneux ont tendance à rappeler que ce que nous appelons données sont en réalité des **construits**.
 
@@ -392,11 +392,11 @@ User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (K
 
 ===
 
-## Data vs. Déterminisme
+## Data vs. Calcul
 
 Le Big data et le machine learning nous permettent de changer de paradigme si besoin:
 
-Il est possible, dans certains cas, de résoudre un problème grâce aux données plutôt que grâce à un algorithme.
+Il est possible, dans certains cas, de résoudre un problème grâce aux masses de données plutôt que grâce à un calcul.
 
 La combinaison des deux approches reste évidemment possible et puissante.
 
@@ -500,7 +500,7 @@ Nombreux système de BDD utilisent le SQL: MySQL, ORACLE, PostgreSQL, MariaDB et
 
 Evolue encore (2011: tables temporelles, PERIOD FOR etc.)
 
-Problèmes: sur-architecturation, problèmes de scalabilité.
+Problèmes: sur-architecturation, scalabilité.
 
 ===
 
@@ -516,7 +516,7 @@ Problèmes: sur-architecturation, problèmes de scalabilité.
 
 Au commencement, tout était SQL.
 
-Il n’y avait qu’assez rarement l’occasion de se poser la question du format de stockage des données.
+Il n’y avait qu’assez rarement l’occasion de se poser la question du format de stockage des données (la silver bullet).
 
 Mais le SQL est trop limitant pour les usages contemporains.
 
@@ -698,7 +698,7 @@ keywords:
 
 ## Résumé
 
-Vous voyez bien que chaque format de données a ses avantages & ses inconvénients.
+Vous voyez bien que chaque format a ses avantages & ses inconvénients.
 
 Il convient de bien choisir le format adapté à votre cas.
 
@@ -790,6 +790,8 @@ MATCH (u:User)-[:LIKES]->(m:Movies)
 LIMIT 30 
 ORDER BY m.title;
 ```
+
+ASCII art.
 
 On en fera un peu en TP à la fin du cours si on a le temps.
 
@@ -919,6 +921,8 @@ Il est coutume de dire qu’il existe trois paradigmes majeurs concernant la pro
 2. Le paradigme objet
 3. Le paradigme déclaratif
 
+Note: expliquer
+
 ===
 
 ## Le lambda calcul
@@ -933,7 +937,7 @@ Il est coutume de dire qu’il existe trois paradigmes majeurs concernant la pro
 
 ## Pureté
 
-Une fonction est dite pure lorsque que l’on est certain qu’elle est libre de tout effet de bord et qu’aucun élément extérieur ne peut affecter son exécution (et inversement).
+Une fonction est dite pure lorsque que l’on est certain qu’elle est libre de tout **effet de bord** et qu’aucun élément extérieur ne peut affecter son exécution (et inversement).
 
 En d’autres termes, une fonction est pure lorsque l’on est certain que si l’on passe un jeu d’argument donné à la fonction, celle-ci renverra toujours, quoi qu’il arrive, la même chose (bijection).
 
@@ -988,17 +992,17 @@ On dira qu'une fonction est pure si elle accepte exactement une source d'inputs 
 
 La pureté est un moyen de lutter contre les **effets de bord** et le doute qu'il génère.
 
+Le problème, c'est que la réalité est un effet de bord qui vient frustrer la logique mathématique de la programmation fonctionnelle.
+
 ===
 
 ## Les effets de bord
 
-Le problème c'est que la réalité, est un effet de bord qui va frustrer la logique mathématique de la programmation fonctionnelle.
-
-Le file system, est un effet de bord, par exemple. L'état en est un autre.
+Le file system, est un effet de bord, par exemple. L'état d'une application en est un autre. La possibilité d'un échec aussi.
 
 On a coutume de dire que le paradigme objet et le paradigme fonctionnel apportent tous deux des solutions différentes à ce problème.
 
-La notion d'effet de bord est donc centrale pour comprendre la logique des langages informatiques.
+La notion d'effet de bord est centrale pour comprendre la logique des langages informatiques.
 
 ===
 
@@ -1020,7 +1024,7 @@ Une fonction retournant un nombre aléatoire peut-elle être pure?
 
 ## Aparté
 
-*Comment peut-on générer du hasard en informatique?*
+*Comment peut-on générer le hasard en informatique?*
 
 ===
 
@@ -1254,6 +1258,8 @@ function addThree(nb) {
 const addFive = compose(addTwo, addThree);
 
 addFive(3) >>> 8
+// pareil que
+addTwo(addThree(3))
 ```
 
 ===
@@ -1348,7 +1354,7 @@ J'ai dit tout à l'heure que le troisième paradigme était le paradigme déclar
 
 Ne pas oublier que la programmation fonctionnelle n'est qu'une facette de ce paradigme.
 
-On y trouve par exemple aussi la programmation logique, comme avec le Prolog.
+On y trouve par exemple aussi la programmation logique (Prolog etc.).
 
 ===
 
@@ -1392,7 +1398,7 @@ Quand je dis langage de **haut niveau**, ce n'est pas un jugement de valeur.
 
 Petit rappel: un ordinateur n'est ni plus ni moins qu'un amas de `0` et de `1`.
 
-Il y a donc 4 niveaux de langages distincts qui sont de plus en plus "hauts" au fur et à mesure qu'on s'éloigne du "métal".
+Il y a donc 4 niveaux distincts de langage qui sont de plus en plus "hauts" au fur et à mesure qu'on s'éloigne du "métal".
 
 ===
 
@@ -1409,7 +1415,7 @@ Quand on écrit du code, on n'écrit pas pour la machine mais bien pour l'humain
 
 ===
 
-# Pourquoi?
+# Pourquoi on parle de ça déjà?
 
 ===
 
@@ -1439,7 +1445,7 @@ Comme son nom l’indique: applique map, puis reduce.
 
 La granularité des tâche permet de rendre le tout fiable et scalable. (Tolérance à l’erreur)
 
-Son objectif est de rendre les problématiques de parallélisation invisibles à l’auteur du calcul.
+Son objectif est de rendre les problématiques de parallélisation invisibles à l’auteur du calcul. (Abstraction)
 
 Nombreuses implémentations existantes, plus un concept qu’une technologie précise.
 
@@ -1572,6 +1578,13 @@ Contrairement à un algorithme déterministe qui a une fin (qui peut être très
 
 ===
 
+## Exemples
+
+1. La banque et les prêts (formulation des hypothèses et pondération).
+2. Netflix et son système de recommandation.
+
+===
+
 ## L’OCR (Optical Character Recognition)
 
 1. Séparer les charactères
@@ -1582,13 +1595,6 @@ Contrairement à un algorithme déterministe qui a une fin (qui peut être très
 </p>
 
 Note: jeu de données entrainé à la main, essayant de formaliser ce qu'est une lettre
-
-===
-
-## Exemples
-
-1. La banque et les prêts (formulation des hypothèses et pondération).
-2. Netflix et son système de recommandation.
 
 ===
 
@@ -1604,7 +1610,7 @@ Très bonne explication visuelle sur le site R2D3:
 
 Famille d’algorithme appartenant aussi à la famille du machine learning.
 
-Dans ce cas là, on n'a pas de données initiales, ou très peu, et on va tenter de faire apprendre à la machine par elle-même.
+Dans ce cas là, on n'a pas de données initiales, ou très peu, et on va tenter de faire apprendre à la machine depuis le "début".
 
 S’inspirer du fonctionnement du cerveau humain.
 
@@ -1628,7 +1634,7 @@ Etymologie (la reminiscence).
 
 Platon et le retour au monde des idées.
 
-Petit retour sur la notion de donnée et de construit.
+Petit retour sur la notion de donné et de construit.
 
 Kant et les catégories de l'entendement.
 
@@ -1696,7 +1702,7 @@ Souvent proche des métiers en analytics mais avec la programmation en plus.
 
 **Java/JVM**:  Java, Clojure, Scala, Groovy...
 
-**Langages ‘scientifiques’**: Matlab, R, Julia...
+**Langages "scientifiques"**: Matlab, R, Julia...
 
 **Langages compilés**: C, C++, Rust, Go...
 
