@@ -2,17 +2,7 @@
 
 ## Cours n°1
 
-* Wrap up fonctionnel 1 input / 1 output, les effets de bords, la solution OO
-* Effets de bord et le monde réel (pourquoi plutot rare jusque maintenant)
-* Corriger le code fonctionnel
-* Principe de l'abstraction
-* L'aléatoire et les fonctions pures
-* Les PRG
-* Les niveaux de langage informatique (métaphore de l'interprète)
-* Wrap up O(n) et différence entre la liste et le dictionnaire
 * Le parallèlisme, la concurrence, l'asynchronie
-* Partiels
-* Racolleur
 * Le LISP et le code comme données (la notation polonaise)
 * Les réseaux de neurones (retour sur la notion de construit)
 * Le matriciel et le vectoriel

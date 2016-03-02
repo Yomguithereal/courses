@@ -528,6 +528,49 @@ On veut le choix crévindiou (et surtout pas de xls)!
 
 ===
 
+## Aparté - La complexité algorithmique
+
+Petit rappel sur la notation `O()`.
+
+Deux complexités:
+
+1. Le calcul
+2. La mémoire
+
+Pour le calcul, nombre théorique d'opérations à effectuer pour accomplir notre objectif.
+
+===
+
+## La notation grand O
+
+* `O(1)`: temps constant
+* `O(log(n))`: temps logarithmique
+* `O(n)`: temps linéaire
+* `O(n^2)`: temps quadratique => le mal absolu (cryptologie)
+
+Exemple de la dichotomie.
+
+===
+
+## Les structures de données
+
+Liste, dictionnaires et sets.
+
+```js
+const list = [1, 2, 3];
+const dict = {1: 'one', 2: 'two', 3: 'three'};
+const set = new Set([1, 2, 3]);
+
+// Quels complexité pour répondre à la question:
+// "Y a-t-il le chiffre 4 dans la structure?"
+
+// Le problème de l'ordre
+```
+
+Utilisez correctement les structures.
+
+===
+
 ## CSV
 
 *Comma-Separated Value*
@@ -629,7 +672,7 @@ keywords:
 
 ## Résumé
 
-Vous voyez bien que chaque format a ses avantages & ses inconvénients.
+Vous voyez bien que chaque format de données a ses avantages & ses inconvénients.
 
 Il convient de bien choisir le format adapté à votre cas.
 
@@ -890,7 +933,7 @@ La notion d'effet de bord est donc centrale pour comprendre la logique des langa
 
 La **programmation orientée objet** trouve une solution aux effets de bords en rendant l'état local à chaque objet et en s'assurant que les effets de bords restent contenus à des endroits précis (avec des résultats plus ou moins variés).
 
-La **programmation fonctionnelle** considère les effets de bord comme le mal incarné et va tout faire pour les éviter autant que possible. Elle fera des compromis avec au travers de concepts jouant le rôle de sas (le typage, les monades etc.).
+La **programmation fonctionnelle** considère les effets de bord comme le mal incarné et va tout faire pour les éviter autant que possible. Elle fera des compromis si nécessaire au travers de concepts jouant le rôle de sas (le typage, les monades etc.).
 
 ===
 
@@ -912,7 +955,7 @@ Et vous la pratiquez tous les jours sans vergogne!
 
 ## Immutabilité
 
-En programmation fonctionnelle, les variables sont des valeurs et non des pointeurs (clarifier JS).
+En programmation fonctionnelle, les variables sont des valeurs et non des pointeurs (clarifier JS, scalaires & primitives).
 
 Cela veut dire qu’une "variable" ne peut jamais, muter, changer.
 
@@ -930,6 +973,7 @@ const list = [1, 2, 3];
 // Mutable
 list.push(4);
 list >>> [1, 2, 3, 4]
+// L'état de la liste originale n'existe plus
 
 // Immutable
 const newList = list.push(4);
@@ -970,6 +1014,8 @@ const doubles = numbers.map(function(nb) {
 
 doubles >>> [2, 4, 6]
 ```
+
+Remarquez qu'on ne mute rien!
 
 ===
 
@@ -1111,6 +1157,10 @@ Haskell, Erlang etc.
   (apply str (drop 1 string)))
 ```
 
+La notation polonaise.
+
+Proximité entre le code et les données (les macros).
+
 ===
 
 ## Un peu de Haskell?
@@ -1161,11 +1211,36 @@ sing_verse(Bottle) ->
 
 ## Je m’en sers déjà?
 
-En réalité, la plupart des langages de haut niveau utilisent aujourd’hui plusieurs paradigmes à la fois.
+En réalité, la plupart des langages de **haut niveau** utilisent aujourd’hui plusieurs paradigmes à la fois.
 
 Le JavaScript, le python, le ruby et même le php (sigh.) utilisent déjà beaucoup de concepts de la programmation fonctionnelle tout en restant près de l’objet et de l’impératif.
 
-Pourquoi cette longue digression?
+===
+
+## Niveaux de langage
+
+Quand je dis langage de **haut niveau**, ce n'est pas un jugement de valeur.
+
+Petit rappel: un ordinateur n'est ni plus ni moins qu'un amas de `0` et de `1`.
+
+Il y a donc 4 niveaux de langages distincts qui sont de plus en plus "hauts" au fur et à mesure qu'on s'éloigne du "métal".
+
+===
+
+## Niveaux de langage
+
+1. Le binaire
+2. Les assembleurs
+3. Les langages compilés
+4. Les langages interprétés
+
+Plus on est près du métal, plus on est potentiellement performant mais plus on perd en expressivité.
+
+Quand on écrit du code, on n'écrit pas pour la machine mais bien pour l'humain.
+
+===
+
+# Pourquoi?
 
 ===
 
@@ -1258,50 +1333,6 @@ Imaginons cela sur des données plus complexes et plus nombreuses et nous aurons
 
 ===
 
-## Le perceptron
-
-Inventé en 1957 par Franck Rosenblatt.
-
-Le plus "simple" des algorithmes de machine learning (pondération linéaire).
-
-Il est dit **itératif** car il fonctionne par itérations successives jusqu’à ce que l’on considère son résultat satisfaisant (ce qui peut potentiellement ne jamais arriver).
-
-Contrairement à un algorithme déterministe qui a une fin (qui peut être très longue à atteindre, par ailleurs).
-
-===
-
-<p align="center">
-  <img src="img/perceptron.png" class="plain" />
-</p>
-
-===
-
-## L’OCR (Optical Character Recognition)
-
-1. Séparer les charactères
-2. Analyser leur structure.
-
-<p align="center">
-  <img src="img/ocr.jpeg" class="plain" />
-</p>
-
-Note: jeu de données entrainé à la main, essayant de formaliser ce qu'est une lettre
-
-===
-
-## Exemples
-
-1. La banque et les prêts (formulation des hypothèses et pondération).
-2. Netflix et son système de recommandation.
-
-===
-
-## L'anamnèse
-
-TODO: explain + messe
-
-===
-
 ## La régression linéaire
 
 Revenons un peu en arrière dans le temps.
@@ -1318,8 +1349,8 @@ Méthode statistique classique.
 
 1. Abscisse (surface en m2), Ordonnée (prix en euros)
 2. Trouver le prix de notre maison
-  1. Tracer la ligne (déterminer son coût)
-  2. Choisir une méthode: les moindres carrés, atténue les erreurs
+  1. Tracer une ligne
+  2. Déterminer son coup
   3. Interpolation
 3. L'extrapolation
 4. Logarithmes et polynomiales
@@ -1330,13 +1361,11 @@ Note: blank slate pour le tableau
 
 ===
 
-## La régression linéaire
+## Régression linéaire & machine learning
 
-Vous ne remarquez rien?
+Est-ce que la régression linéaire est du machine learning?
 
-Quelle différence entre la régression linéaire et le machine learning?
-
-En réalité, très peu. Juste une continuation de cette logique.
+Limites relatives des concepts.
 
 Si on doit formaliser une opposition: on dira que c'est du machine learning dès que le système est capable de prendre de nouveaux inputs et de s'auto-corriger au cours du temps.
 
@@ -1376,12 +1405,83 @@ TODO
 
 *PseudoRandom Number Generator*
 
-L'uniformité et le danger de `Math.random`.
+===
 
-Très important en cryptologie.
+## Les PRNG
 
-TODO: montrer un vrai PRNG
-TODO: l'état et si quelqu'un le connait ou détecte son pattern => boom explosion
+L'uniformité des résultat.
+
+Danger: que l'on puisse détecter son pattern et/ou son état actuel.
+
+Si cela est compromis, on peut prédire son comportement et en jouer (Tool Assisted Speedrun).
+
+Très important pour la cryptologie.
+
+Un PRNG n'est jamais parfait mais le calcul nécessaire pour le percer augmente avec sa qualité.
+
+===
+
+## ACHTUNG!
+
+N'utilisez jamais `Math.random` pour faire de la crypto ou de la sécu!
+
+===
+
+## La méthode Von Neumann
+
+```js
+let state = 11112;
+
+function random() {
+  const squared = state * state;
+
+  // Update state
+  state = middleSquares(squared);
+
+  // Returning pseudo-random number
+  return state;
+}
+
+// Etape n°1 => 11112^2 = 12(3432)1, on garde 3432
+// Etape n°2 => 34322^2 = 11(7786)24, on garde 7786
+// ...
+```
+
+## Le perceptron
+
+Inventé en 1957 par Franck Rosenblatt.
+
+Le plus "simple" des algorithmes de machine learning (pondération linéaire).
+
+Il est dit **itératif** car il fonctionne par itérations successives jusqu’à ce que l’on considère son résultat satisfaisant (ce qui peut potentiellement ne jamais arriver).
+
+Contrairement à un algorithme déterministe qui a une fin (qui peut être très longue à atteindre, par ailleurs).
+
+===
+
+<p align="center">
+  <img src="img/perceptron.png" class="plain" />
+</p>
+
+===
+
+## L’OCR (Optical Character Recognition)
+
+1. Séparer les charactères
+2. Analyser leur structure.
+
+<p align="center">
+  <img src="img/ocr.jpeg" class="plain" />
+</p>
+
+Note: jeu de données entrainé à la main, essayant de formaliser ce qu'est une lettre
+
+===
+
+## Exemples
+
+1. La banque et les prêts (formulation des hypothèses et pondération).
+2. Netflix et son système de recommandation.
 
 ===
 
@@ -1390,6 +1490,12 @@ TODO: l'état et si quelqu'un le connait ou détecte son pattern => boom explosi
 Très bonne explication visuelle sur le site R2D3:
 
 [http://www.r2d3.us](http://www.r2d3.us)
+
+===
+
+## L'anamnèse
+
+TODO: explain + messe
 
 ===
 
@@ -1404,6 +1510,10 @@ S’inspirer du fonctionnement du cerveau humain.
 Certains considèrent que ce ne sont que des réseaux de neurones en embuscade (retour sur le perceptron).
 
 Algorithme DQN (DeepMind).
+
+===
+
+## Les algorithmes génétiques
 
 ===
 
