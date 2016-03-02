@@ -89,11 +89,26 @@ Vous montrer que ces choses existent pour qu'elles deviennent de nouveaux vecteu
 
 Gardez à l’esprit que je ne vous donne ici que des **pistes à explorer** et qu’il est impossible d’être exhaustif.
 
-Cela va être dense et parfois même légèrement technique. N’ayez pas peur des **digressions**.
+===
 
-Enfin, faites attention à l’emploi des mots sur lesquels je vais tenter de mettre une définition: ce sont pour la plupart des **buzzwords** rarement utilisés à bon escient.
+## Pie jesu domine
 
-Note: Oui, on va faire du latin aussi.
+Cela va être dense et parfois même légèrement technique. N’ayez pas peur des **digressions**, on va faire
+
+* des langues mortes
+* de la philosophie
+* de la littérature
+* de la théologie
+
+===
+
+## Dona eis requiem
+
+Enfin, faites attention à l’emploi courant des mots sur lesquels je vais tenter de mettre une définition:
+
+Ce sont pour la plupart des **buzzwords** rarement utilisés à bon escient.
+
+Exerçons notre sens critique!
 
 ===
 
@@ -186,7 +201,7 @@ Un donné, conceptuellement, est-ce qui apparait **immédiatement** à l’intel
 
 La délimitation des deux concepts est, par ailleurs, un très grand problème philosophique.
 
-Mais ‘base de construits’ ne sonnait pas bien.
+Mais "base de construits" ne sonnait pas bien.
 
 Note: lorsque l'on voit quelque chose, sa vision est un donné, le fait que nous puissions l'appeler table ou chaise est en soi un processus de construction et donc un construit. Mais la philo peut aller plus loin.
 
@@ -414,6 +429,17 @@ Une méthode issue de la cryptographie: les rainbow tables.
 Comment un script perl de deux lignes peut casser vos mots de passe?
 
 Vive les condiments!
+
+===
+
+## Vectoriel et matriciel
+
+Prenons le problème à l'envers.
+
+Comment stocker une image dans un fichier?
+
+1. L'approche matricielle
+2. L'approche vectorielle
 
 ===
 
@@ -820,9 +846,56 @@ Le NoSQL est un monde fabuleux. N’ayez pas peur de l’explorer pour découvri
 
 ===
 
-TODO: CPU / GPU procs etc., l'asynchone (exemple setTimeout tricky)
+## Les processeurs
 
-TODO: besoin de beacoup de bécannes
+Un ordinateur a au minimum un processeur.
+
+Un processeur ne peut jamais faire plus d'un cacul à la fois.
+
+C'est une limitation physique.
+
+===
+
+## Une solution?
+
+Pourquoi ne pas diviser le calcul et le faire exécuter par plusieurs ordinateurs.
+
+Notez que c'est aujourd'hui le même principe avec nos ordinateurs qui ont plusieurs processeurs à la fois (4 en moyenne) + les GPU.
+
+===
+
+## Quid de l'asynchrone
+
+L'asynchrone, ce n'est pas de la parallélisation, c'est utiliser des stacks ou des threads (stacks au niveau du processeur).
+
+C'est répartir les calculs dans le temps pour éviter que des calculs lourds ou que des opérations ne nécessitant pas le CPU (I/O) n'en bloquent pas d'autres.
+
+La responsivité d'une interface web.
+
+===
+
+<p align="center">
+  <img src="img/thread.png" class="plain" width="400px" />
+</p>
+
+===
+
+## Petite question en passant
+
+```js
+function main() {
+
+  setTimeout(function() {
+    console.log('a');
+  }, 0);
+
+  console.log('b');
+
+}
+
+// Que va-t-il se passer dans la console
+main();
+```
 
 ===
 
@@ -942,6 +1015,66 @@ La **programmation fonctionnelle** considère les effets de bord comme le mal in
 Maintenant que l'on sait ce qu'est une fonction pure:
 
 Une fonction retournant un nombre aléatoire peut-elle être pure?
+
+===
+
+## Aparté
+
+*Comment peut-on générer du hasard en informatique?*
+
+===
+
+## Solution
+
+#### Mesurer le réel
+
+[random.org](https://www.random.org/)
+
+#### Les PRNG
+
+*PseudoRandom Number Generator*
+
+===
+
+## Les PRNG
+
+L'uniformité des résultat.
+
+Danger: que l'on puisse détecter son pattern et/ou son état actuel.
+
+Si cela est compromis, on peut prédire son comportement et en jouer (Tool Assisted Speedrun).
+
+Très important pour la cryptologie.
+
+Un PRNG n'est jamais parfait mais le calcul nécessaire pour le percer augmente avec sa qualité.
+
+===
+
+## ACHTUNG!
+
+N'utilisez jamais `Math.random` pour faire de la crypto ou de la sécu!
+
+===
+
+## La méthode Von Neumann
+
+```js
+let state = 11112;
+
+function random() {
+  const squared = state * state;
+
+  // Update state
+  state = middleSquares(squared);
+
+  // Returning pseudo-random number
+  return state;
+}
+
+// Etape n°1 => 11112^2 = 12(3432)1, on garde 3432
+// Etape n°2 => 34322^2 = 11(7786)24, on garde 7786
+// ...
+```
 
 ===
 
@@ -1209,6 +1342,42 @@ sing_verse(Bottle) ->
 
 ===
 
+## Et c'est tout?
+
+J'ai dit tout à l'heure que le troisième paradigme était le paradigme déclaratif.
+
+Ne pas oublier que la programmation fonctionnelle n'est qu'une facette de ce paradigme.
+
+On y trouve par exemple aussi la programmation logique, comme avec le Prolog.
+
+===
+
+## Un peu de Prolog?
+
+```prolog
+?- parent(abraham,X).   /* The children of Abraham */
+X = ismael
+Y = isaac
+yes
+?- parent(abraham,_).   /* Did Abraham have children? */
+yes
+?- parent(Father,esau).   /* The father of Esau? */
+Father = isaac
+?- parent(F,S).     /* All the pairs father-son from the data base */
+F = abraham
+S = ismael
+...
+
+?- parent(abraham,X),parent(X,Grandson). /* Is Abraham grandfather? */
+X = isaac
+Grandson = esau
+X = isaac
+Grandson = iacob
+no
+```
+
+===
+
 ## Je m’en sers déjà?
 
 En réalité, la plupart des langages de **haut niveau** utilisent aujourd’hui plusieurs paradigmes à la fois.
@@ -1284,7 +1453,9 @@ Certains calculs ne sont pas parallélisables. 
 
 MapReduce utilise difficilement des index.
 
-TODO: explain what is an index
+Rappelez-vous de tout à l'heure: un index c'est une structure de données que l'on peut requêter en `O(1)` pour répondre à une question.
+
+Exemple de l'index en SQL.
 
 ===
 
@@ -1371,7 +1542,7 @@ Si on doit formaliser une opposition: on dira que c'est du machine learning dès
 
 ===
 
-## L'inférence bayésienne
+## L'inférence bayésienne (1)
 
 Statistiques et probabilité. Thomas Bayes (XVIIIe siècle)
 
@@ -1382,70 +1553,6 @@ Méthode utile quand on a moins de données ou quand on en ajoute progressivemen
 Mais si profusion de données les deux méthodes auront asymptotiquement les mêmes résultats.
 
 ===
-
-## Un coup de dés jamais n'abolira le hasard
-
-TODO
-
-===
-
-## Aparté
-
-*Comment peut-on générer du hasard en informatique?*
-
-===
-
-## Solution
-
-#### Mesurer le réel
-
-[random.org](https://www.random.org/)
-
-#### Les PRNG
-
-*PseudoRandom Number Generator*
-
-===
-
-## Les PRNG
-
-L'uniformité des résultat.
-
-Danger: que l'on puisse détecter son pattern et/ou son état actuel.
-
-Si cela est compromis, on peut prédire son comportement et en jouer (Tool Assisted Speedrun).
-
-Très important pour la cryptologie.
-
-Un PRNG n'est jamais parfait mais le calcul nécessaire pour le percer augmente avec sa qualité.
-
-===
-
-## ACHTUNG!
-
-N'utilisez jamais `Math.random` pour faire de la crypto ou de la sécu!
-
-===
-
-## La méthode Von Neumann
-
-```js
-let state = 11112;
-
-function random() {
-  const squared = state * state;
-
-  // Update state
-  state = middleSquares(squared);
-
-  // Returning pseudo-random number
-  return state;
-}
-
-// Etape n°1 => 11112^2 = 12(3432)1, on garde 3432
-// Etape n°2 => 34322^2 = 11(7786)24, on garde 7786
-// ...
-```
 
 ## Le perceptron
 
@@ -1493,27 +1600,51 @@ Très bonne explication visuelle sur le site R2D3:
 
 ===
 
-## L'anamnèse
-
-TODO: explain + messe
-
-===
-
 ## Le deep learning
-
-TODO: on n'a pas les données d'entrées parfois (DQN => chiffres)
 
 Famille d’algorithme appartenant aussi à la famille du machine learning.
 
+Dans ce cas là, on n'a pas de données initiales, ou très peu, et on va tenter de faire apprendre à la machine par elle-même.
+
 S’inspirer du fonctionnement du cerveau humain.
 
-Certains considèrent que ce ne sont que des réseaux de neurones en embuscade (retour sur le perceptron).
-
-Algorithme DQN (DeepMind).
+Les réseaux de neurones et la spécialisation (couleur, forme etc.)
 
 ===
 
-## Les algorithmes génétiques
+## DQN - DeepMind
+
+Algorithme capable d'apprendre à jouer à des jeux vidéo atari.
+
+Fonctionne sans données préalables mais grâce à un système de stimuli.
+
+Son objectif est de faire grimper les nombres (littéralement).
+
+===
+
+## L'anamnèse
+
+Etymologie (la reminiscence).
+
+Platon et le retour au monde des idées.
+
+Petit retour sur la notion de donnée et de construit.
+
+Kant et les catégories de l'entendement.
+
+(A la messe ça n'a rien à voir, c'est juste le moment où l'on rappelle les paroles du Christ lors de la Cène).
+
+===
+
+## Les algorithmes évolutionnaires
+
+Petit rappel concernant ce cher M. Darwin.
+
+<p align="center">
+  <img src="img/walkers.gif" class="plain" />
+</p>
+
+[Exemple](http://rednuht.org/genetic_walkers/) à faire tourner soi-même.
 
 ===
 
