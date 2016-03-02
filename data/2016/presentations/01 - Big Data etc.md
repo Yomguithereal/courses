@@ -12,7 +12,7 @@
 
 ===
 
-## Parcours
+## Qui suis-je?
 
 Guillaume Plique
 
@@ -21,7 +21,7 @@ Guillaume Plique
 * Hypokhâgne
 * SciencesPo
 * Waseda Daigaku, Tokyo
-* HETIC
+* HETIC (P2014 RPZ)
 
 #### Emploi
 
@@ -823,9 +823,90 @@ En d’autres termes, une fonction est pure lorsque l’on est certain que si l�
 
 ===
 
-## Pureté - Exemple
+## Pureté - Exemple n°1
 
-TODO:
+```js
+let externalCoefficient = 0;
+function impure(nb) {
+  return nb + externalCoefficient + 1;
+}
+
+function pure(nb) {
+  return nb + 1;
+}
+
+impure(2) >>> 3
+pure(2) >>> 3
+
+externalCoefficient++;
+
+// Ooops
+impure(2) >>> 4
+pure(2) >>> 3
+```
+
+Quid de l'ES6?
+
+===
+
+## Pureté - Exemple n°2
+
+```js
+const numbers = [1, 2, 3];
+
+// Behold: side-effects!
+function addItem(list) {
+  list.push(4);
+}
+
+// numbers here...
+addItem(numbers);
+// ...are different from numbers here
+```
+
+===
+
+## Pureté - Résumé
+
+On dira qu'une fonction est pure si elle accepte exactement une source d'inputs et ne produit des résultats que via un canal unique.
+
+La pureté est un moyen de lutter contre les **effets de bord** et le doute qu'il génère.
+
+===
+
+## Les effets de bord
+
+Le problème c'est que la réalité, est un effet de bord qui va frustrer la logique mathématique de la programmation fonctionnelle.
+
+Le file system, est un effet de bord, par exemple. L'état en est un autre.
+
+On a coutume de dire que le paradigme objet et le paradigme fonctionnel apportent tous deux des solutions différentes à ce problème.
+
+La notion d'effet de bord est donc centrale pour comprendre la logique des langages informatiques.
+
+===
+
+## Les effets de bord
+
+La **programmation orientée objet** trouve une solution aux effets de bords en rendant l'état local à chaque objet et en s'assurant que les effets de bords restent contenus à des endroits précis (avec des résultats plus ou moins variés).
+
+La **programmation fonctionnelle** considère les effets de bord comme le mal incarné et va tout faire pour les éviter autant que possible. Elle fera des compromis avec au travers de concepts jouant le rôle de sas (le typage, les monades etc.).
+
+===
+
+## Instant méditation
+
+Maintenant que l'on sait ce qu'est une fonction pure:
+
+Une fonction retournant un nombre aléatoire peut-elle être pure?
+
+===
+
+## Shameless transition
+
+Pour la programmation fonctionnelle, un des pires effets de bord porte le doux nom de "**mutation**".
+
+Et vous la pratiquez tous les jours sans vergogne!
 
 ===
 
@@ -843,7 +924,20 @@ Cela abolit toute forme d’incertitude concernant la valeur d’une variable au
 
 ## Immutabilité - Exemple
 
-TODO:
+```js
+const list = [1, 2, 3];
+
+// Mutable
+list.push(4);
+list >>> [1, 2, 3, 4]
+
+// Immutable
+const newList = list.push(4);
+list >>> [1, 2, 3]
+newList >>> [1, 2, 3, 4]
+```
+
+Problème?
 
 ===
 
@@ -857,9 +951,131 @@ On appelle donc fonctions de premier ordre des fonctions prenant des fonctions c
 
 ===
 
-## Premier ordre - Exemple
+## Map
 
-TODO: map / reduce / filter / partial / composition
+```js
+const numbers = [1, 2, 3];
+
+// Imperatif
+const doubles = [];
+
+for (let i = 0, l = numbers.length; i < l; i++) {
+  doubles.push(numbers[i] * 2);
+}
+
+// Fonctionnel
+const doubles = numbers.map(function(nb) {
+  return nb * 2;
+});
+
+doubles >>> [2, 4, 6]
+```
+
+===
+
+## Filter
+
+```js
+const numbers = [1, 2, 3];
+
+// Imperatif
+const greaters = [];
+
+for (let i = 0, l = numbers.length; i < l; i++) {
+  if (numbers[i] > 1)
+    greaters.push(numbers[i]);
+}
+
+// Fonctionnel
+const greaters = numbers.filter(function(nb) {
+  return nb > 1;
+});
+
+greaters >>> [2, 3]
+```
+
+Predicat
+
+===
+
+## Reduce
+
+```js
+const numbers = [1, 2, 3];
+
+// Imperatif
+let sum = 0;
+
+for (let i = 0, l = numbers.length; i < l; i++) {
+  sum += numbers[i];
+}
+
+// Fonctionnel
+const sum = numbers.reduce(function(a, b) {
+  return a + b;
+});
+
+sum >>> 6
+```
+
+Notice anything?
+
+===
+
+## Reduce, notre maître à tous
+
+```js
+// Map est un reduce
+function map(list, fn) {
+  return list.reduce(function(a, b) {
+    return a.concat(fn(b));
+  }, []);
+}
+
+// Filter est un reduce
+function filter(list, fn) {
+  return list.reduce(function(a, b) {
+    return fn(b) ? a.concat(b) : a;
+  }, []);
+}
+```
+
+Valeur de départ
+
+===
+
+## Partial application
+
+```js
+function add(a, b) {
+  return a + b;
+}
+
+const addToTwo = partial(add, 2);
+
+addToTwo(4) >>> 6
+
+// In raw JS
+const addToTwo = add.bind(null, 2);
+```
+
+===
+
+## Function composition
+
+```js
+function addTwo(nb) {
+  return nb + 2;
+}
+
+function addThree(nb) {
+  return nb + 3
+}
+
+const addFive = compose(addTwo, addThree);
+
+addFive(3) >>> 8
+```
 
 ===
 
@@ -1060,12 +1276,6 @@ Contrairement à un algorithme déterministe qui a une fin (qui peut être très
 
 ===
 
-## L'anamnèse
-
-TODO: explain + messe
-
-===
-
 ## L’OCR (Optical Character Recognition)
 
 1. Séparer les charactères
@@ -1081,8 +1291,105 @@ Note: jeu de données entrainé à la main, essayant de formaliser ce qu'est une
 
 ## Exemples
 
-1. La banque et les prêts.
+1. La banque et les prêts (formulation des hypothèses et pondération).
 2. Netflix et son système de recommandation.
+
+===
+
+## L'anamnèse
+
+TODO: explain + messe
+
+===
+
+## La régression linéaire
+
+Revenons un peu en arrière dans le temps.
+
+Méthode statistique classique.
+
+**Le but**: trouver la corrélation entre deux variables.
+
+**Exemple**: évaluer le prix de sa maison sur un marché immobilier.
+
+===
+
+## La régression linéaire
+
+1. Abscisse (surface en m2), Ordonnée (prix en euros)
+2. Trouver le prix de notre maison
+  1. Tracer la ligne (déterminer son coût)
+  2. Choisir une méthode: les moindres carrés, atténue les erreurs
+  3. Interpolation
+3. L'extrapolation
+4. Logarithmes et polynomiales
+
+===
+
+Note: blank slate pour le tableau
+
+===
+
+## La régression linéaire
+
+Vous ne remarquez rien?
+
+Quelle différence entre la régression linéaire et le machine learning?
+
+En réalité, très peu. Juste une continuation de cette logique.
+
+Si on doit formaliser une opposition: on dira que c'est du machine learning dès que le système est capable de prendre de nouveaux inputs et de s'auto-corriger au cours du temps.
+
+===
+
+## L'inférence bayésienne
+
+Statistiques et probabilité. Thomas Bayes (XVIIIe siècle)
+
+Opposition aux statistiques *fréquentistes* n'ayant une validité que lorsque toutes les données, ou une très grande quantité de ces données sont connues (Loi des grands nombres).
+
+Méthode utile quand on a moins de données ou quand on en ajoute progressivement dans un système.
+
+Mais si profusion de données les deux méthodes auront asymptotiquement les mêmes résultats.
+
+===
+
+## Un coup de dés jamais n'abolira le hasard
+
+TODO
+
+===
+
+## Aparté
+
+*Comment peut-on générer du hasard en informatique?*
+
+===
+
+## Solution
+
+#### Mesurer le réel
+
+[random.org](https://www.random.org/)
+
+#### Les PRNG
+
+*PseudoRandom Number Generator*
+
+L'uniformité et le danger de `Math.random`.
+
+Très important en cryptologie.
+
+TODO: montrer un vrai PRNG
+TODO: l'état et si quelqu'un le connait ou détecte son pattern => boom explosion
+
+===
+
+## Pour aller plus loin
+
+Très bonne explication visuelle sur le site R2D3:
+
+[http://www.r2d3.us](http://www.r2d3.us)
 
 ===
 

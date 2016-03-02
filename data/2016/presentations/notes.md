@@ -2,10 +2,8 @@
 
 ## Cours n°1
 
-* R2D3
-* Régression linéaire
-* XOR encryption
 * Wrap up fonctionnel 1 input / 1 output, les effets de bords, la solution OO
+* Effets de bord et le monde réel (pourquoi plutot rare jusque maintenant)
 * Corriger le code fonctionnel
 * Principe de l'abstraction
 * L'aléatoire et les fonctions pures
@@ -20,11 +18,13 @@
 * Le matriciel et le vectoriel
 * Le prolog
 * Les algos génétiques (gif)
+* L'inférence bayésienne (loi des grands nombres)
 
 ## Cours n°2
 
 * Manuscrit de Voynich
 * Comment obtenir de meilleures réponses en sociologie: les réponses aux questions que l'on ne pose pas
+* XOR encryption & la cryptanalyse
 
 ## Cours n°3
 
