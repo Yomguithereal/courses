@@ -10,7 +10,8 @@
 
 ## Cours n°3
 
-* Example du FOSDEM pour faire comprendre la viz de graphe
+* Example du FOSDEM pour faire comprendre la viz de graphe (stats vs. visu + serendipité)
+* Check jaco
 * Des différences entre l'art et la dataviz (design & graphisme)
 * Rappelons nous du perceptron pour comprendre le layout
 

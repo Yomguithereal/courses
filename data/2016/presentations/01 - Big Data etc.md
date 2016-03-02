@@ -960,7 +960,7 @@ pure(2) >>> 3
 
 externalCoefficient++;
 
-// Ooops
+// You had one job, impure...
 impure(2) >>> 4
 pure(2) >>> 3
 ```
