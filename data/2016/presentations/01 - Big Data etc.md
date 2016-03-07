@@ -93,7 +93,7 @@ Gardez à l’esprit que je ne vous donne ici que des **pistes à explorer** et 
 
 ## Pie jesu domine
 
-Cela va être dense et parfois même légèrement technique. N’ayez pas peur des **digressions**, on va faire
+Cela va être dense et parfois même légèrement technique. N’ayez pas peur des **digressions**, on va faire:
 
 * des langues mortes
 * de la philosophie
@@ -115,7 +115,7 @@ Exerçons notre sens critique!
 ## Les règles du cours
 
 * N'hésitez pas à poser des **questions**.
-* N'héistez pas à m'interrompre si vous trouvez que je raconte des **inepties**.
+* N'hésitez pas à m'interrompre si vous trouvez que je raconte des **inepties**.
 * Ralentissez-moi si je parle trop vite.
 * Ne fuyez pas si j'utilise un vocabulaire **acroamatique** ou **abscons**.
 

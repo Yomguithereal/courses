@@ -7,6 +7,10 @@
 * XOR encryption & la cryptanalyse
 * La classification bayesienne
 * La loi de Zipf
+* Les inflecteurs
+* Petit rappel sur dice
+* lexicométrie
+* sentiment analysis
 
 ## Cours n°3
 
