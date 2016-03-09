@@ -1,4 +1,4 @@
-var $solutions = $('pre:has(code.language-js):not(:first)');
+var $solutions = $('pre.highlight:not(:first)');
 
 $solutions.hide();
 
