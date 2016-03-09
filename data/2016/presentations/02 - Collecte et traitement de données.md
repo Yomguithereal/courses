@@ -46,11 +46,11 @@ Aujourd’hui, nous allons parler des données elles-mêmes, qu’elles soient "
 
 ===
 
-And now for something completely different:
+<p align="center">
+  <img src="img/cleese.gif" class="plain" />
+</p>
 
-## Un peu d’étymologie!
-
-TODO: John Cleese
+<h2 style="text-align: center;">Un peu d’étymologie!</h2>
 
 ===
 
@@ -68,16 +68,22 @@ Démarche de try & error.
 
 2 exemples:
 
-1. TODO: trouver
+1. Déterminer l'encodage d'une réponse HTTP
 2. Le polymorphisme
 
 ===
 
-TODO: exemple 1
+## Encodage réponse HTTP
+
+Comment savoir si la réponse est encodée en `UTF-8` ou en `ISO-8859-1`?
+
+1. Le header `Content-Type`
+2. Le meta charset dans le HTML
+3. Regarder les charactères et détecter un pattern.
 
 ===
 
-## Combo: Polymorphisme
+## Le polymorphisme
 
 ```js
 // Exemple de fonction polymorphique et inutile
@@ -104,7 +110,7 @@ Le typage statique.
 
 ===
 
-## L'heuristique
+## Combo: L'heuristique
 
 Si une startup vous parle d'"intelligence artificielle", prenez les temps de vous interroger sur son fonctionnement.
 
@@ -205,7 +211,9 @@ Il s’agit de trouver un nombre plus ou moins grand représentant la distance t
 
 ===
 
-TODO: image levenshtein
+<p align="center">
+  <img src="img/distance.png" class="plain" />
+</p>
 
 ===
 
@@ -219,17 +227,34 @@ Considérant deux chaînes `M` et `P`: La distance entre `M` et `P` est égale
 2. Nb d’ajout de `M` vers `P `
 3. Nb de suppressions de `M`
 
-Exemple: `LD(livre, libre) = 1`
-
-TODO: detailler
+**Exemple**: `LD(livre, libre) = 1`
 
 ===
 
-## Jaccard
+## Jaccard / Tanimoto
 
 Problèmes des distances absolues comme celle de Levenshtein: écarts de mesure proportionnels à la taille des chaînes considérées.
 
-TODO: détailler
+<p align="center">
+  <img src="img/jaccard.png" class="plain" />
+</p>
+
+Notion de distance ou de similarité (l'inverse).
+
+===
+
+## Jaccard / Tanimoto
+
+1. Prenons un mot `A` "context" et un mot `B` "contact".
+2. Ensembles de charactères de `A` et de `B`.
+  * `EA` = `{c o n t e x}`
+  * `EB` = `{c o n t a}`
+3. Calculons la taille de l'intersection de `EA` et `EB`.
+  * `I` = `{c o n t} => 4`
+4. Calculons la taille de l'union de `EA` et `EB`.
+  * `U` = `{c o n t e x a} => 7`
+5. Alors l'indice de Jaccard de `A` et de `B` est égal à:
+  * `J = 1 - I/U => 3/7`
 
 ===
 
@@ -239,9 +264,15 @@ Une autre distance relative: Jaro-Winkler (1999)
 
 Plus efficace avec des chaînes courtes et indice de comparaison relatif compris entre 0 et 1.
 
-* **Exemple**:   `JWD(Duane, Dwayne) = 0.84`
+<p align="center">
+  <img src="img/jaro.png" class="plain" />
+</p>
 
-TODO: image de la formule
+<p align="center">
+  <img src="img/winkler.png" class="plain" />
+</p>
+
+* **Exemple**:   `JWD(Duane, Dwayne) = 0.84`
 
 ===
 
@@ -500,9 +531,7 @@ Créé dans les années 1920 par Robert Russell et Margaret Ordell.
 
 ## Le Soundex
 
-Tellement connu aujourd’hui qu’un mot clé SQL existe pour s’en servir et que certaines personnes emploient le mot pour désigner les algorithmes phonétiques en général. (Synecdoque)
-
-TODO: checker le sens
+Tellement connu aujourd’hui qu’un mot clé SQL existe pour s’en servir et que certaines personnes emploient le mot pour désigner les algorithmes phonétiques en général. (Synecdoque & métonymie, la récursion).
 
 Limites: Prévu pour fonctionner uniquement sur des noms propres à consonance anglo-saxonne.
 
@@ -542,9 +571,11 @@ Consiste en la classification d’un jeu de données en rassemblant par groupe l
 
 ## OpenRefine
 
-OpenRefine (anciennement GoogleRefine) est un programme open source permettant de raffiner et nettoyer des données (le diamant).
+**OpenRefine** (anciennement GoogleRefine) est un programme open source permettant de raffiner et nettoyer des données (le diamant).
 
-TODO: image
+<p align="center">
+  <img src="img/openrefine.png" width="300px" class="plain" />
+</p>
 
 ===
 
@@ -570,9 +601,12 @@ TODO: l'url, le PDF de la mort
 
 ===
 
-## Le TAL
 
-TODO: la photo qui va bien
+<!-- .slide: data-background="img/tal.jpg" -->
+
+===
+
+## Le TAL
 
 Was ist das?
 
@@ -605,6 +639,8 @@ Sous-séquence de n éléments construite à partir d’une séquence donnée.
 Permet de faire des estimations statistiques bien plus pertinentes sur du texte brut.
 
 La probabilité des éléments dans le texte est alors dépendante des éléments précédents et suivants.
+
+Dice-Sorensen.
 
 ===
 
@@ -732,7 +768,11 @@ Tous les sites n’ont pas forcément d’API.
 
 Certaines API sont limitées (contenu inaccessible, rate etc.).
 
-TODO: le tweet
+===
+
+<p align="center">
+  <img src="img/tweet.png" class="plain" />
+</p>
 
 ===
 
@@ -760,13 +800,17 @@ Hide yo data, bitches! Des données ne sont JAMAIS à l’abri si l’on peut y 
 
 ## EchoJS
 
-TODO: photo 1
+<p align="center">
+  <img src="img/echojs.png" class="plain" />
+</p>
 
 ===
 
 ## EchoJS
 
-TODO: photo 2
+<p align="center">
+  <img src="img/inspector.png" class="plain" />
+</p>
 
 ===
 
@@ -819,6 +863,7 @@ Les serveurs peuvent tenter de vous empêcher de les scraper en détectant votre
 ## Les écueils
 
 Scraping statique vs. dynamique: Emuler un navigateur n’est pas simple.
+
 L’authentification (essayez de scraper Google ou Facebook, juste pour voir).
 
 **Solution**: phantomjs, electron, jsdom etc.
@@ -830,6 +875,8 @@ L’authentification (essayez de scraper Google ou Facebook, juste pour voir).
 Le markup de la page peut changer dans le temps et casser vos heuristiques.
 
 **Solution**: menacer les webmasters responsables.
+
+**Bonus**: le markup obfusqué.
 
 ===
 
@@ -860,54 +907,67 @@ En réalité c’est la réutilisation des données après qui pose problème. (
 
 ## Le crawling
 
-* To crawl: verbe anglais signifiant ramper.
-* Parcourir le web à l’aide d’un programme (bot, spider) en stockant deux choses: les pages parcourues et les liens entre elles.
-* Leur but est d’indexer ‘tout’ ou partie du web.
-* Cela va lentement constituer un graphe.
-* Une idée d’application?
+*To crawl*: verbe anglais signifiant ramper.
+
+Parcourir le web à l’aide d’un programme (bot, spider) en stockant deux choses: les pages parcourues et les liens entre elles.
+
+Leur but est d’indexer "tout" ou partie du web.
+
+Cela va lentement constituer un graphe.
+
+Une idée d’application?
 
 ===
 
 ## Exemples
 
-* Depuis Google, les moteurs de recherches sont des crawlers.
-* Linkfluence: crawler combiné à de la collecte de données des médias sociaux: ontologie du web business.
-* On utilisera un crawler la semaine prochaine pour mieux se familiariser avec le concept.
+Depuis Google, les moteurs de recherches sont des crawlers.
+
+Linkfluence: crawler combiné à de la collecte de données des médias sociaux: ontologie du web business.
 
 ===
 
-## Digression
+<!-- .slide: data-background-iframe="http://hyphe.medialab.sciences-po.fr/" -->
 
-* L’encodage d’une réponse HTTP.
-* Un travail heuristique.
+===
+
+[Link](http://hyphe.medialab.sciences-po.fr/)
 
 ===
 
 ## Un peu d’étymologie
 
-* Téléologie: étude des causes finales. Quelle est l’intention de l’action engagée.
+Le retour. Encore.
+
+**Téléologie**: étude des causes finales. Quelle est l’intention de l’action engagée?
 
 ===
 
 ## Scraping vs. Crawling
 
-* Deux oppositions différentes:
-* 1) Scraping: on souhaite récupérer des données structurées et précises.    Crawling: on souhaite récupérer beaucoup de données non structurées.
-* 2) Scraping: juste le processus d’extraction de la donnée depuis sa souche visuelle.    Crawling: le fait d’aller chercher les URLs et de naviguer sur le web.
+Deux oppositions différentes:
+
+1. **Scraping**: on souhaite récupérer des données structurées et précises. <br>**Crawling**: on souhaite récupérer beaucoup de données non structurées.
+<hr>
+2. **Scraping**: juste le processus d’extraction de la donnée depuis sa souche visuelle. <br>**Crawling**: le fait d’aller chercher les URLs et de naviguer sur le web.
 
 ===
 
 ## TP n°3: Scraper l’OGI
 
-* Boss Final: récupérer les données de vos stages de 3A sur l’OGI.
-* Harmoniser les entreprises et les catégories afin d’avoir des données propres et exploitables pour les semaines prochaines.
-* Bonus: enregistrer les données dans la base NoSQL de votre choix (Neo4J, ArangoDB etc.).
+Boss Final: récupérer les données de vos stages de 3A sur l’OGI.
+
+Harmoniser les entreprises et les catégories afin d’avoir des données propres et exploitables pour les semaines prochaines.
+
+**Bonus**: enregistrer les données dans la base NoSQL de votre choix.
 
 ===
 
 ## Soon
 
-* La semaine prochaine, nous aborderons la question de la datavisualisation.
-* Mail: guillaume.plique@sciencespo.fr
-* Github: @Yomguithereal
+La semaine prochaine, nous aborderons la question de la **datavisualisation**.
+
+**Mail**: guillaumeplique // gmail.com
+
+**Github**: [Yomguithereal](https://github.com/Yomguithereal)
 

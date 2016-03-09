@@ -6,11 +6,13 @@
 * Comment obtenir de meilleures réponses en sociologie: les réponses aux questions que l'on ne pose pas
 * XOR encryption & la cryptanalyse
 * La classification bayesienne
-* La loi de Zipf
+* La loi de Zipf / TF IDF
 * Les inflecteurs
 * Petit rappel sur dice
 * lexicométrie
 * sentiment analysis
+
+* robots.txt
 
 ## Cours n°3
 
