@@ -616,17 +616,15 @@ Ensemble de méthodes informatiques permettant de "comprendre" ou analyser le la
 
 ===
 
-## Le texte brut
+## La lexicométrie
 
-Le TAL a pour objet le texte brut (données non structurées).
+Science étudiant le texte de manière strictement statistique.
 
-Objet d’analyse retors.
+Compter les occurrences de certains mots, par exemple.
 
-Comment découper le texte brut en éléments analysables?
-
-1. Les N-grammes 
-2. La tokenization 
-3. Le POS Tagging
+1. Les N-grammes
+2. La loi de Zipf et TF/IDF
+3. La cryptanalyse
 
 ===
 
@@ -654,6 +652,117 @@ Bi-grammes, Tri-grammes etc. 
 
 ===
 
+## La loi de Zipf
+
+Observation sur la distribution des mots d'un texte.
+
+Comptons les occurrences (James Joyce, Ulysses).
+
+Le mot le plus courant revient ~8000 fois.
+
+Le dixième mot le plus courant ~800 fois.
+
+Le centième ~80 fois. etc.
+
+===
+
+<p align="center">
+  <img src="img/zipf.png" class="plain" />
+</p>
+
+===
+
+## TF / IDF
+
+*Term Frequency - Inverse Document Frequency*
+
+Considérons un corpus de textes composé de plusieurs documents.
+
+`TF` = nombre d'occurence d'un terme dans le texte considéré.
+
+`IDF` = logarithme de l'inverse de la proportion de documents du corpus contenant le terme.
+
+===
+
+## TF / IDF
+
+Pour simplifer: moins un terme est fréquent dans un texte, plus son importance dans la compréhension de ce texte est grande.
+
+Ceci est justifié empiriquement *a posteriori* par la loi de Zipf.
+
+**Exemple**: les articles et les mots de liaison (la notion de *stopwords*).
+
+===
+
+## La cryptanalyse
+
+Analyse lexicométrique du cyphertext afin de percer ses secrets.
+
+L'encryption XOR.
+
+Comment percer une encryption XOR en ayant que le ciphertext?
+
+`ETAOIN SHRDLU` (rien à voir avec Cthulhu!)
+
+===
+
+<!-- .slide: data-background="img/voynich.png" -->
+
+===
+
+## Le manuscrit de Voynich
+
+Manuscrit illustré anonyme écrit dans un alphabet inconnu.
+
+Découvert par Wilfrid M. Voynich en 1912.
+
+Plus ancienne mention historique du manuscrit en 1639.
+
+Datation: XVème siècle.
+
+===
+
+## L'auteur se paye-t-il notre pomme?
+
+Comment savoir si le livre est un canular élaboré ou pas?
+
+Combinaison de lexicométrie et de cryptanalyse.
+
+===
+
+## Que sait-on?
+
+La distribution des mots suit la loi de Zipf.
+
+TF / IDF montre qu'il existe des sujets par section.
+
+Il n'y a pas vraiment de ponctuation.
+
+Il existe des structures morphologiques.
+
+L'ordre des mots semble de faible importance.
+
+===
+
+## Pour aller plus loin
+
+Un bref état de l'art [ici](http://www.aclweb.org/anthology/W11-1511?notdup).
+
+===
+
+## Le texte brut
+
+Le TAL a pour objet le texte brut (données non structurées).
+
+Objet d’analyse retors.
+
+Comment découper le texte brut en éléments analysables?
+
+1. La tokenization 
+2. Le POS Tagging
+
+===
+
 ## La tokenization
 
 Faire d’un amas de texte brut un amas de tokens (jetons).
@@ -678,6 +787,18 @@ Opération très complexe mais nécessaire lorsqu’il s’agit de tenter de com
 
 ===
 
+## Le sentiment analysis
+
+Aussi appelé *opinion mining*.
+
+Essayer de déterminer ce que ressentent ou pensent les gens ayant écrit le texte.
+
+**Exemple**: tenter de mesurer si les gens sont plutôt contents ou mécontents lorsqu'ils évoquent la politique du gouvernement sur Twitter.
+
+Peu développé scientifiquement. Encore trop heuristique aujourd'hui pour fonctionner de manière suffisamment satisfaisante.
+
+===
+
 ## Apprentissage
 
 Il est extrêmement difficile de trouver des règles tout à fait générales en TAL.
@@ -697,6 +818,14 @@ Aujourd’hui, on utilise donc énormément le machine learning en TAL.
 On fait ce que l’on appelle de l’apprentissage, en taggant à la main beaucoup des corpora (la solution) existants et on laisse la machine apprendre d’elle même les règles ou du moins les appliquer sur les corpora suivants.
 
 Le retour de l'inférence Bayésienne.
+
+===
+
+## Bonus: les inflecteurs
+
+Algorithmes dont le but est d'"infléchir" des formes grammaticales.
+
+Conjuguer des verbes, par exemple, ou bien passer un forme du singulier vers le pluriel etc.
 
 ===
 
@@ -950,6 +1079,14 @@ Deux oppositions différentes:
 1. **Scraping**: on souhaite récupérer des données structurées et précises. <br>**Crawling**: on souhaite récupérer beaucoup de données non structurées.
 <hr>
 2. **Scraping**: juste le processus d’extraction de la donnée depuis sa souche visuelle. <br>**Crawling**: le fait d’aller chercher les URLs et de naviguer sur le web.
+
+===
+
+## robots.txt
+
+Juste une convention...
+
+Personne ne vous oblige à le respecter.
 
 ===
 
