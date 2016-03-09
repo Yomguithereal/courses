@@ -12,6 +12,12 @@
 
 ===
 
+## Préparatifs
+
+Télécharger [LibreOffice](https://fr.libreoffice.org/download/libreoffice-stable/) et [OpenRefine](http://openrefine.org/download.html).
+
+===
+
 ## Dans les épisodes précédents
 
 La semaine dernière: Big Data etc.
@@ -587,13 +593,13 @@ Consiste en la classification d’un jeu de données en rassemblant par groupe l
 2. comprendre comment on peut nettoyer des données sales aisément.
 3. Utiliser du clustering et des algorithmes de logique floue.
 
-TODO: l'url
+[./tp/openrefine.html](./tp/openrefine.html)
 
 ===
 
 ## TP n°1 bis: Club 27
 
-TODO: l'url, le PDF de la mort
+[./tp/27club.html](./tp/27club.html)
 
 ===
 
@@ -963,7 +969,20 @@ Pour cela nous allons utiliser [artoo.js](https://yomguithereal.github.io/artoo)
 
 **Bonus**: le faire depuis Node.js ou un autre langage de script.
 
-TODO: url
+[./tp/echojs.html](./tp/echojs.html)
+
+===
+
+## JavaScript casting
+
+```js
+const number = +variable;
+const boolean = !!variable;
+
+const floored = variable | 0;
+
+const magicBoolean = ~array.indexOf();
+```
 
 ===
 
@@ -1087,16 +1106,6 @@ Deux oppositions différentes:
 Juste une convention...
 
 Personne ne vous oblige à le respecter.
-
-===
-
-## TP n°3: Scraper l’OGI
-
-Boss Final: récupérer les données de vos stages de 3A sur l’OGI.
-
-Harmoniser les entreprises et les catégories afin d’avoir des données propres et exploitables pour les semaines prochaines.
-
-**Bonus**: enregistrer les données dans la base NoSQL de votre choix.
 
 ===
 
