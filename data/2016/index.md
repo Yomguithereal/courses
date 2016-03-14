@@ -5,8 +5,8 @@ title: Data 2016
 
 * Cours n°1: [**Big data etc.**](./1.html)
 * Cours n°2: [**Collecte & traitement de données**](./2.html)
-* Cours n°3: **Datavisualisation**
-* Cours n°4: **Open data**
+* Cours n°3: [**Datavisualisation**](./3.html)
+* Cours n°4: [**Open data**](./4.html)
 
 ---
 
