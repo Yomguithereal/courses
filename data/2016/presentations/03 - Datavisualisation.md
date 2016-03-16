@@ -320,7 +320,7 @@ Comment leur en donner une?
 
 Objectif à atteindre: les noeuds "proches", c’est à dire liés par des arcs, doivent être proches visuellement sur notre carte.
 
-Des algorithmes (le plus souvent itératif) permettent de donner une position à ces noeuds.
+Des algorithmes (le plus souvent itératif & physiques) permettent de donner une position à ces noeuds.
 
 ===
 
@@ -360,6 +360,35 @@ Graphe des comportements sexuels depuis des données crawlées sur wikipedia.
 [http://bit.ly/1EUVOp8](http://bit.ly/1EUVOp8)
 
 Graphe des députés/amendements (écriture de la loi). 628 / 1109
+
+===
+
+## Exemple
+
+Se servir de la visualisation de données pour debugger un processus de migration de donnée.
+
+```cypher
+// Finding duplicates
+MATCH (d:Document {original: true})-[rs:HAS]->(:Slide)-[ri:HAS]->(i:Reference)
+WHERE not(d:Contribution) AND d.title =~ "(?i).*\\d{4}.*"
+WITH d, ri, count(rs) AS nbs
+WHERE nbs = 1
+WITH d, count(ri) AS nbi
+WHERE nbi = 1
+MATCH (d)-[rs:HAS]->(s:Slide)-[ri:HAS]->(i:Reference)
+RETURN d, rs, s, ri, i;
+```
+
+===
+
+```cypher
+// Finding errors in link generation
+MATCH (n:`Mode`) WITH n LIMIT 100 MATCH (n)-[r]-(t) RETURN n,r,t;
+```
+
+La visualisation vs. les statistiques?
+
+None, la sérendipité et la monadologie.
 
 ===
 
