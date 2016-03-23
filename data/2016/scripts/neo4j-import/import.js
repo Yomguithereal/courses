@@ -17,6 +17,12 @@ graph.nodes.forEach(function(node) {
       label = node.type === 'student' ? 'Student' : 'Project',
       params = {};
 
+  // Normalizing date
+  if (node.type === 'project') {
+    var s = node.date.split('/');
+    node.date = +(s[2] + s[1] + s[0]);
+  }
+
   params[propertyIdentifier] = node;
 
   nodesSegment.create('(' + node.id + ':' + label + ' {' + propertyIdentifier + '})', params);
