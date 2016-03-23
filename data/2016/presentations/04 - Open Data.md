@@ -405,6 +405,12 @@ Compétences (hors HETIC): 
 
 ===
 
+## TP: Le Boss Final
+
+TODO: wrap up
+
+===
+
 ## The end
 
 Bonne continuation à tous!
