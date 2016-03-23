@@ -205,7 +205,7 @@ Paris data 2011
 
 Nombreuses ouvertures en cours au niveau des régions et des villes.
 
-ETALAB 2011: Séverin Naudet, Henri Verdier CDO.
+ETALAB 2011: Séverin Naudet, Henri Verdier CDO, prix récents (la France se la pète à tord)
 
 ===
 
@@ -238,6 +238,28 @@ Divisée en deux: 
 
 1. Droit moral (paternité, intégrité etc.) 
 2. Droit patrimonial (revenus etc. spécifié)
+
+===
+
+## Les types d'oeuvre
+
+* Collaborative
+* Collective
+* Composite
+
+===
+
+<h2 style="text-align: center;">Le singe photographe</h2>
+
+<p align="center">
+  <img src="img/monkey.jpg" class="plain" />
+  <br />
+  De l'importance du juge de fond (la démarche artistique comme défense).
+</p>
+
+===
+
+## Exemple complexe
 
 Ministère de la culture et Open data.
 
