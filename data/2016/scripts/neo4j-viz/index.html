@@ -42,7 +42,9 @@
   var sig = new sigma({
     container: 'graph-container',
     settings: {
-      labelThreshold: 8
+      labelThreshold: 8,
+      minEdgeSize: 0.1,
+      maxEdgeSize: 4
     }
   });
 
@@ -69,7 +71,7 @@
         id: 'e' + i,
         source: edge.source,
         target: edge.target,
-        size: edge.weight,
+        size: Math.pow(edge.weight, 2),
         color: '#ccc'
       });
     });
