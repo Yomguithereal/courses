@@ -407,7 +407,7 @@ Compétences (hors HETIC): 
 
 ## TP: Le Boss Final
 
-TODO: wrap up
+[./tp/boss.html](./tp/boss.html)
 
 ===
 
