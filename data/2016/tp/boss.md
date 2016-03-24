@@ -10,7 +10,7 @@ Scraper l'OGP pour récupérer un graphe *bipartite* contenant:
 1. Les étudiants de différentes promotions de l'ecole.
 2. Les projets terminés sur lesquels les étudiants ont travaillé.
 
-Voir le fichier générer [ici](../resources/promo.json).
+Voir le fichier généré [ici](../resources/promo.json).
 
 Voir commment les données ont été importées [ici](https://github.com/Yomguithereal/courses/tree/gh-pages/data/2016/scripts/neo4j-import).
 
