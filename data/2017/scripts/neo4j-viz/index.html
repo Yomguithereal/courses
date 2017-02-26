@@ -1,0 +1,110 @@
+<script src="jquery.min.js"></script>
+<script src="sigma.min.js"></script>
+<script src="sigma.layout.forceAtlas2.min.js"></script>
+
+<div id="container">
+  <style>
+    #graph-container {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+      z-index: 1;
+    }
+
+    #controls {
+      position: absolute;
+      z-index: 2;
+    }
+  </style>
+  <div id="graph-container"></div>
+  <div id="controls">
+    <button id="start">Start layout</button>
+    <button id="stop">Stop layout</button>
+    <button id="color">Toggle color</button>
+  </div>
+</div>
+
+<script>
+  var promoPalette = [
+    '#6D8AC4',
+    '#5EAD53',
+    '#C763AC',
+    '#D05548'
+  ];
+
+  var cdpPalette = [
+    '#969C43',
+    '#B46FA1'
+  ];
+
+  var sig = new sigma({
+    container: 'graph-container',
+    settings: {
+      labelThreshold: 8,
+      minEdgeSize: 0.1,
+      maxEdgeSize: 4
+    }
+  });
+
+  // Fetching the data
+  $.get('graph.json', function(data) {
+
+    data.nodes.forEach(function(node) {
+      var promo = +node.promo.slice(-1);
+
+      sig.graph.addNode({
+        id: node.id,
+        label: node.name + ' ' + node.surname + '(' + node.promo + ')',
+        promoColor: promoPalette[promo - 2],
+        cdpColor: cdpPalette[+node.cdp],
+        color: promoPalette[promo - 2],
+        x: Math.random(),
+        y: Math.random(),
+        size: 1
+      });
+    });
+
+    data.edges.forEach(function(edge, i) {
+      sig.graph.addEdge({
+        id: 'e' + i,
+        source: edge.source,
+        target: edge.target,
+        size: Math.pow(edge.weight, 2),
+        color: '#ccc'
+      });
+    });
+
+    sig.graph.nodes().forEach(function(node) {
+      node.size = sig.graph.degree(node.id);
+    });
+
+    sig.refresh();
+  });
+
+  // Binding controls
+  $('#start').on('click', function() {
+    sig.startForceAtlas2({
+      strongGravityMode: true,
+      gravity: 0.05,
+      scalingRatio: 10,
+      slowDown: 2
+    });
+  });
+
+  $('#stop').on('click', function() {
+    sig.stopForceAtlas2();
+  });
+
+  var color = 'promo';
+  $('#color').on('click', function() {
+    color = color === 'promo' ? 'cdp' : 'promo';
+
+    sig.graph.nodes().forEach(function(node) {
+      node.color = color === 'promo' ? node.promoColor : node.cdpColor;
+    });
+
+    sig.refresh();
+  });
+</script>
