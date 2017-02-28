@@ -620,7 +620,7 @@ Utilisez correctement les structures.
 
 *Comma-Separated Value*
 
-```js
+```lisp
 name,surname,age
 John,Doe,24
 Mary,Jordan,56
@@ -633,8 +633,9 @@ Des problèmes?
 
 ## CSV
 
-```js
-// Escaping
+Echappement.
+
+```lisp
 name,surname,age,commentaire
 John,Travolta,45,"J'aime les ,"
 Marie,Doe,76,"J'aime les ""guillemets"""
@@ -714,6 +715,73 @@ keywords:
 ```
 
 *Fun fact*: `YAML` est un superset du `JSON`
+
+===
+
+## Petit exercice
+
+**Objectif**: représenter des données non-scalaire dans un format tabulaire
+
+```js
+[
+  {name: 'John', colors: ['red', 'yellow']},
+  {name: 'Lucy', colors: ['blue']},
+  {name: 'Elizabeth', colors: ['purple', 'magenta', 'cyan']}
+]
+```
+
+===
+
+## Solution n°1: multiplexer
+
+```lisp
+name,color
+John,red
+John,yellow
+Lucy,blue
+Elizabeth,purple
+Elizabeth,magenta
+Elizabeth,cyan
+```
+
+Problème?
+
+===
+
+## Solution n°2: colonnes
+
+```lisp
+name,color1,color2,color3
+John,red,yellow,
+Lucy,blue,,
+Elizabeth,purple,magenta,cyan
+```
+
+Problème?
+
+===
+
+## Solution n°3: JSON?
+
+```lisp
+name,colors
+John,"[""red"", ""yellow""]"
+Lucy,["blue"]
+Elizabeth,"[""purple"", ""magenta"", ""cyan""]"
+```
+
+Problème?
+
+===
+
+## Solution n°4: le séparateur
+
+```lisp
+name,colors
+John,red|yellow
+Lucy,blue
+Elizabeth,purple|magenta|cyan
+```
 
 ===
 
