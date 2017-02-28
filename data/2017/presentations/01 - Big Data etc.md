@@ -61,17 +61,35 @@ Laboratoire de recherche rassemblant les profils suivants:
 
 ===
 
+## On vous a menti!
+
+L'accroche putassière de ce cours cache en réalité un curieux patchwork.
+
+===
+
 ## Concept du cours
 
 Un Monde de données
 
-**5 grands axes**:
+**6 grands axes**:
 
 * Le Big Data
+* Le machine learning
 * La science informatique & l'algorithmie
 * Le traitement de données
 * La visualisation de données
 * L'Open Data
+
+===
+
+## Plan du cours
+
+Dans un monde parfait:
+
+* **Cours n°1**: Big Data, Machine learning
+* **Cours n°2**: Logique floue, TAL, Webmining
+* **Cours n°3**: Open Data
+* **Cours n°4**: Datavisualisation
 
 ===
 
@@ -136,11 +154,13 @@ Note: Aristote et ses écrits.
 
 ## Un partiel?
 
-Il parait que j'ai un partiel à vous donner.
+Il parait que j'ai un partiel à vous donner?
 
 ===
 
 ## Interlude musical
+
+(Vous pouvez la main plusieurs fois)
 
 * Combien de **développeurs** (langages)?
 * Combien de **designers**?
@@ -152,7 +172,9 @@ Il parait que j'ai un partiel à vous donner.
 
 ## Récapitulatif
 
-* Cours de M. Topolov?
+* Cours en architecture matérielle?
+* Cours en *information retrieval*?
+* Structures de données?
 * Cours de MM. Fongue & Gourven?
 * Projet de dataviz l'année dernière?
 
@@ -213,9 +235,9 @@ Qu’est-ce que le Big data? (un peu d’anglais?)
 
 Un **amas** extrêmement important de données.
 
-Tant que cela tient sur vos ordinateurs, on ne parlera pas de **Big data**.
+Si cela tient sur vos ordinateurs, on ne parlera pas de **Big data**.
 
-Donc, trivialement, pas la table SQL de 1000 lignes de tata Lucienne.
+**Point**
 
 ===
 
@@ -241,7 +263,7 @@ L’humanité a produit dans les ~3 dernières années plus de données que ce q
 
 Des nombres en valant d’autres:  
 
-* 1 **zettaoctet** (1021) franchi en 2011 
+* 1 **zettaoctet** (10^21) franchi en 2011 
 * 204 millions d’emails/minute 
 * 40 000 recherches sur Google à la seconde 
 * 100 heures de vidéo sur YouTube/minute 
@@ -259,11 +281,11 @@ La seule chose sur laquelle les sources s’accordent est le côté **Big**.
 
 ## Le saut quantitatif
 
-Cela n’est pas prêt de ralentir: 
+Cela n’est pas prêt de ralentir (sauf fin abrupte de l'humanité à court terme): 
 
 * Quantified self 
 * Un bon avion (25 To/heure) 
-* Objets connectés 
+* Objets connectés  (pain béni pour les DDOS)
 * Capacité de stockage de plus en plus évidente
 
 ===
@@ -290,21 +312,11 @@ Les deux enjeux du Big data sont donc les suivants:
 
 Etape importante de l’histoire de l’informatique.
 
-On sait que ces données et leur analyse peuvent changer la manière dont on perçoit le monde.
+On sait que ces données et leur analyse peuvent changer la manière dont on comprend le monde (la connaissance).
 
 Mais, les standards techniques et théoriques sont loins d’être arrêtés.
 
-Le Big data est encore dans une dynamique de pionniers.
-
-===
-
-## Les trois V
-
-Effort théorique de définition du Big data:
-
-1. Volume
-2. Variété
-3. Vélocité
+*Le Big data est encore dans une dynamique de pionniers.*
 
 ===
 
@@ -359,9 +371,9 @@ Il est tout à fait possible de construire un business autour de la donnée (mai
 
 Le Big data n’est en aucun cas une idée neuve!
 
-(déjà appliqué par les géants du web depuis au moins 10 ans)
+(déjà appliqué par les géants du web depuis fort longtemps)
 
-C’est surtout la médiatisation et la démocratisation du concept qui est impressionnante.
+C’est surtout la **médiatisation**, la **démocratisation** et la **buzzwordisation-bullshitisation** du concept qui est impressionnante.
 
 ===
 
@@ -394,7 +406,7 @@ User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (K
 
 ## Data vs. Calcul
 
-Le Big data et le machine learning nous permettent de changer de paradigme si besoin:
+Le Big data nous permet de changer de paradigme si besoin:
 
 Il est possible, dans certains cas, de résoudre un problème grâce aux masses de données plutôt que grâce à un calcul.
 
@@ -438,20 +450,16 @@ Prenons le problème à l'envers.
 
 Comment stocker une image dans un fichier?
 
-1. L'approche matricielle
-2. L'approche vectorielle
+1. L'approche matricielle (penchant mémoire)
+2. L'approche vectorielle (penchant calcul)
 
 ===
 
-## Google?
+## Bref
 
-Pour résumer: masse de données = possibilité de résoudre des problèmes differemment.
+Tout ça pour vous rappeler que en informatique, il faut toujours faire l'arbitrage entre la mémoire, les données et le calcul.
 
-Stratégie de Google depuis le début, notamment.
-
-La recherche ne fonctionne plus par curation de liens et index mais bien par collecte des données du web lui même.
-
-Leur correction orthographique en est par ailleurs un pur produit. (Dérives)
+Le Big Data, c'est l'opportunité d'utiliser les données pour résoudre un problème auparavant insolvable sans ou différemment.
 
 ===
 
@@ -467,11 +475,10 @@ Parfois la richesse des données se trouve bien plus dans les croisements que da
 
 ## Big Data & Technique
 
-Trois axes (choisis arbitrairement):  
+Deux axes (choisis arbitrairement):  
 
 1. Le stockage des données 
-2. La parallélisation 
-3. Le machine learning
+2. La parallélisation  du calcul
 
 ===
 
@@ -530,15 +537,9 @@ L’idéologie du tout SQL n’a donc plus de validité.
 
 **Achtung!** Il ne s’agit absolument pas de dire que le SQL est dépassé (ce serait une grossière erreur que de penser cela).
 
-Cependant, le SQL n’est qu’une possibilité parmi bien d’autres.
+Cependant, le SQL n’est aujourd'hui qu’une possibilité parmi bien d’autres.
 
 Il est donc contre-productif d’utiliser le SQL partout, notamment dans des cas où il n’est pas efficace.
-
-===
-
-## Question
-
-Voudriez-vous toujours utiliser des fichiers Excel pour stocker des données?
 
 ===
 
@@ -550,7 +551,13 @@ Question de la taille du fichier, aussi.
 
 Parfois le JSON, c’est pas bon et le CSV c’est à jeter.
 
-On veut le choix crévindiou (et surtout pas de xls)!
+===
+
+## Message d'intérêt public
+
+Les fichiers Excel sont une plaie et sont une très mauvaise solution pour stocker des données (pour le développeur, évidemment).
+
+Différence entre les fichiers binaires et fichiers texte.
 
 ===
 
@@ -569,10 +576,10 @@ Pour le calcul, nombre théorique d'opérations à effectuer pour accomplir notr
 
 ## La notation grand O
 
-* `O(1)`: temps constant
-* `O(log(n))`: temps logarithmique
-* `O(n)`: temps linéaire
-* `O(n^2)`: temps quadratique => le mal absolu (cryptologie)
+* `O(1)`: temps constant (Yeaaaaaah!)
+* `O(log(n))`: temps logarithmique (Yeah!)
+* `O(n)`: temps linéaire (Mouarf)
+* `O(n^2)`: temps quadratique (On va tous mourir!)
 
 Exemple de la dichotomie.
 
@@ -694,6 +701,8 @@ keywords:
   - batch
 ```
 
+*Fun fact*: `YAML` est un superset du `JSON`
+
 ===
 
 ## Résumé
@@ -732,7 +741,7 @@ Le NoSQL est doublement varié:
 Pour résumer, le NoSQL c’est:  
 
 * Un usage = un outil. 
-* Une structure de données souvent plus proche du développeur. 
+* Une structure de données souvent plus proche du développeur et des structures de données.
 * Pas le SQL (sinon on appelle ça le SQL)
 
 Faisons un bref tour du propriétaire
@@ -754,9 +763,9 @@ Problèmes à résoudre: 
 1. Surarchitecturation du SQL 
 2. Rigidité des schemas
 
-Analogie développement:  un array JavaScript
+Analogie développement:  une collection JavaScript (array d'objets)
 
-**Exemples**: MongoDB, CouchDB
+**Exemples**: MongoDB, CouchDB, RethinkDB
 
 ===
 
@@ -810,7 +819,7 @@ Analogie développement:  Un objet JavaScript
 
 ===
 
-## Orientées whatever
+## Orientées YOLO
 
 Problèmes à résoudre:  Besoin de plusieurs paradigmes à la fois
 
@@ -822,7 +831,7 @@ Problèmes à résoudre:  Besoin de plusieurs paradigmes à la fois
 
 Il y a aussi du NoSQL dans le navigateur:  
 
-* `localStorage` (clé-valeur) 
+* `localStorage` (clé-valeur)  synchrone!
 * `IndexedDB` (clé-valeur & documents)
 
 Le WebSQL a été déprécié en faveur d’IndexedDB.
@@ -882,8 +891,6 @@ La responsivité d'une interface web.
 
 ===
 
-## Petite question en passant
-
 ```js
 function main() {
 
@@ -921,13 +928,12 @@ Il est coutume de dire qu’il existe trois paradigmes majeurs concernant la pro
 2. Le paradigme objet
 3. Le paradigme déclaratif
 
-Note: expliquer
-
 ===
 
 ## Le lambda calcul
 
 * Système inventé par Alonzo Church dans les années 1930 (les fonctions récursives, c’est lui).
+* VS. les machines de Turing
 
 <p align="center">
   <img src="img/lambda.png" class="plain" width="400px" />
@@ -960,7 +966,7 @@ pure(2) >>> 3
 
 externalCoefficient++;
 
-// You had one job, impure...
+// You had one job...
 impure(2) >>> 4
 pure(2) >>> 3
 ```
@@ -1010,7 +1016,7 @@ La notion d'effet de bord est centrale pour comprendre la logique des langages i
 
 La **programmation orientée objet** trouve une solution aux effets de bords en rendant l'état local à chaque objet et en s'assurant que les effets de bords restent contenus à des endroits précis (avec des résultats plus ou moins variés).
 
-La **programmation fonctionnelle** considère les effets de bord comme le mal incarné et va tout faire pour les éviter autant que possible. Elle fera des compromis si nécessaire au travers de concepts jouant le rôle de sas (le typage, les monades etc.).
+La **programmation fonctionnelle** considère les effets de bord comme le grand Satan et va tout faire pour les éviter autant que possible. Elle fera des compromis si nécessaire au travers de concepts jouant le rôle de sas (le typage, les monades etc.).
 
 ===
 
@@ -1036,7 +1042,7 @@ Une fonction retournant un nombre aléatoire peut-elle être pure?
 
 #### Les PRNG
 
-*PseudoRandom Number Generator*
+*Pseudo Random Number Generator*
 
 ===
 
@@ -1056,7 +1062,7 @@ Un PRNG n'est jamais parfait mais le calcul nécessaire pour le percer augmente 
 
 ## ACHTUNG!
 
-N'utilisez jamais `Math.random` pour faire de la crypto ou de la sécu!
+N'utilisez jamais `Math.random` pour faire de la crypto ou de la sécurité!
 
 ===
 
@@ -1096,7 +1102,7 @@ En programmation fonctionnelle, les variables sont des valeurs et non des pointe
 
 Cela veut dire qu’une "variable" ne peut jamais, muter, changer.
 
-Ainsi, pour « changer » une variable, il faut en créer une nouvelle différente.
+Ainsi, pour "changer" une variable, il faut en créer une nouvelle différente.
 
 Cela abolit toute forme d’incertitude concernant la valeur d’une variable au prix d’une plus grande rigueur.
 
@@ -1201,7 +1207,7 @@ const sum = numbers.reduce(function(a, b) {
 sum >>> 6
 ```
 
-Notice anything?
+Notice anything? Abstraction?
 
 ===
 
@@ -1411,7 +1417,7 @@ Il y a donc 4 niveaux distincts de langage qui sont de plus en plus "hauts" au f
 
 Plus on est près du métal, plus on est potentiellement performant mais plus on perd en expressivité.
 
-Quand on écrit du code, on n'écrit pas pour la machine mais bien pour l'humain.
+Quand on écrit du code, on n'écrit pas pour la machine mais pour l'humain.
 
 ===
 
@@ -1465,7 +1471,7 @@ Exemple de l'index en SQL.
 
 ===
 
-# 3. Le machine learning
+# Le machine learning
 
 ===
 
@@ -1473,9 +1479,74 @@ Exemple de l'index en SQL.
 
 But du jeu: faire « apprendre » la machine.
 
-N’est possible que lorsque l’on possède énormément de données concernant un problème.
+N’est en général possible que lorsque l’on possède beaucoup de données concernant un problème. (Big Data, tout ça...)
 
 (Il existe des moyens d’estimer le seuil critique à atteindre mais nous n’en discuterons pas ici).
+
+===
+
+## Simplification réductrice
+
+Le machine learning c'est faire "apprendre" à un ordinateur la solution à un problème en appliquant une méthode statistique/mathématique sur une masse de données.
+
+**Exemple**: les animaux *acères* et la classification.
+
+SVP, ne cherchez pas sur Google, ce serait tricher.
+
+===
+
+<!-- .slide: data-background="img/vache.png" reversed="true" -->
+
+# True
+
+===
+
+<!-- .slide: data-background="img/taureau.jpg" reversed="true" -->
+
+# False
+
+===
+
+<!-- .slide: data-background="img/cerf.jpg" reversed="true" -->
+
+# False
+
+===
+
+<!-- .slide: data-background="img/poisson.jpg" reversed="true" -->
+
+# True
+
+===
+
+Ce qu'on vient de faire c'est un travail de classification.
+
+On a des données qui sont classifiées (acère ou pas).
+
+Le machine learning, c'est utiliser un algorithme pour trouver la réponse à la question: "Ce nouvel animal, que tu ne connais pas, est-il acéreux?".
+
+Le résultat de l'algorithme est un "modèle", une représentation statistique/mathématique de ce qu'est essentiellement un animal acéreux (!peut-être faux!).
+
+===
+
+## Typologie par problème et méthode
+
+Il est courant de catégoriser les algorithmes de machine learning soit pas méthode, soit pas type de problème résolu.
+
+* Exemple: la supervision.
+* Exemple: partitionnement.
+
+===
+
+## Notion de supervision
+
+* Supervisé
+* Semi-supervisé
+* Non supervisé
+
+===
+
+## Types de problèmes
 
 ===
 
