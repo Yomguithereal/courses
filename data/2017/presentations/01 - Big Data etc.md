@@ -139,6 +139,18 @@ Exerçons notre sens critique!
 
 ===
 
+## Verre à moitié vide/plein
+
+J'améliore ce cours (j'espère) tous les ans.
+
+Du coup vous avez à la fois de la chance d'avoir un meilleur cours que ceux de l'année dernière.
+
+Mais vous avez probablement un cours plus mauvais que celui de l'année d'après.
+
+`¯\_(ツ)_/¯`
+
+===
+
 ## Acroamatique
 
 Point etymologie n°1
@@ -1678,6 +1690,10 @@ Problème?
 S’inspirer du fonctionnement du cerveau humain.
 
 Le perceptron est en réalité un neurone.
+
+Il est ensuite possible de créer des réseaux de neurones.
+
+Le deep learning est "deep" parce que les réseaux créés sont profonds et ont de multiples couches.
 
 On va accumuler des couches de neurones successives et observer une montée progressive de l'abstraction.
 
