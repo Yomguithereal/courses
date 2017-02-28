@@ -1655,6 +1655,24 @@ Très bonne explication visuelle sur le site R2D3:
 
 ===
 
+## K-moyennes
+
+`k-means` en anglais.
+
+Algorithme de partitionnement (on en reverra d'autres la semaine prochaine).
+
+Comment cela marche-t-il?
+
+Problème?
+
+===
+
+<p align="center">
+  <img src="img/k-means.png" class="plain" />
+</p>
+
+===
+
 ## Le deep learning
 
 S’inspirer du fonctionnement du cerveau humain.
