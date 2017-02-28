@@ -14,7 +14,7 @@
 
 ## Qui suis-je?
 
-Guillaume Plique
+Guillaume Plique ([Yomguithereal](https://github.com/Yomguithereal) sur github.)
 
 #### Formation
 
@@ -1529,6 +1529,35 @@ Le résultat de l'algorithme est un "modèle", une représentation statistique/m
 
 ===
 
+## Abstraction
+
+Nous avons une masse impressionnante d’inputs et d’outputs:  
+
+```
+x1 -> y1 ,
+x2 -> y2 ,
+x3 -> y3 ,
+(…)
+```
+
+Et l’on cherche à trouver la fonction qui permet de passer de x à y:   `f(x) = y`.
+
+Que fait `f`?
+
+===
+
+```
+x1 = 3 -> y1 = 5,
+x2 = 1 -> y2 = 3,
+x3 = 7 -> y3 = 9. 
+```
+
+Sans challenge: `f(x) = x + 2`
+
+Imaginons cela sur des données plus complexes et plus nombreuses et nous aurons une idée à peu près correcte de ce que peut être **un** algorithme de machine learning.
+
+===
+
 ## Typologie par problème et méthode
 
 Il est courant de catégoriser les algorithmes de machine learning soit pas méthode, soit pas type de problème résolu.
@@ -1548,46 +1577,20 @@ Il est courant de catégoriser les algorithmes de machine learning soit pas mét
 
 ## Types de problèmes
 
-===
-
-## Le machine learning
-
-En machine learning, nous n’avons qu’une masse impressionnante d’inputs et d’outputs:  
-
-```
-x1 -> y1 ,
-x2 -> y2 ,
-x3 -> y3 ,
-(…)
-```
-
-Et l’on cherche à trouver la fonction qui permet de passer de x à y:   `f(x) = y`.
-
-Que fait `f`?
-
-===
-
-## Le machine learning
-
-```
-x1 = 3 -> y1 = 5,
-x2 = 1 -> y2 = 3,
-x3 = 7 -> y3 = 9. 
-```
-
-Sans challenge: `f(x) = x + 2`
-
-Imaginons cela sur des données plus complexes et plus nombreuses et nous aurons une idée à peu près correcte de ce qu’est le machine learning.
+* Régression
+* Classification
+* Partitionnement
+* etc.
 
 ===
 
 ## La régression linéaire
 
-Revenons un peu en arrière dans le temps.
+C'est une forme de machine learning, oui. Flou des contours.
 
 Méthode statistique classique.
 
-**Le but**: trouver la corrélation entre deux variables.
+**Le but**: trouver le lien mathématique entre deux variables.
 
 **Exemple**: évaluer le prix de sa maison sur un marché immobilier.
 
@@ -1598,36 +1601,10 @@ Méthode statistique classique.
 1. Abscisse (surface en m2), Ordonnée (prix en euros)
 2. Trouver le prix de notre maison
   1. Tracer une ligne
-  2. Déterminer son coup
+  2. Déterminer son coût
   3. Interpolation
 3. L'extrapolation
 4. Logarithmes et polynomiales
-
-===
-
-Note: blank slate pour le tableau
-
-===
-
-## Régression linéaire & machine learning
-
-Est-ce que la régression linéaire est du machine learning?
-
-Limites relatives des concepts.
-
-Si on doit formaliser une opposition: on dira que c'est du machine learning dès que le système est capable de prendre de nouveaux inputs et de s'auto-corriger au cours du temps.
-
-===
-
-## L'inférence bayésienne (1)
-
-Statistiques et probabilité. Thomas Bayes (XVIIIe siècle)
-
-Opposition aux statistiques *fréquentistes* n'ayant une validité que lorsque toutes les données, ou une très grande quantité de ces données sont connues (Loi des grands nombres).
-
-Méthode utile quand on a moins de données ou quand on en ajoute progressivement dans un système.
-
-Mais si profusion de données les deux méthodes auront asymptotiquement les mêmes résultats.
 
 ===
 
@@ -1649,10 +1626,11 @@ Contrairement à un algorithme déterministe qui a une fin (qui peut être très
 
 ===
 
-## Exemples
+## Exemple
 
-1. La banque et les prêts (formulation des hypothèses et pondération).
-2. Netflix et son système de recommandation.
+La banque et les prêts.
+
+Algèbre linéaire sur de multiples dimensions (une par variable).
 
 ===
 
@@ -1679,13 +1657,11 @@ Très bonne explication visuelle sur le site R2D3:
 
 ## Le deep learning
 
-Famille d’algorithme appartenant aussi à la famille du machine learning.
-
-Dans ce cas là, on n'a pas de données initiales, ou très peu, et on va tenter de faire apprendre à la machine depuis le "début".
-
 S’inspirer du fonctionnement du cerveau humain.
 
-Les réseaux de neurones et la spécialisation (couleur, forme etc.)
+Le perceptron est en réalité un neurone.
+
+On va accumuler des couches de neurones successives et observer une montée progressive de l'abstraction.
 
 ===
 
@@ -1703,7 +1679,7 @@ Son objectif est de faire grimper les nombres (littéralement).
 
 ## L'anamnèse
 
-Etymologie (la reminiscence).
+Etymologie (la reminiscence).h
 
 Platon et le retour au monde des idées.
 
@@ -1716,6 +1692,8 @@ Kant et les catégories de l'entendement.
 ===
 
 ## Les algorithmes évolutionnaires
+
+Cette fois on va s'inspirer de la biologie et de la théorie de l'évolution.
 
 Petit rappel concernant ce cher M. Darwin.
 
@@ -1753,7 +1731,7 @@ Pour le design, on verra dans les prochains cours.
 
 ## Data scientist
 
-Métier aux contours encore très flou.
+Métier aux contours encore très flous.
 
 Tout le monde cherche des data scientists sans toujours savoir ce que c’est.
 
@@ -1769,7 +1747,7 @@ Souvent proche des métiers en analytics mais avec la programmation en plus.
 
 ## Programmation
 
-**PHP?** Non, essaye encore.
+**PHP?** Loupé, essaye encore.
 
 **Langages de script**: Python, Ruby, Node.js...
 
@@ -1810,18 +1788,13 @@ Laboratoires de recherche
 
 Linkfluence, MFG Labs, Orange innovation.
 
-Géants de l’Internet.
+GAFA
 
 ===
 
 ## Teaser
 
-Dans les prochaines semaines, nous allons nous pencher sur:  
-
-1. Le web mining, le crawling, le scraping etc. 
-2. La collecte et le traitement de données. 
-3. La visualisation de données.
-4. L'Open Data
+La semaine prochaine, nous aborderons la logique floue, le traitement automatique du langage et le web mining.
 
 ===
 
