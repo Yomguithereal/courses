@@ -951,7 +951,7 @@ C'est une limitation physique.
 
 Pourquoi ne pas diviser le calcul et le faire exécuter par plusieurs ordinateurs.
 
-Notez que c'est aujourd'hui le même principe avec nos ordinateurs qui ont plusieurs processeurs à la fois (4 en moyenne) + les GPU.
+Notez que c'est aujourd'hui le même principe avec nos ordinateurs qui ont plusieurs processeurs à la fois (4 en moyenne) + les GPU (loi de Moore en berne).
 
 ===
 
@@ -1350,6 +1350,14 @@ addTwo(addThree(3))
 
 ===
 
+## Pour aller plus loin
+
+La programmation fonctionnelle et la théorie des catégories.
+
+Monades, Functors, Applicatives etc.
+
+===
+
 ## Les langages fonctionnels
 
 Lisp (le plus ancien, 1958), Clojure etc.
@@ -1735,6 +1743,14 @@ Très bonne explication visuelle sur le site R2D3:
 
 ===
 
+## Les algorithmes online
+
+Souvent, l'on souhaite calculer un modèle à partir de données beaucoup trop importantes pour tenir dans la RAM (BigData coucou!).
+
+Un algorithme est dit online quand il ne nécessite pas d'accéder à une représentation totale en mémoire vive des données et qu'il peut se contenter de lire un flux de données sans en altérer le résultat.
+
+===
+
 ## K-moyennes
 
 `k-means` en anglais.
@@ -1779,9 +1795,13 @@ Son objectif est de faire grimper les nombres (littéralement).
 
 ===
 
+<!-- .slide: data-background="img/deep-network.jpg" reversed="true" -->
+
+===
+
 ## L'anamnèse
 
-Etymologie (la reminiscence).h
+Etymologie (la reminiscence).
 
 Platon et le retour au monde des idées.
 
@@ -1793,17 +1813,92 @@ Kant et les catégories de l'entendement.
 
 ===
 
-## Les algorithmes évolutionnaires
+## Les algos génétiques
 
-Cette fois on va s'inspirer de la biologie et de la théorie de l'évolution.
-
-Petit rappel concernant ce cher M. Darwin.
+Cette fois on va s'inspirer de la biologie et de la théorie de l'évolution (Rappel Darwin).
 
 <p align="center">
   <img src="img/walkers.gif" class="plain" />
 </p>
 
 [Exemple](http://rednuht.org/genetic_walkers/) à faire tourner soi-même.
+
+===
+
+## Exemple
+
+Problème à résoudre: produire la chaîne de caractère:
+
+`Hello World!`
+
+Sans intérêt mais cela vous montre la logique des algorithmes génétiques.
+
+===
+
+## Modus operandi
+
+1. des individus génèrent des chaînes aléatoires.
+2. on mesure la distance entre leur chaîne et la chaîne attendue.
+3. classer les individus
+4. tuer les plus faibles
+5. faire se reproduire les meilleurs
+6. faire muter les individus (éviter les optima locaux)
+
+===
+
+## Quid des algorithmes non supervisés
+
+What kind of magic is that?
+
+On en verra certains la semaine prochaine.
+
+===
+
+## L'intelligence artificielle
+
+Que des algorithmes mathématiques/statistiques.
+
+On est encore très loin de Skynet.
+
+===
+
+## Ethique & données d'entrainement
+
+On peut facilement être conduit à penser que le travail purement mathématique de ces algorithmes ne pose pas de questions éthiques.
+
+C'est faux.
+
+Le choix des données et la méthode employée produit souvent des biais néfastes pour des pans entiers de population.
+
+===
+
+## Femmes au volant
+
+Des recherches ont montré aux Etats-Unis que les femmes avaient plus de chances de mourir au volant que les hommes.
+
+Cela veut-il dire que les femmes conduisent mal? **NON**
+
+Pendant des années, les mannequins de test avaient systématiquement une morphologie masculine.
+
+Choisir de mauvaises données d'entrainement (biaisées) signifie produire un mauvais modèle avec parfois des conséquences atroces (des gens sont morts dans ce cas!).
+
+===
+
+## Modèles racistes
+
+En Nouvelle-Zélande, les douanes ont entraîné un modèle ayant pour but de repérer, entre autres, si une personne ferme les yeux sur une photo.
+
+Le modèle fut entraîné exclusivement sur des personnes blanches.
+
+Le modèle part donc du principe que les personnes bridées ferment les yeux...
+
+===
+
+## Limites de l'apprentissage
+
+La plupart des algos sont capables de revoir leur modèle au fur et à mesure que de nouvelles données sont entrées dans le système.
+
+Dérives de biais: fautes de Google Traduction, des bots en général etc.
 
 ===
 
@@ -1815,7 +1910,7 @@ Petit rappel concernant ce cher M. Darwin.
 
 OpenOffice, Excel, Tableau, Stata, OpenRefine, Gephi
 
-AWS, Google BigQuery (étonnant, non?)
+Hadoop, Spark, BigTable, BigQuery, AWS etc.
 
 ===
 
