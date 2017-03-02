@@ -178,6 +178,8 @@ Il parait que j'ai un partiel à vous donner?
 * Combien de **designers**?
 * Quid des **CDP et alii**?
 * Qui a une **expérience** ayant un lien avec les sujets du cours?
+* Qui est allé à l'étranger?
+* Qui fait de l'Open Source?
 * Qui a fait du **latin** ou du **grec ancien**?
 
 ===
