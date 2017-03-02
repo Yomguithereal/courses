@@ -1201,7 +1201,7 @@ list >>> [1, 2, 3, 4]
 // L'état de la liste originale n'existe plus
 
 // Immutable
-const newList = list.push(4);
+const newList = list.concat(4);
 list >>> [1, 2, 3]
 newList >>> [1, 2, 3, 4]
 ```
