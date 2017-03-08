@@ -1565,6 +1565,12 @@ Exemple de l'index en SQL.
 
 ===
 
+<p align="center">
+  <img src="img/ml.png" class="plain" />
+</p>
+
+===
+
 ## Le machine learning
 
 But du jeu: faire « apprendre » la machine.
@@ -1969,15 +1975,7 @@ Développer pour le Big Data c'est:
 * Etre fiable
 * Etre scalable
 * Maîtriser l'algorithmie
-
-===
-
-## Beware!
-
-Le métier de data scientist peut paraître sexy mais:
-
-* Nettoyer des données immondes pour un résultat final nul peut en décourager plus d'un.
-* Inutile de vous dire que si vous n’aimez pas le traitement de données, vous n’êtes pas fait pour ça.
+* Maîtriser l'algèbre linéaire
 
 ===
 
