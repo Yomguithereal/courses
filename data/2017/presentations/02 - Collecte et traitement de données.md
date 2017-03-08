@@ -121,7 +121,9 @@ Le typage statique.
 
 Si une startup vous parle d'"intelligence artificielle", prenez les temps de vous interroger sur son fonctionnement.
 
-Si celle-ci n'est qu'une succession glorifiée de `if` et de `else`, alors c'est une heuristique.
+Si celle-ci n'est qu'une succession glorifiée de conditions, alors c'est une heuristique.
+
+Une heuristique peut être fort intelligente, mais là n'est pas la question.
 
 ===
 
@@ -174,13 +176,15 @@ Données **structurées**: données correctement définies par leur format. Un f
 
 ===
 
+<!-- .slide: data-background="img/perceval.jpg" -->
+
+===
+
 ## La logique floue
 
 "Tout simplement" considérer que certains objets ne sont pas strictement délimités.
 
 De fait, l’être humain est ainsi fait que les objets intellectuels qu’il manipule au quotidien sont complexes et dépassent la compréhension mathématique de l’ordinateur.
-
-**Exemple**: Dupond & dupond.
 
 ===
 
@@ -188,7 +192,9 @@ De fait, l’être humain est ainsi fait que les objets intellectuels qu’il ma
 
 1965, Lotfi Zadeh, les ensembles flous en algèbre.
 
-Enoncé: la voiture roule à 96 km/h. Enoncé flou: la voiture roule vite.
+**Enoncé**: la voiture roule à 96 km/h. 
+
+**Enoncé flou**: la voiture roule vite.
 
 Nous rapproche du fonctionnement cognitif humain.
 
@@ -202,15 +208,53 @@ Application primaire de la logique floue: comparer des chaînes de charactères.
 
 Intérêts: la recherche floue, la correction orthographique, le clustering.
 
-Trois méthodes canoniques (à combiner):  
+Quatre méthodes canoniques (à combiner):  
 
-1. Les distances mathématiques 
-2. La lemmatisation/racinisation 
-3. Les algorithmes phonétiques
+1. La normalisation
+2. Les distances mathématiques 
+3. La lemmatisation/racinisation 
+4. Les algorithmes phonétiques
+
+===
+
+## La normalisation
+
+Dupond & dupond.
+
+Normaliser une chaîne de charactère pour faciliter les comparaisons.
+
+* Harmoniser la casse
+* Supprimer les accents
+* Harmoniser les charactères unicodes (guillemets, apostrophes)
+* Elaguer lea chaîne
+* Compresser les espaces
+* ...
+
+===
+
+## Le fingerprinting
+
+```js
+'University of north Carolina'
+'University of of North Carolina.'
+'Carolina, North university of'
+
+>>> 'carolina north of university'
+```
+
+Encore plus aggressif que la normalisation.
+
+* Tokénisation (spoiler)
+* Déduplication
+* Tri des tokens
+
+Pour essayer, cliquez [ici](http://yomguithereal.github.io/talisman/keyers#fingerprint).
 
 ===
 
 ## Les distances
+
+Dupont & Dupont.
 
 Trouver une distance mathématique entre deux chaînes.
 
@@ -234,11 +278,16 @@ Considérant deux chaînes `M` et `P`: La distance entre `M` et `P` est égale
 2. Nb d’ajout de `M` vers `P `
 3. Nb de suppressions de `M`
 
-**Exemple**: `LD(livre, libre) = 1`
+```
+LD(livre, libre) = 1
+LD(ivre, libre) = 2
+```
+
+Pour essayer, cliquez [ici](https://yomguithereal.github.io/talisman/metrics/distance#levenshtein).
 
 ===
 
-## Jaccard / Tanimoto
+## Jaccard
 
 Problèmes des distances absolues comme celle de Levenshtein: écarts de mesure proportionnels à la taille des chaînes considérées.
 
@@ -250,7 +299,7 @@ Notion de distance ou de similarité (l'inverse).
 
 ===
 
-## Jaccard / Tanimoto
+## Jaccard
 
 1. Prenons un mot `A` "context" et un mot `B` "contact".
 2. Ensembles de charactères de `A` et de `B`.
@@ -261,7 +310,7 @@ Notion de distance ou de similarité (l'inverse).
 4. Calculons la taille de l'union de `EA` et `EB`.
   * `U` = `{c o n t e x a} => 7`
 5. Alors l'indice de Jaccard de `A` et de `B` est égal à:
-  * `J = 1 - I/U => 3/7`
+  * `J = I/U => 4/7`
 
 ===
 
@@ -296,6 +345,8 @@ Cela permet de faire de la recherche un peu plus intelligente que de la recherch
 ## Porter
 
 Un des plus célèbres algorithmes de racinisation porte le nom de son inventeur: Martin Porter (un linguiste).
+
+Pour l'essayer, cliquez [ici](http://yomguithereal.github.io/talisman/stemmers/#porter).
 
 Il y en existe d’autres, plus ou moins agressifs (le raciniseur ne cherche pas à donner un radical correct mais juste une base permettant de flouter les comparaisons).
 
@@ -514,8 +565,6 @@ Contrairement à la racinisation, la lemmatisation cherche à retrouver le radic
 
 Impossible à faire correctement avec un algorithme. Nécessite donc un dictionnaire.
 
-Encore une fois: résolution d’un problème au travers de calculs ou des données.
-
 ===
 
 ## Algorithmes phonétiques
@@ -533,6 +582,8 @@ Historiquement, un des premiers algorithmes phonétiques (utilisé par des bibli
 Créé dans les années 1920 par Robert Russell et Margaret Ordell.
 
 **Exemple**: Robert & Rupert = `R163`, Rubin = `R150`
+
+Pour l'essayer, cliquez [ici](http://yomguithereal.github.io/talisman/phonetics/#soundex).
 
 ===
 
@@ -556,13 +607,31 @@ Le double métaphone.
 
 **Exemple**: "Smith" = [`SMT`, `SM0`]
 
+Pour l'essayer, cliquez [ici](http://yomguithereal.github.io/talisman/phonetics/#metaphone).
+
 ===
 
 ## Limites
 
 Ces algorithmes fonctionnent assez mal pour les voyelles qui ne sont que très rarement considérées comme les lettres discriminantes d’un mot.
 
-Utiliser des dictionnaires reste toujours une possibilité:  En anglais, le Carnegie-Mellon University (CMU) dictionary. ~3/4mo en RAM.
+Utiliser des dictionnaires reste toujours une possibilité: 
+
+En anglais, le Carnegie-Mellon University (CMU) dictionary. ~3/4mo en RAM.
+
+===
+
+## Provençal le gaulois
+
+Utiliser une combinaison de toutes les méthodes que l'on vient de voir.
+
+===
+
+## Bonus: les inflecteurs
+
+Algorithmes dont le but est d'"infléchir" des formes grammaticales.
+
+Conjuguer des verbes, par exemple, ou bien passer un forme du singulier vers le pluriel etc.
 
 ===
 
@@ -645,8 +714,6 @@ Permet de faire des estimations statistiques bien plus pertinentes sur du texte 
 
 La probabilité des éléments dans le texte est alors dépendante des éléments précédents et suivants.
 
-Dice-Sorensen.
-
 ===
 
 ## Exemples
@@ -687,13 +754,13 @@ Considérons un corpus de textes composé de plusieurs documents.
 
 `TF` = nombre d'occurence d'un terme dans le texte considéré.
 
-`IDF` = logarithme de l'inverse de la proportion de documents du corpus contenant le terme.
+`IDF` = logarithme de l'inverse du nombre de documents du corpus contenant le terme.
 
 ===
 
 ## TF / IDF
 
-Pour simplifer: moins un terme est fréquent dans un texte, plus son importance dans la compréhension de ce texte est grande.
+Pour simplifier: plus un terme est fréquent dans un document mais moins il est fréquent dans le corpus, plus son importance et sa pertinence pour la compréhension de ce document est grande.
 
 Ceci est justifié empiriquement *a posteriori* par la loi de Zipf.
 
@@ -824,15 +891,7 @@ Aujourd’hui, on utilise donc énormément le machine learning en TAL.
 
 On fait ce que l’on appelle de l’apprentissage, en taggant à la main beaucoup des corpora (la solution) existants et on laisse la machine apprendre d’elle même les règles ou du moins les appliquer sur les corpora suivants.
 
-Le retour de l'inférence Bayésienne.
-
-===
-
-## Bonus: les inflecteurs
-
-Algorithmes dont le but est d'"infléchir" des formes grammaticales.
-
-Conjuguer des verbes, par exemple, ou bien passer un forme du singulier vers le pluriel etc.
+Un perceptron marche par exemple très bien pour créer un POS Tagger.
 
 ===
 
@@ -902,7 +961,7 @@ Etudier le développement d’un buzz sur Twitter peut se révéler très intér
 
 Tous les sites n’ont pas forcément d’API.
 
-Certaines API sont limitées (contenu inaccessible, rate etc.).
+Certaines API sont limitées (contenu inaccessible, rate limit etc.).
 
 ===
 
@@ -974,16 +1033,19 @@ Pour cela nous allons utiliser [artoo.js](https://yomguithereal.github.io/artoo)
 
 ===
 
-## JavaScript casting
+## JavaScript ninja casting
 
 ```js
 const number = +variable;
 const boolean = !!variable;
+const string = '' + variable;
 
 const floored = variable | 0;
 
 const magicBoolean = ~array.indexOf();
 ```
+
+Le duck typing.
 
 ===
 
@@ -991,9 +1053,9 @@ const magicBoolean = ~array.indexOf();
 
 Les API du web sémantique (BNF), par exemple, sont tellement complexes qu’il est souvent plus facile de scraper leur site que de comprendre leur API.
 
-Le scraping n’est jamais une pratique dénuée d’ironie.
+Le scraping est une pratique qui n'est jamais dénuée d’ironie.
 
-**Exemple**: la boîte ou institution incapable de vous mettre à disposition ses données.
+**Exemple**: l'entreprise ou institution incapable de vous mettre à disposition ses données.
 
 ===
 
@@ -1005,7 +1067,7 @@ Le scraping n’est jamais une pratique dénuée d’ironie.
 
 Les serveurs peuvent tenter de vous empêcher de les scraper en détectant votre `User-Agent`, en vous imposant des quotas ou en vous piègeant dans des tarpits.
 
-**Solution**: le spoofing.
+**Solution**: le spoofing, le throttling.
 
 ===
 
@@ -1050,7 +1112,7 @@ En réalité c’est la réutilisation des données après qui pose problème. (
 * Comparateurs de prix.
 * Besoin de données ponctuelles pour pallier à un Open Data déficient.
 * Recherche: OMS
-* Google est le plus grand scraper du monde et ne se gène vraiment pas… (les cartouches)
+* Google est le plus grand scraper du monde et ne se gène vraiment pas… (les encarts)
 
 ===
 
@@ -1081,14 +1143,6 @@ Linkfluence: crawler combiné à de la collecte de données des médias sociaux:
 ===
 
 [Link](http://hyphe.medialab.sciences-po.fr/)
-
-===
-
-## Un peu d’étymologie
-
-Le retour. Encore.
-
-**Téléologie**: étude des causes finales. Quelle est l’intention de l’action engagée?
 
 ===
 
