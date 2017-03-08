@@ -864,11 +864,22 @@ Conjuguer des verbes, par exemple, ou bien passer un forme du singulier vers le 
 
 ## Le clustering
 
-Partitionnement en français.
+Partitionnement en français (souvenez-vous de l'algorithme K-moyennes).
 
 Consiste en la classification d’un jeu de données en rassemblant par groupe les éléments considérés comme proches.
 
-**Exemple**: rassembler les mots d’un texte par similarité.
+**Exemple**: trouver des doublons flous dans des données (record linkage).
+
+===
+
+## Le clustering
+
+Plusieurs approches:
+
+1. La matrice
+2. L'indexation
+3. L'approximation
+4. etc. (Boss final si on a le temps)
 
 ===
 
