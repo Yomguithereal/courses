@@ -46,9 +46,9 @@ Le cours d’aujourd’hui sera, je l’espère, un peu moins théorique et on d
 
 Aujourd’hui, nous allons parler des données elles-mêmes, qu’elles soient "big" ou pas, qu’elle soient "propres" ou pas (c’est à dire?).
 
-1. La logique floue & le clustering
-2. L'information retrieval
-3. Le traitement automatique du langage (TAL)
+1. Le traitement automatique du langage (TAL)
+2. La logique floue & le clustering
+3. L'information retrieval
 4. Le data mining et son rejeton le web mining
 
 ===
@@ -172,7 +172,229 @@ Données **structurées**: données correctement définies par leur format. Un f
 
 ===
 
-# 1. La logique floue
+# Le traitement automatique du langage
+
+===
+
+
+<!-- .slide: data-background="img/tal.jpg" -->
+
+===
+
+## Le TAL
+
+Was ist das?
+
+"Traitement Automatique du Langage" (*Natural Language Processing*, NLP, en anglais).
+
+Ensemble de méthodes informatiques permettant de "comprendre" ou analyser le langage naturel, c’est à dire notre langage, le langage de l’humain.
+
+===
+
+## La lexicométrie
+
+Science étudiant le texte de manière strictement statistique.
+
+Compter les occurrences de certains mots, par exemple.
+
+1. Les N-grammes
+2. La loi de Zipf et TF/IDF
+3. La cryptanalyse
+
+===
+
+## Les N-grammes
+
+Méthode strictement mathématique et statistique. (n-grams en anglais)
+
+Sous-séquence de n éléments construite à partir d’une séquence donnée.
+
+Permet de faire des estimations statistiques bien plus pertinentes sur du texte brut.
+
+La probabilité des éléments dans le texte est alors dépendante des éléments précédents et suivants.
+
+===
+
+## Exemples
+
+Bi-grammes, Tri-grammes etc. 
+
+* "123456789"
+* "Martin"
+* "Cette phrase est un exemple".
+
+===
+
+## La loi de Zipf
+
+Observation sur la distribution des mots d'un texte.
+
+Comptons les occurrences (James Joyce, Ulysses).
+
+Le mot le plus courant revient ~8000 fois.
+
+Le dixième mot le plus courant ~800 fois.
+
+Le centième ~80 fois. etc.
+
+===
+
+<p align="center">
+  <img src="img/zipf.png" class="plain" />
+</p>
+
+===
+
+## TF / IDF
+
+*Term Frequency - Inverse Document Frequency*
+
+Considérons un corpus de textes composé de plusieurs documents.
+
+`TF` = nombre d'occurence d'un terme dans le texte considéré.
+
+`IDF` = logarithme de l'inverse du nombre de documents du corpus contenant le terme.
+
+===
+
+## TF / IDF
+
+Pour simplifier: plus un terme est fréquent dans un document mais moins il est fréquent dans le corpus, plus son importance et sa pertinence pour la compréhension de ce document est grande.
+
+Ceci est justifié empiriquement *a posteriori* par la loi de Zipf.
+
+**Exemple**: les articles et les mots de liaison (la notion de *stopwords*).
+
+===
+
+## La cryptanalyse
+
+Analyse lexicométrique du cyphertext afin de percer ses secrets.
+
+L'encryption XOR.
+
+Comment percer une encryption XOR en ayant que le ciphertext?
+
+`ETAOIN SHRDLU` (rien à voir avec Cthulhu!)
+
+===
+
+<!-- .slide: data-background="img/voynich.png" -->
+
+===
+
+## Le manuscrit de Voynich
+
+Manuscrit illustré anonyme écrit dans un alphabet inconnu.
+
+Découvert par Wilfrid M. Voynich en 1912.
+
+Plus ancienne mention historique du manuscrit en 1639.
+
+Datation: XVème siècle.
+
+===
+
+## L'auteur se paye-t-il notre pomme?
+
+Comment savoir si le livre est un canular élaboré ou pas?
+
+Combinaison de lexicométrie et de cryptanalyse.
+
+===
+
+## Que sait-on?
+
+La distribution des mots suit la loi de Zipf.
+
+TF / IDF montre qu'il existe des sujets par section.
+
+Il n'y a pas vraiment de ponctuation.
+
+Il existe des structures morphologiques.
+
+L'ordre des mots semble de faible importance.
+
+===
+
+## Pour aller plus loin
+
+Un bref état de l'art [ici](http://www.aclweb.org/anthology/W11-1511?notdup).
+
+===
+
+## Le texte brut
+
+Le TAL a pour objet le texte brut (données non structurées).
+
+Objet d’analyse retors.
+
+Comment découper le texte brut en éléments analysables?
+
+1. La tokenization 
+2. Le POS Tagging
+
+===
+
+## La tokenization
+
+Faire d’un amas de texte brut un amas de tokens (jetons).
+
+1. Découper le texte en phrases (exemple).
+2. Découper les phrases en mots.
+3. Découper les mots en syllabes.
+
+Première étape nécessaire pour le POS tagging.
+
+===
+
+## Le POS tagging
+
+Part of Speech tagging (étiquetage morpho-syntaxique en français…)
+
+Associer aux mots d'une phrases leurs informations grammaticales.
+
+**Exemple**: Le chat mange la souris.
+
+Opération très complexe mais nécessaire lorsqu’il s’agit de tenter de comprendre le sens du texte.
+
+===
+
+## Le sentiment analysis
+
+Aussi appelé *opinion mining*.
+
+Essayer de déterminer ce que ressentent ou pensent les gens ayant écrit le texte.
+
+**Exemple**: tenter de mesurer si les gens sont plutôt contents ou mécontents lorsqu'ils évoquent la politique du gouvernement sur Twitter.
+
+Peu développé scientifiquement. Encore trop heuristique aujourd'hui pour fonctionner de manière suffisamment satisfaisante.
+
+===
+
+## Apprentissage
+
+Il est extrêmement difficile de trouver des règles tout à fait générales en TAL.
+
+Même en combinant des règles à des dictionnaires on n’arrive pas toujours à des solutions satisfaisantes.
+
+Cependant, il est possible d'arriver à des résultats satisfaisants sur des typologies de corpus (pluriel?) précis.
+
+Pour résumer, il est difficile de s'abstraire complètement du matériau analysé pour devenir purement générique.
+
+===
+
+## Apprentissage
+
+Aujourd’hui, on utilise donc énormément le machine learning en TAL.
+
+On fait ce que l’on appelle de l’apprentissage, en taggant à la main beaucoup des corpora (la solution) existants et on laisse la machine apprendre d’elle même les règles ou du moins les appliquer sur les corpora suivants.
+
+Un perceptron marche par exemple très bien pour créer un POS Tagger.
+
+===
+
+# La logique floue
 
 ===
 
@@ -670,228 +892,6 @@ Consiste en la classification d’un jeu de données en rassemblant par groupe l
 ## TP n°1 bis: Club 27
 
 [./tp/27club.html](./tp/27club.html)
-
-===
-
-#2. Le traitement automatique du langage
-
-===
-
-
-<!-- .slide: data-background="img/tal.jpg" -->
-
-===
-
-## Le TAL
-
-Was ist das?
-
-"Traitement Automatique du Langage" (*Natural Language Processing*, NLP, en anglais).
-
-Ensemble de méthodes informatiques permettant de "comprendre" ou analyser le langage naturel, c’est à dire notre langage, le langage de l’humain.
-
-===
-
-## La lexicométrie
-
-Science étudiant le texte de manière strictement statistique.
-
-Compter les occurrences de certains mots, par exemple.
-
-1. Les N-grammes
-2. La loi de Zipf et TF/IDF
-3. La cryptanalyse
-
-===
-
-## Les N-grammes
-
-Méthode strictement mathématique et statistique. (n-grams en anglais)
-
-Sous-séquence de n éléments construite à partir d’une séquence donnée.
-
-Permet de faire des estimations statistiques bien plus pertinentes sur du texte brut.
-
-La probabilité des éléments dans le texte est alors dépendante des éléments précédents et suivants.
-
-===
-
-## Exemples
-
-Bi-grammes, Tri-grammes etc. 
-
-* "123456789"
-* "Martin"
-* "Cette phrase est un exemple".
-
-===
-
-## La loi de Zipf
-
-Observation sur la distribution des mots d'un texte.
-
-Comptons les occurrences (James Joyce, Ulysses).
-
-Le mot le plus courant revient ~8000 fois.
-
-Le dixième mot le plus courant ~800 fois.
-
-Le centième ~80 fois. etc.
-
-===
-
-<p align="center">
-  <img src="img/zipf.png" class="plain" />
-</p>
-
-===
-
-## TF / IDF
-
-*Term Frequency - Inverse Document Frequency*
-
-Considérons un corpus de textes composé de plusieurs documents.
-
-`TF` = nombre d'occurence d'un terme dans le texte considéré.
-
-`IDF` = logarithme de l'inverse du nombre de documents du corpus contenant le terme.
-
-===
-
-## TF / IDF
-
-Pour simplifier: plus un terme est fréquent dans un document mais moins il est fréquent dans le corpus, plus son importance et sa pertinence pour la compréhension de ce document est grande.
-
-Ceci est justifié empiriquement *a posteriori* par la loi de Zipf.
-
-**Exemple**: les articles et les mots de liaison (la notion de *stopwords*).
-
-===
-
-## La cryptanalyse
-
-Analyse lexicométrique du cyphertext afin de percer ses secrets.
-
-L'encryption XOR.
-
-Comment percer une encryption XOR en ayant que le ciphertext?
-
-`ETAOIN SHRDLU` (rien à voir avec Cthulhu!)
-
-===
-
-<!-- .slide: data-background="img/voynich.png" -->
-
-===
-
-## Le manuscrit de Voynich
-
-Manuscrit illustré anonyme écrit dans un alphabet inconnu.
-
-Découvert par Wilfrid M. Voynich en 1912.
-
-Plus ancienne mention historique du manuscrit en 1639.
-
-Datation: XVème siècle.
-
-===
-
-## L'auteur se paye-t-il notre pomme?
-
-Comment savoir si le livre est un canular élaboré ou pas?
-
-Combinaison de lexicométrie et de cryptanalyse.
-
-===
-
-## Que sait-on?
-
-La distribution des mots suit la loi de Zipf.
-
-TF / IDF montre qu'il existe des sujets par section.
-
-Il n'y a pas vraiment de ponctuation.
-
-Il existe des structures morphologiques.
-
-L'ordre des mots semble de faible importance.
-
-===
-
-## Pour aller plus loin
-
-Un bref état de l'art [ici](http://www.aclweb.org/anthology/W11-1511?notdup).
-
-===
-
-## Le texte brut
-
-Le TAL a pour objet le texte brut (données non structurées).
-
-Objet d’analyse retors.
-
-Comment découper le texte brut en éléments analysables?
-
-1. La tokenization 
-2. Le POS Tagging
-
-===
-
-## La tokenization
-
-Faire d’un amas de texte brut un amas de tokens (jetons).
-
-1. Découper le texte en phrases (exemple).
-2. Découper les phrases en mots.
-3. Découper les mots en syllabes.
-
-Première étape nécessaire pour le POS tagging.
-
-===
-
-## Le POS tagging
-
-Part of Speech tagging (étiquetage morpho-syntaxique en français…)
-
-Associer aux mots d'une phrases leurs informations grammaticales.
-
-**Exemple**: Le chat mange la souris.
-
-Opération très complexe mais nécessaire lorsqu’il s’agit de tenter de comprendre le sens du texte.
-
-===
-
-## Le sentiment analysis
-
-Aussi appelé *opinion mining*.
-
-Essayer de déterminer ce que ressentent ou pensent les gens ayant écrit le texte.
-
-**Exemple**: tenter de mesurer si les gens sont plutôt contents ou mécontents lorsqu'ils évoquent la politique du gouvernement sur Twitter.
-
-Peu développé scientifiquement. Encore trop heuristique aujourd'hui pour fonctionner de manière suffisamment satisfaisante.
-
-===
-
-## Apprentissage
-
-Il est extrêmement difficile de trouver des règles tout à fait générales en TAL.
-
-Même en combinant des règles à des dictionnaires on n’arrive pas toujours à des solutions satisfaisantes.
-
-Cependant, il est possible d'arriver à des résultats satisfaisants sur des typologies de corpus (pluriel?) précis.
-
-Pour résumer, il est difficile de s'abstraire complètement du matériau analysé pour devenir purement générique.
-
-===
-
-## Apprentissage
-
-Aujourd’hui, on utilise donc énormément le machine learning en TAL.
-
-On fait ce que l’on appelle de l’apprentissage, en taggant à la main beaucoup des corpora (la solution) existants et on laisse la machine apprendre d’elle même les règles ou du moins les appliquer sur les corpora suivants.
-
-Un perceptron marche par exemple très bien pour créer un POS Tagger.
 
 ===
 
