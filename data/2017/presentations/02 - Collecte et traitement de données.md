@@ -205,7 +205,7 @@ Le pluriel se dit corpora mais personne ne le fait...
 
 Science étudiant le texte de manière strictement statistique.
 
-Compter les occurrences, co-occurrences de certains mots, par exemple.
+Compter les occurrences de certains mots, par exemple.
 
 Base low-cost du TAL. Permet de faire facilement des analyses de larges corpus de texte sans forcément rentrer dans la compréhension du langage lui-même mais plutôt de ses motifs.
 
