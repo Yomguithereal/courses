@@ -6,6 +6,12 @@
 
 ===
 
+## Url du cours
+
+[http://yomguithereal.github.io/courses/data/2017/4.html](http://yomguithereal.github.io/courses/data/2017/4.html)
+
+===
+
 ## Rappel
 
 La dernière fois, nous avons abordé la datavisualisation.

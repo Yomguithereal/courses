@@ -6,6 +6,12 @@
 
 ===
 
+## Url du cours
+
+[http://yomguithereal.github.io/courses/data/2017/3.html](http://yomguithereal.github.io/courses/data/2017/3.html)
+
+===
+
 ## Rappel
 
 La semaine dernière: la collecte et le traitement de données.
