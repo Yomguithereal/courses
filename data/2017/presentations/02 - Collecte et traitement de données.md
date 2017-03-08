@@ -195,7 +195,7 @@ Ensemble de méthodes informatiques permettant de "comprendre" ou analyser le la
 
 Science étudiant le texte de manière strictement statistique.
 
-Compter les occurrences de certains mots, par exemple.
+Compter les occurrences, co-occurrences de certains mots, par exemple.
 
 1. Les N-grammes
 2. La loi de Zipf et TF/IDF
