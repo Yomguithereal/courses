@@ -20,7 +20,7 @@ Télécharger [LibreOffice](https://fr.libreoffice.org/download/libreoffice-stab
 
 ## Dans les épisodes précédents
 
-La semaine dernière: Big Data etc.
+La semaine dernière: Big Data & machine learning.
 
 Gérer techniquement et théoriquement des masses énormes de données.
 
@@ -47,8 +47,9 @@ Le cours d’aujourd’hui sera, je l’espère, un peu moins théorique et on d
 Aujourd’hui, nous allons parler des données elles-mêmes, qu’elles soient "big" ou pas, qu’elle soient "propres" ou pas (c’est à dire?).
 
 1. La logique floue & le clustering
-2. Le traitement automatique du langage (TAL)
-3. Le data mining et son rejeton le web mining
+2. L'information retrieval
+3. Le traitement automatique du langage (TAL)
+4. Le data mining et son rejeton le web mining
 
 ===
 
@@ -835,7 +836,7 @@ Conjuguer des verbes, par exemple, ou bien passer un forme du singulier vers le 
 
 ===
 
-#3. Le data mining
+# 3. Le data mining
 
 ===
 

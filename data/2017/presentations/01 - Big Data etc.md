@@ -1700,7 +1700,7 @@ Méthode statistique classique.
   2. Déterminer son coût
   3. Interpolation
 3. L'extrapolation
-4. Logarithmes et polynomiales
+4. Logarithmes et polynomiales (Overfitting!)
 
 ===
 
@@ -1791,15 +1791,22 @@ On va accumuler des couches de neurones successives et observer une montée prog
 
 ===
 
-## DQN - DeepMind
+<p align="center">
+  <img src="img/deep.png" class="plain" />
+</p>
 
-Algorithme capable d'apprendre à jouer à des jeux vidéo atari.
+===
 
-Fonctionne sans données préalables mais grâce à un système de stimuli.
+## Le deep learning
 
-Son objectif est de faire grimper les nombres (littéralement).
+Intuitivement, le réseau va opérer des combinaisons de facteurs (expemple immobilier encore) et composer des concepts de plus en plus abstraits, au fur et à mesure que l'on s'enfonce dans les couches successives.
 
-(Leurs yeux vous regardent)
+Exemple pour de la reconnaissance d'image:
+
+1. Niveau 1: zone rouge, zone noire etc.
+2. Niveau 2: traits, courbes etc.
+3. Niveau 4: Formes, rectangles carrés etc.
+4. Niveau 5: Visage, animal, maison etc.
 
 ===
 
@@ -1862,11 +1869,76 @@ On en verra certains la semaine prochaine.
 
 ===
 
-## L'intelligence artificielle
+## Feature extraction
 
-Que des algorithmes mathématiques/statistiques.
+Les données en entrée doivent être rationnalisées et selectionnées.
 
-On est encore très loin de Skynet.
+Souvent il faut réduire les points de données à des vecteurs pouvant exister dans un espace euclidien.
+
+===
+
+## Vectorisation: un prêt
+
+Individu male, 43 ans, 35k de revenu annuel
+
+```js
+[1, 43, 35]
+```
+
+Vecteur 3 dimensions.
+
+=== 
+
+## Vectorisation: le texte
+
+Modèle BOW, CBOW, TF/IDF.
+
+```js
+'Le chat mange la souris.'
+'La souris mange le fromage.'
+
+{le: 1, chat: 2, mange: 3, la: 4, souris: 5, fromage: 6}
+
+[1, 1, 1, 1, 1, 0]
+[1, 0, 1, 1, 1, 1]
+```
+
+Sparse vectors. Enormément de dimensions.
+
+High dimensionality curse.
+
+===
+
+## L'intelligence artificielle?
+
+On est encore très loin d'une intelligence artificielle au sens de la science fiction.
+
+Que des algorithmes mathématiques/statistiques qui, ainsi qu'on l'a vu, véhiculent nos préconceptions sur les objets étudiés.
+
+C'est moins le cas avec le deep learning mais on ne parle toujours pas d'intelligence générale (ne ciblant pas un problème en particulier).
+
+===
+
+## DQN - DeepMind
+
+Algorithme capable d'apprendre à jouer à des jeux vidéo Atari.
+
+Fonctionne sans données préalables mais grâce à un système de stimuli (*non supervisé*).
+
+Son objectif est de faire grimper les nombres (littéralement).
+
+Fonction de coût comme pour les algorithmes génétiques.
+
+===
+
+## Pour résumer
+
+Deux points où la machine est finalement assez humaine:
+
+1. les données qu'on lui passe et la manière dont on les structure
+2. le problème qu'on cherche à résoudre et la méthologie employée
+
+La seule chose que la machine "apprend", c'est un modèle statistique.
 
 ===
 
