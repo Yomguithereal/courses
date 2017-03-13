@@ -457,7 +457,7 @@ Normaliser une chaîne de charactère pour faciliter les comparaisons.
 * Harmoniser la casse
 * Supprimer les accents
 * Harmoniser les charactères unicodes (guillemets, apostrophes)
-* Elaguer lea chaîne
+* Elaguer les chaînes
 * Compresser les espaces
 * ...
 
@@ -485,7 +485,7 @@ Pour essayer, cliquez [ici](http://yomguithereal.github.io/talisman/keyers#finge
 
 ## Les distances
 
-Dupont & Dupont.
+Dupond & Dupont.
 
 Trouver une distance mathématique entre deux chaînes.
 

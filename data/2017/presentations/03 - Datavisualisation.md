@@ -18,7 +18,7 @@ La semaine dernière: la collecte et le traitement de données.
 
 Mais, maintenant que l’on a ces données: **comment** et **pourquoi** les visualiser?
 
-Nous allons faire de la théorie.
+Nous allons faire de la théorie (désolé pour la pratique...).
 
 ===
 
@@ -92,6 +92,14 @@ L’image est un moyen d’expression puissant.
 Il est possible de faire comprendre très simplement des concepts grâce à la datavisualisation alors que les données sont massives et complexes.
 
 Propos complexe -> image simple.
+
+===
+
+## Statistiques
+
+Datavisualisation et statistiques ont des points communs.
+
+L'aggrégation.
 
 Mais attention, il y a simplification tout de même, et il convient de manipuler les principes de cette simplification pour ne pas en être la victime.
 
@@ -373,28 +381,13 @@ Graphe des députés/amendements (écriture de la loi). 628 / 1109
 
 Se servir de la visualisation de données pour debugger un processus de migration de donnée.
 
-```cypher
-// Finding duplicates
-MATCH (d:Document {original: true})-[rs:HAS]->(:Slide)-[ri:HAS]->(i:Reference)
-WHERE not(d:Contribution) AND d.title =~ "(?i).*\\d{4}.*"
-WITH d, ri, count(rs) AS nbs
-WHERE nbs = 1
-WITH d, count(ri) AS nbi
-WHERE nbi = 1
-MATCH (d)-[rs:HAS]->(s:Slide)-[ri:HAS]->(i:Reference)
-RETURN d, rs, s, ri, i;
-```
+===
+
+<!-- .slide: data-background="img/balloons.png" reversed="true" -->
 
 ===
 
-```cypher
-// Finding errors in link generation
-MATCH (n:`Mode`) WITH n LIMIT 100 MATCH (n)-[r]-(t) RETURN n,r,t;
-```
-
-La visualisation vs. les statistiques?
-
-None, la sérendipité et la monadologie.
+<!-- .slide: data-background="img/duplicates.png" reversed="true" -->
 
 ===
 
@@ -403,18 +396,6 @@ None, la sérendipité et la monadologie.
 Méthodologie scientifique consistant à structurer un jeu de données de recherche autour d’outils permettant leurs visualisation.
 
 Considérer la visualisation comme partie intégrante du processus de recherche et non comme sa présentation finale.
-
-===
-
-## Cartographie des controverses
-
-Pur produit de la visualisation exploratoire de données.
-
-Méthodologie en épistémologie ayant pour objectif de cartographier la position des différents acteurs d’une controverse.
-
-**Exemple**: le réchauffement climatique.
-
-[http://climaps.eu/](http://climaps.eu/)
 
 ===
 
@@ -487,15 +468,6 @@ Compétences (hors HETIC): 
 * MFG Labs
 * Linkfluence
 * Presse (data journalism), NYT, BBC, le monde, arte etc.
-
-===
-
-<!-- ## TD: Boss Final
-
-* Visualiser des données vous concernant scrapées depuis l’OGI.
-* Outils: Node, Gexf, Manylines, Gephi
-* Le principe de prétérition.
-* http://yomguithereal.github.io/courses/boss/ -->
 
 ===
 
