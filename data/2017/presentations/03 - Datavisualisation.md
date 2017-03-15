@@ -220,6 +220,12 @@ Il faut distinguer datavisualisation et esthétique (pas opposés mais ne serven
 
 ===
 
+<p align="center" style="margin-top: 0;">
+  <img src="img/ratio.png" class="plain" />
+</p>
+
+===
+
 ## Mauvais exemples
 
 [wtfviz](http://viz.wtf/): Un tumblr pour les gens de goût.
