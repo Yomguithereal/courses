@@ -39,7 +39,7 @@ MATCH (s:Student) RETURN count(s);
 Trouver le nombre de CDP
 
 ```cypher
-$MATCH (s:Student {cdp: true}) RETURN count(s);
+MATCH (s:Student {cdp: true}) RETURN count(s);
 ```
 
 Récupérer la liste de votre promo

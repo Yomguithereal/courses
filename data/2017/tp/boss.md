@@ -10,11 +10,11 @@ Scraper l'OGP pour récupérer un graphe *bipartite* contenant:
 1. Les étudiants de différentes promotions de l'ecole.
 2. Les projets terminés sur lesquels les étudiants ont travaillé.
 
-Voir le fichier généré [ici](../resources/promo.json).
+Voir les fichiers scrapés.
 
-Voir commment les données ont été importées [ici](https://github.com/Yomguithereal/courses/tree/gh-pages/data/2016/scripts/neo4j-import).
+Voir commment les données ont été traitées [ici](https://github.com/Yomguithereal/courses/tree/gh-pages/data/2017/scripts/boss).
 
-L'*épistémologie* et le choix de mettre la propriété `cdp` sur les noeuds `Student`.
+L'*épistémologie* et le principe de prétérition.
 
 ## 2) Comprendre comment requêter les données
 
@@ -36,31 +36,31 @@ Compter les étudiants
 MATCH (s:Student) RETURN count(s);
 ```
 
-Trouver le nombre de CDP
+Trouver le nombre d'étudiant dans votre promo.
 
 ```cypher
-$MATCH (s:Student {cdp: true}) RETURN count(s);
+MATCH (s:Student {promo: "P2018"}) RETURN count(s);
 ```
 
 Récupérer la liste de votre promo
 
 ```cypher
-MATCH (s:Student {promo: "h3"}) RETURN s ORDER BY s.surname;
+MATCH (s:Student {promo: "P2018"}) RETURN s ORDER BY s.name;
 ```
 
 Récupérer la liste des projets sur lesquels vous avez travaillé
 
 ```cypher
-MATCH (:Student {surname: "BARBE"})-[:WORKED_ON]->(p:Project) RETURN p ORDER BY p.date;
+MATCH (:Student {name: "BONNIKE"})-[:WORKED_ON]->(p:Project) RETURN p ORDER BY p.date;
 ```
 
 Récupérer la liste de vos collègues
 
 ```cypher
-MATCH (s:Student {surname: "BARBE"})-[:WORKED_ON]->(:Project)<-[:WORKED_ON]-(c:Student)
+MATCH (s:Student {name: "BONNIKE"})-[:WORKED_ON]->(:Project)<-[:WORKED_ON]-(c:Student)
 WHERE c <> s
 RETURN DISTINCT c AS colleague
-ORDER BY colleague.surname;
+ORDER BY colleague.name;
 ```
 
 ## 3) Composer un graphe monopartite
@@ -86,6 +86,7 @@ La structure du JSON devra être la suivante:
 }
 ```
 
+<!--
 Pour les paresseux, les JSON est [ici](../resources/graph.json).
 
 Pour voir comment on pourrait faire cela en utilisant node.js, c'est [ici](https://github.com/Yomguithereal/courses/tree/gh-pages/data/2016/scripts/neo4j-export).
@@ -107,4 +108,4 @@ npm i http-server
 http-server
 ```
 
-Pour les feignants, se rendre [ici](../scripts/neo4j-viz/index.html).
+Pour les feignants, se rendre [ici](../scripts/neo4j-viz/index.html). -->
