@@ -6,3 +6,6 @@ baseurl: '/courses'
 
 highlighter: rouge
 markdown: kramdown
+
+exclude:
+  - "**/node_modules"
