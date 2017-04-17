@@ -33,6 +33,8 @@ title: Cours de Perfectionnement (2017)
   * [a. Vectoriser des données](#vectorisation)
   * [b. Entraîner un modèle de classification](#modele)
 
+TODO: install libreoffice / open refine
+
 ---
 
 ## Principes du cours
@@ -110,7 +112,13 @@ URL: [https://news.ycombinator.com/](https://news.ycombinator.com/)
 2. Y insérer les données que nous avons scrapé de transparency.org.
 3. Etre capable de formuler des requêtes pour récupérer les données dont une API pourrait avoir besoin.
 
-TODO: lien vers scraped data
+**Suggestions**:
+
+* MongoDB
+* Neo4j
+* ElasticSearch
+
+TODO: lien vers scraped data => liens vers BDD
 
 ---
 
