@@ -442,18 +442,6 @@ Terme employé dans deux sens: 
 
 ===
 
-## Porn data
-
-Ne pas confondre **data porn** et **porn data**.
-
-Il est tout à fait possible de faire de la datavisualisation sur les données du porn.
-
-Pornhub, par exemple, a une très bonne équipe de datavisualisation (un peu tape-à-l’oeil évidemment mais il fallait s’y attendre).
-
-[http://www.pornhub.com/insights/](http://www.pornhub.com/insights/)
-
-===
-
 ## Le marché du travail
 
 Profils: 
