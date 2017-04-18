@@ -54,7 +54,8 @@ title: Cours de Perfectionnement (2017)
 1. Composer la géographie des intérêts.
 2. Planifier vos ambitions.
 3. Faire des modules approfondis en fonction du plan.
-4. 仕事!
+4. Installer les dépendances lourdes nécessaires (scikit, jupyter, OpenRefine etc.).
+5. 仕事!
 
 ---
 
@@ -281,7 +282,10 @@ Trouver un moyen de sélectionner une valeur pondérée aléatoirement.
 
 On va utiliser [scikit-learn](http://scikit-learn.org/stable/install.html).
 
+Télécharger le dataset [ici](http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#webspam).
+
 1. Trouver un cas d'usage (SPAM/HAM, par exemple).
 2. Splitter le dataset.
-3. Entraîner un modèle.
-4. Evaluer la précision du modèle.
+3. Vectoriser le dataset.
+4. Entraîner un modèle.
+5. Evaluer la précision du modèle.
