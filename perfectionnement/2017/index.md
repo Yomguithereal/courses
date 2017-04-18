@@ -53,7 +53,8 @@ title: Cours de Perfectionnement (2017)
 
 1. Composer la géographie des intérêts.
 2. Planifier vos ambitions.
-3. Shigoto!
+3. Faire des modules approfondis en fonction du plan.
+4. 仕事!
 
 ---
 
@@ -120,11 +121,11 @@ URL: [https://news.ycombinator.com/](https://news.ycombinator.com/)
 
 **Suggestions**:
 
-* MongoDB
-* Neo4j
-* ElasticSearch
+* [MongoDB](https://docs.mongodb.com/)
+* [Neo4j](https://neo4j.com/product/)
+* [ElasticSearch](https://www.elastic.co/fr/products/elasticsearch)
 
-TODO: lien vers scraped data => liens vers BDD
+[Lien](./projects/transparency/data.json) vers les données pour les feignant(e)s.
 
 ---
 
@@ -132,10 +133,13 @@ TODO: lien vers scraped data => liens vers BDD
 
 **Objectifs**:
 
-1. Implémenter un index de Jaccard (théorie des ensembles).
+1. Implémenter un [index de Jaccard](https://en.wikipedia.org/wiki/Jaccard_index) (théorie des ensembles).
 2. Ecrire des tests unitaires pour s'assurer de son bon fonctionnement (notion de régression).
 
-TODO: lien
+**Suggestions**:
+
+* (js) [mocha](https://mochajs.org/)
+* (py) [unittest](https://docs.python.org/3/library/unittest.html)
 
 ---
 
@@ -150,6 +154,8 @@ TODO: lien
 5. Requêter un index inversé
 6. Ajouter un poil de logique floue
 7. Pour les plus taré(e)s: Fréquences, taille, TF-IDF et similarité cosinus
+
+[Lien](./projects/transparency/data.json) vers les données pour les feignant(e)s.
 
 ---
 
@@ -169,7 +175,7 @@ TODO: lien
 * (py) [Flask](http://flask.pocoo.org/)
 * (py) [Pep8](https://pypi.python.org/pypi/pep8)
 
-TODO: link to data
+[Lien](./projects/transparency/data.json) vers les données pour les feignant(e)s.
 
 ---
 
@@ -177,17 +183,46 @@ TODO: link to data
 
 **Dépendances**: Il serait préférable d'avoir effectué les étapes précédentes.
 
+**Astuce**: il vous est tout à fait possible de charger toutes les données en JSON depuis le client et utiliser un moteur de recherche côté client si vous ne voulez pas développer une API.
+
+[Lien](./projects/transparency/data.json) vers les données pour les feignant(e)s.
+
 <h4 id="webpack">a. Utiliser webpack</h4>
+
+[https://webpack.js.org/](https://webpack.js.org/)
+
+Utiliser le serveur de développement pour se faciliter la tâche.
 
 <h4 id="reactredux">b. React + Redux</h4>
 
+* [React](https://facebook.github.io/react/)
+* [Redux](http://redux.js.org/)
+  - La notion d'état centralisé et la programmation fonctionnelle
+  - Constantes, reducers, actions
+  - Créer un helper pour faire mieux que les `switch`
+  - Les ducks
+  - redux-thunk
+
 <h4 id="hmr">c. Le Hot Module Reload</h4>
+
+Configurer un HMR pour pouvoir développer confortablement et efficacement.
 
 <h4 id="viz">d. Les visualisation classiques</h4>
 
+**Objectifs**:
+
+* Choisir comment représenter les données
+* Utiliser [recharts](http://recharts.org/#/en-US/) pour afficher des visualisations simples.
+
 <h4 id="d3">e. Utiliser D3 ou pas</h4>
 
+* Comprendre la logique et l'intérêt de [d3](https://d3js.org/).
+* Comprendre que sa couche de rendu est aujourd'hui peu utile.
+* Mais que ses librairies annexes demeurent extrêmement utiles.
+
 <h4 id="reseau">f. Visualiser un réseau</h4>
+
+* Utiliser [sigma.js](http://sigmajs.org/) pour visualiser un réseau d'une certaine envergure.
 
 ---
 
@@ -232,6 +267,8 @@ Trouver une librairie ou concevoir un modèle de données pour manipuler des gra
 * (js) [graphology](https://graphology.github.io/)
 * (py) [networkx](https://networkx.readthedocs.io/en/stable/)
 
+Trouver un moyen de sélectionner une valeur pondérée aléatoirement.
+
 <h4 id="observations">b. Générer de fausses observations</h4>
 
 * *Niveau 1*: Créer de faux mots du [dictionnaire](http://www.pallier.org/ressources/dicofr/dicofr.html).
@@ -241,3 +278,10 @@ Trouver une librairie ou concevoir un modèle de données pour manipuler des gra
 ---
 
 <h3 id="ml">9. Utiliser un algorithme de machine learning</h3>
+
+On va utiliser [scikit-learn](http://scikit-learn.org/stable/install.html).
+
+1. Trouver un cas d'usage (SPAM/HAM, par exemple).
+2. Splitter le dataset.
+3. Entraîner un modèle.
+4. Evaluer la précision du modèle.
