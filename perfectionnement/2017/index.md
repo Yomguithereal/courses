@@ -49,6 +49,14 @@ title: Cours de Perfectionnement (2017)
 
 ---
 
+## KickOff
+
+1. Composer la géographie des intérêts.
+2. Planifier vos ambitions.
+3. Shigoto!
+
+---
+
 ## Langages
 
 Vous êtes libres de travailler sur les langages de programmation que vous préférez.
@@ -86,6 +94,7 @@ URL: [https://www.transparency.org/whatwedo/publications](https://www.transparen
 **Difficultés**:
 
 * Throttling (le site est loin d'être rapide)
+* Scheduling, fault-tolerance, queue, BDD
 * Faire de la rétro-ingénierie sur une pagination pour la crawler.
 * Scraper toutes les pages nécessaires afin de récupérer les données.
 
@@ -189,9 +198,26 @@ TODO: link to data
 * [LibreOffice](https://fr.libreoffice.org/)
 * [OpenRefine](http://openrefine.org/)
 
+**Jeux de données**:
+
+1. [Figshare](./resources/dirty-figshare.csv)
+2. [Musicians](./resources/dirty-musicians.csv)
+3. [Universities](./resources/dirty-musicians.csv) (Ancien [TP]({{ site.baseurl }}/data/2016/tp/openrefine.html))
+
 <h4 id="clustering">b. Concevoir un algorithme de partitionnement</h4>
 
+1. Collision de clés
+2. Algorithme quadratique naïf
+3. Utilisation de structures de données dédiées (le Vantage Point Tree)
+
 <h4 id="minhash">c. MinHashing et partitionnement à l'échelle</h4>
+
+Pour les plus taré(e)s!
+
+1. Les algorithmes de hash (le CRC32 notamment).
+2. Principes du minhashing.
+3. Préparer des documents textuels (page web, mail). 
+4. Binning sur base de minhashing.
 
 ---
 
@@ -199,7 +225,18 @@ TODO: link to data
 
 <h4 id="graph">a. Manipuler un réseau</h4>
 
+Trouver une librairie ou concevoir un modèle de données pour manipuler des graphes à même de stocker des chaînes de Markov.
+
+**Suggestions**:
+
+* (js) [graphology](https://graphology.github.io/)
+* (py) [networkx](https://networkx.readthedocs.io/en/stable/)
+
 <h4 id="observations">b. Générer de fausses observations</h4>
+
+* *Niveau 1*: Créer de faux mots du [dictionnaire](http://www.pallier.org/ressources/dicofr/dicofr.html).
+* *Niveau 2*: Créer de faux produits du XIXe siècle ([products.csv](./resources/products.csv)).
+* *Niveau 3*: Créer de faux cours d'HETIC (plus difficile, il faut trouver un syllabus).
 
 ---
 
