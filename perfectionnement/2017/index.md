@@ -30,10 +30,6 @@ title: Cours de Perfectionnement (2017)
   * [a. Manipuler un réseau](#graph)
   * [b. Générer de fausses observations](#observations)
 9. [Utiliser un algorithme de machine learning](#ml)
-  * [a. Vectoriser des données](#vectorisation)
-  * [b. Entraîner un modèle de classification](#modele)
-
-TODO: install libreoffice / open refine
 
 ---
 
@@ -42,7 +38,7 @@ TODO: install libreoffice / open refine
 * Vous choisissez la granularité qui vous intéresse: vous pouvez très bien approfondir au maximum un seul des axes de la trame, ou au contraire tenter de travailler tous les axes
 * Vous êtes libres de travailler les sujets dans n'importe quel sens, même si je vous recommande de suivre la trame qui se veut plus ou moins "logique" (et full-stack, tmtc).
 * De la même manière, si vous souhaitez approfondir vraiment un domaine (le scraping, par exemple) et que les sujets proposés sont trop faciles, on peut tout à fait les corser.
-* Vous êtes libres de constituer des équipes ou bien de travailler seul(e)s.
+* Vous êtes libres de constituer des équipes ou bien de travailler seul(e)s ou même de composer des ensembles flous. J'ai juste besoin d'avoir une idée globale de la géographie de ces ensembles pour pouvoir planifier.
 * Si vous avez en tête des données plus concrètes et plus utiles pour vous que celles que je mets à disposition ou vous demande de récupérer, n'hésitez pas.
 * Si vous avez des projets pédagogiques et personnels en rapport avec les sujets du cours et que vous voulez en profiter pour que nous puissions les travailler ensemble, allons-y (en *record linkage*, notamment).
 * Si vous trouvez que la présente page n'est pas claire, discutons-en et ouvrons une fusiodemande. De plus, je vais probablement améliorer cette page au cours des deux journées au fur et à mesure que nous aborderons les différents sujets ensemble.
@@ -59,7 +55,7 @@ Vous êtes libres de travailler sur les langages de programmation que vous préf
 
 Sachez seulement que je suis plus à même de vous aider sur des langages que je maîtrise (dans l'ordre):
 
-* JavaScript
+* JavaScript / TypeScript etc.
 * Python
 * Clojure
 * Ruby
@@ -146,4 +142,65 @@ TODO: lien
 6. Ajouter un poil de logique floue
 7. Pour les plus taré(e)s: Fréquences, taille, TF-IDF et similarité cosinus
 
+---
 
+<h3 id="rest">5. Développer une API REST et linter son code</h3>
+
+**Dépendances**: Il serait préférable d'avoir effectué les étapes précédentes ou afin de s'attaquer à cette partie dans la mesure où vous êtes censés avoir des données à servir.
+
+**Objectif**:
+
+1. Concevoir et développer une API REST (préférence MVC)
+2. Linter son code afin de conserver un style cohérent
+
+**Suggestions**:
+
+* (js) [Express.js](http://expressjs.com/)
+* (js) [Eslint](http://eslint.org/)
+* (py) [Flask](http://flask.pocoo.org/)
+* (py) [Pep8](https://pypi.python.org/pypi/pep8)
+
+TODO: link to data
+
+---
+
+<h3 id="client">6. Développer une app client pour visualiser les données</h3>
+
+**Dépendances**: Il serait préférable d'avoir effectué les étapes précédentes.
+
+<h4 id="webpack">a. Utiliser webpack</h4>
+
+<h4 id="reactredux">b. React + Redux</h4>
+
+<h4 id="hmr">c. Le Hot Module Reload</h4>
+
+<h4 id="viz">d. Les visualisation classiques</h4>
+
+<h4 id="d3">e. Utiliser D3 ou pas</h4>
+
+<h4 id="reseau">f. Visualiser un réseau</h4>
+
+---
+
+<h3 id="recordlinkage">7. Détection de duplicats flous</h3>
+
+<h4 id="openrefine">a. Utiliser OpenRefine</h4>
+
+* [LibreOffice](https://fr.libreoffice.org/)
+* [OpenRefine](http://openrefine.org/)
+
+<h4 id="clustering">b. Concevoir un algorithme de partitionnement</h4>
+
+<h4 id="minhash">c. MinHashing et partitionnement à l'échelle</h4>
+
+---
+
+<h3 id="markov">8. Les chaînes de Markov</h3>
+
+<h4 id="graph">a. Manipuler un réseau</h4>
+
+<h4 id="observations">b. Générer de fausses observations</h4>
+
+---
+
+<h3 id="ml">9. Utiliser un algorithme de machine learning</h3>
