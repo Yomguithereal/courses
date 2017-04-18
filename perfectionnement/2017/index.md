@@ -46,6 +46,7 @@ TODO: install libreoffice / open refine
 * Si vous avez en tête des données plus concrètes et plus utiles pour vous que celles que je mets à disposition ou vous demande de récupérer, n'hésitez pas.
 * Si vous avez des projets pédagogiques et personnels en rapport avec les sujets du cours et que vous voulez en profiter pour que nous puissions les travailler ensemble, allons-y (en *record linkage*, notamment).
 * Si vous trouvez que la présente page n'est pas claire, discutons-en et ouvrons une fusiodemande. De plus, je vais probablement améliorer cette page au cours des deux journées au fur et à mesure que nous aborderons les différents sujets ensemble.
+* De manière générale, il serait bon de publier votre code sur un repo Github. Notamment parce que cela vous entraîne à utiliser un outil de versionning et qu'il me sera plus facile de vous aider.
 * Si vous avez des questions quand je ne suis pas là, ouvrez une issue sur le repo:
 
 [Repo GitHub](https://github.com/Yomguithereal/courses)
