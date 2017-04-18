@@ -51,6 +51,8 @@ title: Cours de Perfectionnement (2017)
 
 ## KickOff
 
+!Aménagement horaire!
+
 1. Composer la géographie des intérêts.
 2. Planifier vos ambitions.
 3. Faire des modules approfondis en fonction du plan.

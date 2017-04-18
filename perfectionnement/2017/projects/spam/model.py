@@ -2,7 +2,6 @@
 from sklearn.datasets import load_svmlight_file
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.svm import SVC
 from sklearn.metrics import precision_score, recall_score
 
 # Loading the files
@@ -15,7 +14,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.1)
 
 # Training the model
 print 'Training the model...'
-clf = SVC()
+clf = MultinomialNB()
 clf.fit(X_train, y_train)
 
 # Testing
