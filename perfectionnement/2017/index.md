@@ -286,6 +286,8 @@ On va utiliser [scikit-learn](http://scikit-learn.org/stable/install.html).
 
 Télécharger le dataset [ici](http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#webspam).
 
+Utiliser [Jupyter](http://jupyter.org/).
+
 1. Trouver un cas d'usage (SPAM/HAM, par exemple).
 2. Splitter le dataset.
 3. Vectoriser le dataset.
