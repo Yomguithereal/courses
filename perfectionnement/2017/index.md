@@ -49,18 +49,6 @@ title: Cours de Perfectionnement (2017)
 
 ---
 
-## KickOff
-
-!Aménagement horaire!
-
-1. Composer la géographie des intérêts.
-2. Planifier vos ambitions.
-3. Faire des modules approfondis en fonction du plan.
-4. Installer les dépendances lourdes nécessaires (scikit, jupyter, OpenRefine etc.).
-5. 仕事!
-
----
-
 ## Langages
 
 Vous êtes libres de travailler sur les langages de programmation que vous préférez.
@@ -74,6 +62,18 @@ Sachez seulement que je suis plus à même de vous aider sur des langages que je
 * PHP
 * Java
 * C
+
+---
+
+## KickOff
+
+!Aménagement horaire!
+
+1. Composer la géographie des intérêts.
+2. Planifier vos ambitions.
+3. Faire des modules approfondis en fonction du plan.
+4. Installer les dépendances lourdes nécessaires (scikit, jupyter, OpenRefine etc.).
+5. 仕事!
 
 ---
 
