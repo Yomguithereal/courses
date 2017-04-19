@@ -240,7 +240,7 @@ Configurer un HMR pour pouvoir développer confortablement et efficacement.
 
 1. [Figshare](./resources/dirty-figshare.csv)
 2. [Musicians](./resources/dirty-musicians.csv)
-3. [Universities](./resources/dirty-musicians.csv) (Ancien [TP]({{ site.baseurl }}/data/2016/tp/openrefine.html))
+3. [Universities](./resources/dirty-universities.csv) (Ancien [TP]({{ site.baseurl }}/data/2016/tp/openrefine.html))
 
 <h4 id="clustering">b. Concevoir un algorithme de partitionnement</h4>
 
