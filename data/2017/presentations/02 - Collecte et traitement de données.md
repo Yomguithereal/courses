@@ -1109,7 +1109,7 @@ To scrape: verbe anglais signifiant gratter, racler.
 
 Vient plus généralement de l’expression "screen scraping", racler l’écran.
 
-Désigne l’art d’extraire des données directement depuis leur présentation visuelle.
+Désigne l’art d’extraire des données directement depuis leur représentation visuelle.
 
 **Exemple**: Un site web est un moyen visuel d’afficher des données à un utilisateur. Scraper ce site c’est extraire les données depuis le HTML lui même.
 

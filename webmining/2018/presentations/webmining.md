@@ -1,1 +1,297 @@
 # Webmining
+
+<p align="center">
+  *Scraping, crawling et autres fantaisies...*
+</p>
+
+===
+
+## Url du cours
+
+[http://yomguithereal.github.io/courses/webmining/2018](http://yomguithereal.github.io/courses/webmining/2018)
+
+===
+
+Désolé pour les slides moches...
+
+===
+
+## Qui suis-je?
+
+Guillaume Plique ([Yomguithereal](https://github.com/Yomguithereal) sur github.)
+
+Ingénieur au médialab de Sciences Po.
+
+===
+
+<!-- .slide: data-background="img/medialab.jpg" reversed="true" -->
+
+## Le médialab
+
+Laboratoire de recherche rassemblant les profils suivants:
+
+* Des **chercheurs** en sciences humaines
+* Des **designers**
+* Des **ingénieurs**
+
+===
+
+## Mon métier
+
+* Ingénieur de recherche (sciences humaines surtout)
+* R&D Open Source
+* Collecte et traitement de données
+* Algo & implémentation
+
+===
+
+## Qui êtes-vous?
+
+Combien de personnes?
+
+Profils? Parcours?
+
+Quels langages de programmation?
+
+===
+
+## Full disclosure
+
+Ce mastère est une nouveauté à HETIC.
+
+C'est la première fois que je donne ce cours.
+
+Vous allez essuyer les plâtres.
+
+===
+
+## Objet du cours
+
+Le **webmining**. Au travers des pratiques suivantes:
+
+* Le scraping.
+* Le crawling.
+* La collecte de données via les APIs.
+
+===
+
+Qui en a entendu parler?
+
+===
+
+Qui a déjà pratiqué?
+
+===
+
+## Méthodologie du cours
+
+Peu question ici de théorie.
+
+On va surtout pratiquer et mettre les mains dans le cambouis, plutôt que de gloser.
+
+On ne va pas non plus parler de l'analyse des données collectées. Vous avez normalement d'autres cours pour cela.
+
+===
+
+## Programmation
+
+Du coup, évidemment, on va coder.
+
+Je vous laisse le soin de choisir avec quel langage vous allez effectuer les TPs.
+
+Gardez juste en tête que je ne maîtrise pas tous les langages et que mon aide sera moins pertinente si vous sortez des sentiers battus.
+
+===
+
+## Langages conseillés
+
+* JavaScript
+* Python
+* Clojure
+* Ruby
+* PHP
+* Java
+
+===
+
+## Github & Slack
+
+Avez-vous tous un compte github ou équivalent.
+
+Pratique pour moi pour faire la revue de votre code si besoin.
+
+Je suis aussi disponible sur Slack pour toute question.
+
+===
+
+## Les règles du jeu
+
+* N'hésitez pas à poser des **questions**.
+* N'hésitez pas à m'interrompre si vous trouvez que je raconte des **inepties**.
+* Ralentissez-moi si je parle trop vite.
+* Appelez à l'aide si vous êtes bloqués.
+
+===
+
+## Un cours marmoréen?
+
+Le déroulé du cours n'est pas gravé dans le marbre.
+
+Mon objectif est de vous apprendre des choses utiles.
+
+Si un sujet vous intéresse plus qu'un autre etc., parlons-en et orientons le cours dans la bonne direction ensemble.
+
+===
+
+## Des typos partout?
+
+Le cours est en Open Source [ici](https://github.com/Yomguithereal/courses).
+
+N'hésitez pas à ouvrir une PR pour le corriger ou ajouter des précisions si vous trouvez le contenu trop lacunaire.
+
+===
+
+## Des question?
+
+Avant que l'on commence?
+
+===
+
+## Le webmining
+
+Le webmining est une branche spécifique du datamining.
+
+"Fouille du web", dans la langue de Molière.
+
+**Collecte** et **analyse** des données présentes sur le web.
+
+===
+
+## Pourquoi?
+
+De nombreuses données sont présentes sur le web. Il serait dommage de ne pas exploiter cette manne.
+
+Pour le marketing et les sciences humaines, le web a une spécificité intéressante:
+
+Contrairement aux données recueillies lors de questionnaires/entretiens, les gens produisent spontanément des contenus.
+
+Ceci contourne les limites de la méthodologie classique. Il devient possible d'analyser quantitativement le champ social plutôt aisément.
+
+===
+
+## Axes
+
+En général, on parle de trois axes du web mining:  
+
+1. Usages du web (très lié aux analytics)  ✗
+2. Contenus du web (scraping, en partie) ✓ 
+3. Structure du web (crawling, en partie) ✓
+
+===
+
+# Les technos web
+
+<p align="center">
+  *Quelques rappels concernant les technos web...*
+</p>
+
+===
+
+## Rappels
+
+* La résolution DNS
+* Le client/serveur
+* HTTP
+* Le HTML, le CSS, le templating
+* L'authentification, les cookies
+* Les formulaires
+* L'ajax
+* Les scripts
+
+===
+
+# Le scraping
+
+<p align="center">
+  *De l'art de récupérer des données structurées dans la fange visuelle du web...*
+</p>
+
+===
+
+## Les APIs web
+
+La manière la plus évidente de collecter des données structurées sur Internet c'est d'utiliser les API créées à cet effet.
+
+**Exemple**: Twitter, Facebook, LinkedIn.
+
+===
+
+## Mais…
+
+Tous les sites n’ont pas forcément d’API.
+
+Certaines API sont limitées (contenu inaccessible, rate limit etc.).
+
+===
+
+<p align="center">
+  <img src="img/tweet.png" class="plain" />
+</p>
+
+===
+
+## Le scraping
+
+To scrape: verbe anglais signifiant gratter, racler.
+
+Vient plus généralement de l’expression "screen scraping", racler l’écran.
+
+Désigne l’art d’extraire des données directement depuis leur représentation visuelle.
+
+**Exemple**: Un site web est un moyen visuel d’afficher des données à un utilisateur. Scraper ce site c’est extraire les données depuis le HTML lui même.
+
+===
+
+## Le scraping
+
+Très pratique pour récupérer des données structurées sur Internet là où il n’y existe pas d’API.
+
+Processus un peu "fourbe" qui procède d’une forme de rétro-ingénierie.
+
+Hide yo data, bitches! Des données ne sont **JAMAIS** à l’abri si l’on peut y accéder depuis son navigateur Internet (on ne peut que pourrir la vie des scrapers mais on ne les empêchera que très rarement de fonctionner).
+
+===
+
+## EchoJS
+
+<p align="center">
+  <img src="img/echojs.png" class="plain" />
+</p>
+
+===
+
+## EchoJS
+
+<p align="center">
+  <img src="img/inspector.png" class="plain" />
+</p>
+
+===
+
+[EchoJS](http://www.echojs.com/)
+
+===
+
+## Ironie
+
+Les API du web sémantique (BNF), par exemple, sont tellement complexes qu’il est souvent plus facile de scraper leur site que de comprendre leur API.
+
+Le scraping est une pratique qui n'est jamais dénuée d’ironie.
+
+**Exemple**: l'entreprise ou institution incapable de vous mettre à disposition ses données.
+
+===
+
+## Le cambouis
+
+EchoJS => Hackernews => le TP perfectionnement 1. => page avec load ajax des data => OGP (need auth)
