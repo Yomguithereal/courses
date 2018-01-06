@@ -3,7 +3,12 @@ layout: page
 title: Summary
 ---
 
-* [Data 2016]({{ site.baseurl }}/data/2016/) (HETIC P2017)
-* [Data 2017]({{ site.baseurl }}/data/2017/) (HETIC P2018)
+*Un monde de données (HETIC H4)*
+
+* [Data 2016]({{ site.baseurl }}/data/2016/) (P2017)
+* [Data 2017]({{ site.baseurl }}/data/2017/) (P2018)
   * [Perfectionnement 2017]({{ site.baseurl }}/perfectionnement/2017/)
 
+*Webmining (HETIC Mastère data)*
+
+* [Webmining 2018]({{ site.baseurl }}/webmining/2018/)
