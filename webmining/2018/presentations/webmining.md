@@ -294,4 +294,61 @@ Le scraping est une pratique qui n'est jamais dénuée d’ironie.
 
 ## Le cambouis
 
-EchoJS => Hackernews => le TP perfectionnement 1. => page avec load ajax des data => OGP (need auth)
+Au menu:
+
+1. Etape 1: [EchoJS](http://www.echojs.com/)
+2. Etape 2: [HackerNews](https://news.ycombinator.com/) 
+3. Etape 3: [HackerNews PWA](https://react-hn.kristoferbaxter.com/)
+4. Etape 4: [Le cinéma français](http://www.cinema-francais.fr/)
+5. Etape 5: L'OGP
+6. Etape 6: Fiabilité et scalabilité
+
+===
+
+## 1) EchoJS
+
+*Tout est simple dans le meilleur des mondes*
+
+[Site](http://www.echojs.com/)
+
+===
+
+## 2) Hacker News
+
+*Des turpitudes du markup web*
+
+[Site](https://news.ycombinator.com/)
+
+Note: La difficulté réside dans le markup inbuvable.
+
+===
+
+## 3) Hacker News PWA
+
+*Le web moderne et ses challenges*
+
+[Site](https://react-hn.kristoferbaxter.com/)
+
+Note: Soit rétro-ingénierie de l'API, soit émulation de navigateur.
+
+===
+
+## 4) Le cinéma français
+
+*Le web, c'est sale...*
+
+[Site](http://www.cinema-francais.fr/)
+
+Note: Les problèmes d'encodage etc. Premières bases de crawling avec queue de processing et conservation des pages déjà récupérées?
+
+===
+
+## 5) L'OGP
+
+*Un peu de challenge?*
+
+Note: authentification et stratégie.
+
+===
+
+TODO: les contre-mesures.
