@@ -327,7 +327,7 @@ Note: La difficulté réside dans le markup inbuvable.
 
 *Le web moderne et ses challenges*
 
-[Site](https://react-hn.kristoferbaxter.com/)
+[Site](https://angular2-hn.firebaseapp.com)
 
 Note: Soit rétro-ingénierie de l'API, soit émulation de navigateur.
 
