@@ -282,16 +282,6 @@ Hide yo data, bitches! Des données ne sont **JAMAIS** à l’abri si l’on peu
 
 ===
 
-## Ironie
-
-Les API du web sémantique (BNF), par exemple, sont tellement complexes qu’il est souvent plus facile de scraper leur site que de comprendre leur API.
-
-Le scraping est une pratique qui n'est jamais dénuée d’ironie.
-
-**Exemple**: l'entreprise ou institution incapable de vous mettre à disposition ses données.
-
-===
-
 ## Le cambouis
 
 Au menu:
@@ -339,7 +329,7 @@ Note: Soit rétro-ingénierie de l'API, soit émulation de navigateur.
 
 [Site](http://www.cinema-francais.fr/)
 
-Note: Les problèmes d'encodage etc. Premières bases de crawling avec queue de processing et conservation des pages déjà récupérées?
+Note: Les problèmes d'encodage etc. Premières bases de crawling avec queue de processing et conservation des pages déjà récupérées? Parsing complexe des noms non-structurés. Le sleep pour éviter la DDOS.
 
 ===
 
@@ -351,4 +341,131 @@ Note: authentification et stratégie.
 
 ===
 
-TODO: les contre-mesures.
+<h2 style="text-align: center;">Comment emmerde-t-on les scrapers?</h2>
+
+===
+
+## Les écueils
+
+Les serveurs peuvent tenter de vous empêcher de les scraper en détectant votre `User-Agent`, en vous imposant des quotas ou en vous piègeant dans des tarpits.
+
+**Solution**: le spoofing, le throttling.
+
+===
+
+## Digression: les DDOS
+
+Fonctionnement d'un serveur apache.
+
+Fonctionnement d'un serveur nginx.
+
+Le slow loris.
+
+===
+
+## Les écueils
+
+Scraping statique vs. dynamique: Emuler un navigateur n’est pas simple.
+
+L’authentification (essayez de scraper Google ou Facebook, juste pour voir).
+
+**Solution**: phantomjs, electron, jsdom etc.
+
+===
+
+## Les écueils
+
+Le markup de la page peut changer dans le temps et casser vos heuristiques.
+
+**Solution**: menacer les webmasters responsables.
+
+**Bonus**: le markup obfusqué.
+
+===
+
+## Mais c’est légal ça?
+
+===
+
+**TL;DR**: oui et non.
+
+Le scraping est une question alégale. (Seulement quelques jurisprudences)
+
+En soit la pratique elle-même est légale. En quoi cela diffère-t-il d’un internaute accédant à des données publiques (vous avez juste codé un stagiaire)?
+
+En réalité c’est la réutilisation des données après qui pose problème. (CGU) (Droits d’auteur)
+
+**Exemple**: si vous scrapez les articles d'un journal pour les revendre dans le votre, ceci est illégal.
+
+===
+
+## Application
+
+* Comparateurs de prix.
+* Besoin de données ponctuelles pour pallier à un Open Data déficient.
+* Recherche: OMS
+* Google est le plus grand scraper du monde et ne se gène vraiment pas… (les encarts)
+
+===
+
+## Ironie
+
+Les API du web sémantique (BNF), par exemple, sont tellement complexes qu’il est souvent plus facile de scraper leur site que de comprendre leur API.
+
+Le scraping est une pratique qui n'est jamais dénuée d’ironie.
+
+**Exemple**: l'entreprise ou institution incapable de vous mettre à disposition ses données.
+
+===
+
+## Le crawling
+
+*To crawl*: verbe anglais signifiant ramper.
+
+Parcourir le web à l’aide d’un programme (bot, spider) en stockant deux choses: les pages parcourues et les liens entre elles.
+
+Leur but est d’indexer "tout" ou partie du web.
+
+Cela va lentement constituer un graphe.
+
+Une idée d’application?
+
+===
+
+## Exemples
+
+Depuis Google, les moteurs de recherches sont des crawlers.
+
+Linkfluence: crawler combiné à de la collecte de données des médias sociaux: ontologie du web business.
+
+===
+
+<!-- .slide: data-background-iframe="http://hyphe.medialab.sciences-po.fr/" -->
+
+===
+
+[Link](http://hyphe.medialab.sciences-po.fr/)
+
+===
+
+## Scraping vs. Crawling
+
+Deux oppositions différentes:
+
+1. **Scraping**: on souhaite récupérer des données structurées et précises. <br>**Crawling**: on souhaite récupérer beaucoup de données non structurées.
+<hr>
+2. **Scraping**: juste le processus d’extraction de la donnée depuis sa souche visuelle. <br>**Crawling**: le fait d’aller chercher les URLs et de naviguer sur le web.
+
+===
+
+## robots.txt
+
+Juste une convention...
+
+Personne ne vous oblige à le respecter.
+
+===
+
+## [rel=nofollow]
+
+Pareil...
