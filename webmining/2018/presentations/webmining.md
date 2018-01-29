@@ -329,7 +329,7 @@ Note: Soit rétro-ingénierie de l'API, soit émulation de navigateur.
 
 [Site](http://www.cinema-francais.fr/)
 
-Note: Les problèmes d'encodage etc. Premières bases de crawling avec queue de processing et conservation des pages déjà récupérées? Parsing complexe des noms non-structurés. Le sleep pour éviter la DDOS.
+Note: Les problèmes d'encodage etc. Premières bases de crawling avec queue de processing et conservation des pages déjà récupérées? Parsing complexe des noms non-structurés. Le sleep pour éviter la DDOS. Les b dans les a et l'inverse. Générer les urls soi-même.
 
 ===
 
