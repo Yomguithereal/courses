@@ -8,7 +8,7 @@
 
 ## Url du cours
 
-[http://yomguithereal.github.io/courses/data/2017/3.html](http://yomguithereal.github.io/courses/data/2017/3.html)
+[http://bit.ly/hetic-data-2018](http://bit.ly/hetic-data-2018)
 
 ===
 

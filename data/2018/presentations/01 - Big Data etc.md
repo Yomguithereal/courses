@@ -8,7 +8,7 @@
 
 ## Url du cours
 
-[http://yomguithereal.github.io/courses/data/2018/1.html](http://yomguithereal.github.io/courses/data/2018/1.html)
+[http://bit.ly/hetic-data-2018](http://bit.ly/hetic-data-2018)
 
 ===
 
@@ -40,12 +40,13 @@ Ingénieur en programmation informatique
 * Analyse statistique & visuelle des graphes
 * Traitement automatique du langage & logique floue
 * Web mining (crawling & scraping)
+* Machine learning
 
 #### Langages
 
-JavaScript, Clojure, Python, Ruby
+JavaScript, Python, Clojure, Ruby
 
-Note: L'objectif c'est qu'à la fin de ce cours vous compreniez ce que représentent dire ces domaines d'expertise.
+Note: L'objectif c'est qu'à la fin de ce cours vous compreniez ce que représentent ces domaines d'expertise.
 
 ===
 
@@ -88,8 +89,11 @@ Dans un monde parfait:
 
 * **Cours n°1**: Big Data, Machine learning
 * **Cours n°2**: Logique floue, TAL, Webmining
-* **Cours n°3**: Open Data
-* **Cours n°4**: Datavisualisation
+* **Cours n°3**: Datavisualisation
+
+---
+
+* **Cours n°4**: Open Data
 
 ===
 
@@ -97,9 +101,9 @@ Dans un monde parfait:
 
 Vous expliquer des concepts et vous ouvrir à des thématiques parfois obscures (voire fumeuses...)
 
-Donner un visage à des mots que vous entendez tous les jours mais pourtant vaporeux: **Big Data**, **Data mining**, **Web mining**, **Machine learning** etc.
+Donner un visage à des mots que vous entendez tous les jours mais pourtant vaporeux: **Big Data**, **Data mining**, **Web mining**, **Machine learning**, **Information retrieval** etc.
 
-Vous montrer que ces choses existent pour qu'elles deviennent de nouveaux vecteurs professionnels pour vous.
+Vous montrer que ces choses existent pour qu'elles deviennent de nouvelles possibilités professionnelles pour vous.
 
 ===
 
@@ -113,7 +117,7 @@ Gardez à l’esprit que je ne vous donne ici que des **pistes à explorer** et 
 
 Cela va être dense et parfois même légèrement technique. N’ayez pas peur des **digressions**, on va faire:
 
-* des langues mortes
+* de langues mortes
 * de la philosophie
 * de la littérature
 * de la théologie
@@ -136,6 +140,16 @@ Exerçons notre sens critique!
 * N'hésitez pas à m'interrompre si vous trouvez que je raconte des **inepties**.
 * Ralentissez-moi si je parle trop vite.
 * Ne fuyez pas si j'utilise un vocabulaire **acroamatique** ou **abscons**.
+
+===
+
+## Une tentative périlleuse
+
+Notes collaboratives:
+
+[http://bit.ly/hetic-data-2018-notes1](http://bit.ly/hetic-data-2018-notes1)
+
+Le premier groupe essuie les plats (pas de bol...)
 
 ===
 
@@ -190,6 +204,7 @@ Il parait que j'ai un partiel à vous donner?
 * Cours en *information retrieval*?
 * Structures de données?
 * Cours de MM. Fongue & Gourven?
+* Cours de M. Serval et alii.
 * Projet de dataviz l'année dernière?
 
 ===
@@ -252,6 +267,26 @@ Un **amas** extrêmement important de données.
 Si cela tient sur vos ordinateurs, on ne parlera pas de **Big data**.
 
 **Point**
+
+===
+
+## De l'eau dans mon vin
+
+Les 3 V du Big data:
+
+* **V**olume
+* **V**élocité
+* **V**ariété
+
+===
+
+## Du vin dans mon vin
+
+Les 3 V du Big data:
+
+* **V**olume (on est dedans)
+* **V**élocité (corrélé au volume)
+* **V**ariété (sigh)
 
 ===
 
@@ -360,7 +395,7 @@ Quelques exemples...
 
 ## Un marché en expansion
 
-Le Big data est une nouvelle source substantielle de profits.
+Le Big data est une source substantielle de profits.
 
 Une fois de plus, tous les organismes économiques y vont de leurs conjectures sur le sujet.
 
@@ -377,7 +412,7 @@ Des nombres en valant d’autres (2, le retour):  
 * 4,2 millions d’emplois d’ici 2015 
 * 54,3 milliards de chiffre d’affaire horizon 2017
 
-Il est tout à fait possible de construire un business autour de la donnée (mais de moins en moins dans la vente de données).
+Il est tout à fait possible de construire un business autour de la donnée (mais de moins en moins dans la vente de données) et l'intelligence artificielle (qui se nourrit de données).
 
 ===
 
@@ -416,6 +451,8 @@ Host: www.moddb.com 
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36
 ```
 
+Avec des règles ou des données?
+
 ===
 
 ## Data vs. Calcul
@@ -436,7 +473,7 @@ Utiliser les règles phonétiques anglaises: 
 
 Ou utiliser un dictionnaire?
 
-(N.B.: Eternel problème de computation vs. mémoire)
+(N.B.: Eternel problème de calcul vs. mémoire)
 
 ===
 
@@ -484,6 +521,16 @@ Le Big data est surtout le reflet d’une prise de conscience des acteurs et d�
 Le Big data a évidemment des limites et ne pose que peu la question des données floues ou trop peu nombreuses (pourtant intéressantes mais encore plus complexes à analyser, paradoxalement).
 
 Parfois la richesse des données se trouve bien plus dans les croisements que dans la masse.
+
+===
+
+## Le manque à gagner
+
+Aussi, de nombreuses institutions ont longtemps collecté de très nombreuses données sans être certaines de leur utilisation (ex: le ministère des armées).
+
+Ne pas valoriser ces données représente un manque à gagner ainsi qu'un coût, quoique presque négligeable, en stockage.
+
+Le Big data prétend trouver de la valeur à ces données jusqu'ici poussiéreuses.
 
 ===
 
@@ -895,7 +942,7 @@ Problèmes à résoudre: 
 * I/O, temps d’accès aux données 
 * Rigidité des schemas
 
-Analogie développement:  Un objet JavaScript
+Analogie développement:  Un objet JavaScript.
 
 **Exemples**:  Redis, Memcache, Riak, Couchbase
 
@@ -1575,7 +1622,7 @@ Exemple de l'index en SQL.
 
 But du jeu: faire « apprendre » la machine.
 
-N’est en général possible que lorsque l’on possède beaucoup de données concernant un problème. (Big Data, tout ça...)
+N’est en général possible que lorsque l’on possède beaucoup de données concernant un problème. (C'est là que le Big data devient pratique!)
 
 (Il existe des moyens d’estimer le seuil critique à atteindre mais nous n’en discuterons pas ici).
 
@@ -1619,9 +1666,19 @@ Ce qu'on vient de faire c'est un travail de classification.
 
 On a des données qui sont classifiées (acère ou pas).
 
-Le machine learning, c'est utiliser un algorithme pour trouver la réponse à la question: "Ce nouvel animal, que tu ne connais pas, est-il acéreux?".
+Le machine learning, c'est utiliser un algorithme pour entraîner un modèle statistique capable de répondre à la question: "Ce nouvel animal, que tu ne connais pas, est-il acéreux?".
 
-Le résultat de l'algorithme est un "modèle", une représentation statistique/mathématique de ce qu'est essentiellement un animal acéreux (!peut-être faux!).
+===
+
+## Attention!
+
+Le modèle que l'on entraîne peut être faux.
+
+Les données passées en entrée sont très importantes!
+
+Recommençons l'exercice avec des données différentes.
+
+Note: ne montrer que les 2 premières images.
 
 ===
 
@@ -1681,8 +1738,6 @@ Il est courant de catégoriser les algorithmes de machine learning soit pas mét
 ===
 
 ## La régression linéaire
-
-C'est une forme de machine learning, oui. Flou des contours.
 
 Méthode statistique classique.
 
@@ -1783,7 +1838,7 @@ S’inspirer du fonctionnement du cerveau humain.
 
 Le perceptron est en réalité un neurone.
 
-Il est ensuite possible de créer des réseaux de neurones.
+Il est ensuite possible de créer des réseaux de ces neurones.
 
 Le deep learning est "deep" parce que les réseaux créés sont profonds et ont de multiples couches.
 
@@ -1865,7 +1920,21 @@ Sans intérêt mais cela vous montre la logique des algorithmes génétiques.
 
 What kind of magic is that?
 
+TODO: montrer un algo non-supervisé
+
 On en verra certains la semaine prochaine.
+
+===
+
+## DQN - DeepMind
+
+Algorithme capable d'apprendre à jouer à des jeux vidéo Atari.
+
+Fonctionne sans données préalables mais grâce à un système de stimuli (*non supervisé*).
+
+Son objectif est de faire grimper les nombres (littéralement).
+
+Fonction de coût comme pour les algorithmes génétiques.
 
 ===
 
@@ -1916,18 +1985,6 @@ On est encore très loin d'une intelligence artificielle au sens de la science f
 Que des algorithmes mathématiques/statistiques qui, ainsi qu'on l'a vu, véhiculent nos préconceptions sur les objets étudiés.
 
 C'est moins le cas avec le deep learning mais on ne parle toujours pas d'intelligence générale (ne ciblant pas un problème en particulier).
-
-===
-
-## DQN - DeepMind
-
-Algorithme capable d'apprendre à jouer à des jeux vidéo Atari.
-
-Fonctionne sans données préalables mais grâce à un système de stimuli (*non supervisé*).
-
-Son objectif est de faire grimper les nombres (littéralement).
-
-Fonction de coût comme pour les algorithmes génétiques.
 
 ===
 
