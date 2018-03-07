@@ -33,20 +33,26 @@ Guillaume Plique ([Yomguithereal](https://github.com/Yomguithereal) sur github.)
 
 ## Métier
 
-Ingénieur en programmation informatique
+Ingénieur de recherche
 
 #### Domaines
 
 * Analyse statistique & visuelle des graphes
+* Algorithmie et structures de données  
 * Traitement automatique du langage & logique floue
 * Web mining (crawling & scraping)
 * Machine learning
 
+Note: L'objectif c'est qu'à la fin de ce cours vous compreniez ce que représentent ces domaines d'expertise.
+
+===
+
 #### Langages
 
-JavaScript, Python, Clojure, Ruby
-
-Note: L'objectif c'est qu'à la fin de ce cours vous compreniez ce que représentent ces domaines d'expertise.
+* JavaScript
+* Python
+* Clojure
+* Ruby
 
 ===
 
@@ -115,9 +121,9 @@ Gardez à l’esprit que je ne vous donne ici que des **pistes à explorer** et 
 
 ## Pie jesu domine
 
-Cela va être dense et parfois même légèrement technique. N’ayez pas peur des **digressions**, on va faire:
+Cela va être **très** dense et souvent technique (mais compréhensible par tous). N’ayez pas peur des **digressions**, on va faire:
 
-* de langues mortes
+* des langues mortes
 * de la philosophie
 * de la littérature
 * de la théologie
@@ -1748,12 +1754,62 @@ Il est courant de catégoriser les algorithmes de machine learning soit pas mét
 
 ===
 
+<p align="center">
+  <img src="img/ml-field.png" class="plain" />
+</p>
+
+===
+
 ## Types de problèmes
 
 * Régression
 * Classification
 * Partitionnement
 * etc.
+
+===
+
+# Préparer les données
+
+===
+
+## Feature extraction
+
+Les données en entrée doivent être rationnalisées et selectionnées.
+
+Souvent il faut réduire les points de données à des vecteurs pouvant exister dans un espace euclidien.
+
+===
+
+## Vectorisation: un prêt
+
+Individu male, 43 ans, 35k de revenu annuel
+
+```js
+[1, 43, 35]
+```
+
+Vecteur 3 dimensions.
+
+=== 
+
+## Vectorisation: le texte
+
+Modèle BOW, CBOW, TF/IDF.
+
+```js
+'Le chat mange la souris.'
+'La souris mange le fromage.'
+
+{le: 1, chat: 2, mange: 3, la: 4, souris: 5, fromage: 6}
+
+[1, 1, 1, 1, 1, 0]
+[1, 0, 1, 1, 1, 1]
+```
+
+Sparse vectors. Enormément de dimensions.
+
+High dimensionality curse.
 
 ===
 
@@ -1803,6 +1859,8 @@ Inventé en 1957 par Franck Rosenblatt.
 
 Le plus "simple" des algorithmes de machine learning (pondération linéaire).
 
+Produit scalaire des poids et des features => activation? (heaviside step function)
+
 ===
 
 ## Aparté: les algos itératifs
@@ -1815,6 +1873,16 @@ Le contraire esr un algo déterministe ayant une fin prouvable (qui peut être t
 
 <p align="center">
   <img src="img/perceptron.png" class="plain" />
+</p>
+
+Exemple en deux dimensions.
+
+===
+
+## La descente de gradient stochastique
+
+<p align="center">
+  <img src="img/learning-rate.jpg" class="plain" />
 </p>
 
 ===
@@ -1892,7 +1960,7 @@ On va accumuler des couches de neurones successives et observer une montée prog
 
 ## Le deep learning
 
-Intuitivement, le réseau va opérer des combinaisons de facteurs (expemple immobilier encore) et composer des concepts de plus en plus abstraits, au fur et à mesure que l'on s'enfonce dans les couches successives.
+Intuitivement, le réseau va opérer des combinaisons de facteurs et composer des concepts de plus en plus abstraits, au fur et à mesure que l'on s'enfonce dans les couches successives.
 
 Exemple pour de la reconnaissance d'image:
 
@@ -1907,13 +1975,70 @@ Exemple pour de la reconnaissance d'image:
 
 ===
 
+## Les facteurs latents
+
+Les réseaux de neurones sont capables d'abstraire des concepts en en découvrant les facteurs latents.
+
+Le problème: il est extrêmement compliqué de comprendre comment ces réseaux forment leur abstraction.
+
+Les erreurs curieuses et les moyens de tromper ces réseaux sont nombreux.
+
+===
+
+## Overfitting
+
+Comme tout algorithme de machine learning, les réseaux de neurones sont sujets à l'overfitting.
+
+Des stratégies existent pour le mitiger.
+
+Exemple: les variations génératives d'images.
+
+===
+
+## Réutiliser les couches
+
+Puisque les réseaux de neurones sont formés de couches successives, comprenant différents niveaux d'abstraction, il est possible de réutiliser ses couches.
+
+Prendre un réseau entraîné sur une variété énorme d'images et le reconfigurer avec d'autres pour résoudre notre problème du début.
+
+On parle alors d'architecture pour les réseaux de neurones et la manière dont les différentes couches successives sont conçues.
+
+===
+
+## Cependant
+
+Il n'y a pas vraiment de différence conceptuelle entre un perceptron, une régression linéaire etc. et un réseau de neurones.
+
+La tâche est clairement définie et "notée" par une fonction de coût.
+
+L'avantage du réseau de neurones est cependant double:
+
+1. Capable d'abstraction.
+2. Peut modéliser n'importe quelle fonction, même non-linéaire.
+
+===
+
+## Liens
+
+Pour comprendre visuellement l'activation des couches:
+
+[http://yosinski.com/deepvis](http://yosinski.com/deepvis)
+
+[https://distill.pub/2017/feature-visualization/](https://distill.pub/2017/feature-visualization/)
+
+Pour plonger dans le deep learning "facilement":
+
+[http://course.fast.ai/](http://course.fast.ai/)
+
+===
+
 ## Quid des algorithmes non supervisés
 
 What kind of magic is that?
 
 ===
 
-## K-moyennes - partitionnement
+## K-moyennes
 
 `k-means` en anglais.
 
@@ -1994,46 +2119,6 @@ Fonction de coût comme pour les algorithmes génétiques.
 
 ===
 
-## Feature extraction
-
-Les données en entrée doivent être rationnalisées et selectionnées.
-
-Souvent il faut réduire les points de données à des vecteurs pouvant exister dans un espace euclidien.
-
-===
-
-## Vectorisation: un prêt
-
-Individu male, 43 ans, 35k de revenu annuel
-
-```js
-[1, 43, 35]
-```
-
-Vecteur 3 dimensions.
-
-=== 
-
-## Vectorisation: le texte
-
-Modèle BOW, CBOW, TF/IDF.
-
-```js
-'Le chat mange la souris.'
-'La souris mange le fromage.'
-
-{le: 1, chat: 2, mange: 3, la: 4, souris: 5, fromage: 6}
-
-[1, 1, 1, 1, 1, 0]
-[1, 0, 1, 1, 1, 1]
-```
-
-Sparse vectors. Enormément de dimensions.
-
-High dimensionality curse.
-
-===
-
 ## Pour résumer
 
 Deux points où la machine est finalement assez humaine:
@@ -2051,7 +2136,7 @@ On est encore très loin d'une intelligence artificielle au sens de la science f
 
 Que des algorithmes mathématiques/statistiques qui, ainsi qu'on l'a vu, véhiculent nos préconceptions sur les objets étudiés.
 
-C'est moins le cas avec le deep learning mais on ne parle toujours pas d'intelligence générale (ne ciblant pas un problème en particulier).
+C'est moins le cas avec le deep learning mais on ne parle toujours pas d'intelligence générale (ne ciblant pas un problème en particulier ou ayant une "conscience").
 
 Note: Ceci nous amène à des questions d'éthiques.
 
@@ -2086,6 +2171,16 @@ En Nouvelle-Zélande, les douanes ont entraîné un modèle ayant pour but de re
 Le modèle fut entraîné exclusivement sur des personnes blanches.
 
 Le modèle part donc du principe que les personnes bridées ferment les yeux...
+
+===
+
+## Corrélation n'est pas causation
+
+[Spurious Correlations](http://www.tylervigen.com/spurious-correlations)
+
+Aussi, un algorithme a de forte chance d'être essentialiste et de reproduire des biais.
+
+Exemple: la justice prédictive, la pauvreté et la couleur de peau.
 
 ===
 
