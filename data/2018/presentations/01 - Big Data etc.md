@@ -143,13 +143,36 @@ Exerçons notre sens critique!
 
 ===
 
+## Acroamatique
+
+Point etymologie n°1
+
+* Du grec, *entendre* (du moins une manière de le dire).
+* Désigne par extension le savoir véhiculé de manière orale.
+* Puis désigne les cours d'Aristote dont nous avons perdu la trace (*Le nom de la rose*, Umberto Ecco).
+* Signifie aujourd'hui mystérieux, ésotérique, réservé aux initiés.
+
+Note: Aristote et ses écrits.
+
+===
+
+## Open Source
+
+Le code du cours est disponible en ligne sur ce repo:
+
+[https://github.com/Yomguithereal/courses](https://github.com/Yomguithereal/courses)
+
+N'hésitez pas à soumettre une fusio-demande (sic.) en cas de faute d'orthographe inopinée ou si vous souhaitez clarifier le cours.
+
+===
+
 ## Une tentative périlleuse
 
 Notes collaboratives:
 
-[http://bit.ly/hetic-data-2018-notes1](http://bit.ly/hetic-data-2018-notes1)
+Groupe n°1: [http://bit.ly/hetic-data-2018-notes1-1](http://bit.ly/hetic-data-2018-notes1-1)
 
-Le premier groupe essuie les plats (pas de bol...)
+Groupe n°2: [http://bit.ly/hetic-data-2018-notes1-2](http://bit.ly/hetic-data-2018-notes1-2)
 
 ===
 
@@ -162,19 +185,6 @@ Du coup vous avez à la fois de la chance d'avoir un meilleur cours que ceux de 
 Mais vous avez probablement un cours plus mauvais que celui de l'année d'après.
 
 `¯\_(ツ)_/¯`
-
-===
-
-## Acroamatique
-
-Point etymologie n°1
-
-* Du grec, *entendre* (du moins une manière de le dire).
-* Désigne par extension le savoir véhiculé de manière orale.
-* Puis désigne les cours d'Aristote dont nous avons perdu la trace (*Le nom de la rose*, Umberto Ecco).
-* Signifie aujourd'hui mystérieux, ésotérique, réservé aux initiés.
-
-Note: Aristote et ses écrits.
 
 ===
 
@@ -1608,6 +1618,16 @@ Exemple de l'index en SQL.
 
 ===
 
+## SIMD & GPU
+
+Je vous ai dit tout à l'heure qu'un CPU ne pouvait pas paralléliser des calculs. Ce n'est pas tout à fait vrai.
+
+Plus loin que la loi de Moore.
+
+Les processeurs quantiques.
+
+===
+
 # Le machine learning
 
 ===
@@ -1737,6 +1757,10 @@ Il est courant de catégoriser les algorithmes de machine learning soit pas mét
 
 ===
 
+# La régression
+
+===
+
 ## La régression linéaire
 
 Méthode statistique classique.
@@ -1759,15 +1783,33 @@ Méthode statistique classique.
 
 ===
 
+## Régression multivariée
+
+Augmentons le nombre de dimensions.
+
+<center>
+  <img src="img/multivariate.png" />
+</center>
+
+===
+
+# La classification
+
+===
+
 ## Le perceptron
 
 Inventé en 1957 par Franck Rosenblatt.
 
 Le plus "simple" des algorithmes de machine learning (pondération linéaire).
 
-Il est dit **itératif** car il fonctionne par itérations successives jusqu’à ce que l’on considère son résultat satisfaisant (ce qui peut potentiellement ne jamais arriver).
+===
 
-Contrairement à un algorithme déterministe qui a une fin (qui peut être très longue à atteindre, par ailleurs).
+## Aparté: les algos itératifs
+
+Un algo est itératif quand il fonctionne par itérations successives jusqu’à ce que l’on considère son résultat satisfaisant (ce qui peut potentiellement ne jamais arriver).
+
+Le contraire esr un algo déterministe ayant une fin prouvable (qui peut être très longue à atteindre, par ailleurs).
 
 ===
 
@@ -1783,9 +1825,11 @@ La banque et les prêts.
 
 Algèbre linéaire sur de multiples dimensions (une par variable).
 
+On ne classifie qu'en deux catégories.
+
 ===
 
-## L’OCR (Optical Character Recognition)
+## OCR
 
 1. Séparer les charactères
 2. Analyser leur structure.
@@ -1793,6 +1837,8 @@ Algèbre linéaire sur de multiples dimensions (une par variable).
 <p align="center">
   <img src="img/ocr.jpeg" class="plain" />
 </p>
+
+On classifie plusieurs catégories.
 
 Note: jeu de données entrainé à la main, essayant de formaliser ce qu'est une lettre
 
@@ -1806,29 +1852,21 @@ Très bonne explication visuelle sur le site R2D3:
 
 ===
 
-## Les algorithmes online
+## Aparté: les algos online
 
-Souvent, l'on souhaite calculer un modèle à partir de données beaucoup trop importantes pour tenir dans la RAM (BigData coucou!).
+Souvent, l'on souhaite calculer un modèle à partir de données beaucoup trop importantes pour tenir dans la RAM (BigData nous revoilà).
 
-Un algorithme est dit online quand il ne nécessite pas d'accéder à une représentation totale en mémoire vive des données et qu'il peut se contenter de lire un flux de données sans en altérer le résultat.
-
-===
-
-## K-moyennes
-
-`k-means` en anglais.
-
-Algorithme de partitionnement (on en reverra d'autres la semaine prochaine).
-
-Comment cela marche-t-il?
-
-Problème?
+Un algorithme est dit online quand il ne nécessite pas d'accéder à une représentation totale en mémoire vive des données et qu'il peut se contenter de lire un flux de données pour opérer.
 
 ===
 
-<p align="center">
-  <img src="img/k-means.png" class="plain" />
-</p>
+## Peut-on toujours séparer linéairement?
+
+===
+
+## Kernel trick
+
+<img src="img/kernel-trick.jpg" class="plain" />
 
 ===
 
@@ -1869,17 +1907,39 @@ Exemple pour de la reconnaissance d'image:
 
 ===
 
-## L'anamnèse
+## Quid des algorithmes non supervisés
 
-Etymologie (la reminiscence).
+What kind of magic is that?
 
-Platon et le retour au monde des idées.
+===
 
-Petit retour sur la notion de donné et de construit.
+## K-moyennes - partitionnement
 
-Kant et les catégories de l'entendement.
+`k-means` en anglais.
 
-(A la messe ça n'a rien à voir, c'est juste le moment où l'on rappelle les paroles du Christ lors de la Cène).
+Algorithme de partitionnement (on en reverra d'autres la semaine prochaine).
+
+Comment cela marche-t-il?
+
+Problème?
+
+===
+
+<p align="center">
+  <img src="img/k-means.png" class="plain" />
+</p>
+
+===
+
+## Les hyperparamètres
+
+L'algo k-means demande de choisir un paramètre `k` qui va extrêmement influencer le résultat de l'algorithme.
+
+On appelle cela un "hyperparamètre".
+
+Parfois, le machine learning ressemble un peu à une forme d'artisanat.
+
+C'est d'autant plus vrai avec le deep learning.
 
 ===
 
@@ -1916,13 +1976,9 @@ Sans intérêt mais cela vous montre la logique des algorithmes génétiques.
 
 ===
 
-## Quid des algorithmes non supervisés
+## Entropie et optima locaux
 
-What kind of magic is that?
-
-TODO: montrer un algo non-supervisé
-
-On en verra certains la semaine prochaine.
+Maximiser/minimiser une fonction multimodale.
 
 ===
 
@@ -1978,16 +2034,6 @@ High dimensionality curse.
 
 ===
 
-## L'intelligence artificielle?
-
-On est encore très loin d'une intelligence artificielle au sens de la science fiction.
-
-Que des algorithmes mathématiques/statistiques qui, ainsi qu'on l'a vu, véhiculent nos préconceptions sur les objets étudiés.
-
-C'est moins le cas avec le deep learning mais on ne parle toujours pas d'intelligence générale (ne ciblant pas un problème en particulier).
-
-===
-
 ## Pour résumer
 
 Deux points où la machine est finalement assez humaine:
@@ -1999,13 +2045,25 @@ La seule chose que la machine "apprend", c'est un modèle statistique.
 
 ===
 
+## L'intelligence artificielle?
+
+On est encore très loin d'une intelligence artificielle au sens de la science fiction.
+
+Que des algorithmes mathématiques/statistiques qui, ainsi qu'on l'a vu, véhiculent nos préconceptions sur les objets étudiés.
+
+C'est moins le cas avec le deep learning mais on ne parle toujours pas d'intelligence générale (ne ciblant pas un problème en particulier).
+
+Note: Ceci nous amène à des questions d'éthiques.
+
+===
+
 ## Ethique & données d'entrainement
 
 On peut facilement être conduit à penser que le travail purement mathématique de ces algorithmes ne pose pas de questions éthiques.
 
 C'est faux.
 
-Le choix des données et la méthode employée produit souvent des biais néfastes pour des pans entiers de population.
+Le choix des données et la méthode employée est victime de nombreux biais.
 
 ===
 
@@ -2028,14 +2086,6 @@ En Nouvelle-Zélande, les douanes ont entraîné un modèle ayant pour but de re
 Le modèle fut entraîné exclusivement sur des personnes blanches.
 
 Le modèle part donc du principe que les personnes bridées ferment les yeux...
-
-===
-
-## Limites de l'apprentissage
-
-La plupart des algos sont capables de revoir leur modèle au fur et à mesure que de nouvelles données sont entrées dans le système.
-
-Dérives de biais: fautes de Google Traduction, des bots en général etc.
 
 ===
 
