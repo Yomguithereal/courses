@@ -31,11 +31,25 @@ Guillaume Plique ([Yomguithereal](https://github.com/Yomguithereal) sur github.)
 
 ===
 
+<!-- .slide: data-background="img/medialab.jpg" reversed="true" -->
+
+## Le médialab
+
+Laboratoire de recherche rassemblant les profils suivants:
+
+* Des **chercheurs** en sciences humaines
+* Des **designers**
+* Des **ingénieurs**
+
+===
+
 ## Métier
 
 Ingénieur de recherche
 
-#### Domaines
+===
+
+## Domaines
 
 * Analyse statistique & visuelle des graphes
 * Algorithmie et structures de données  
@@ -47,24 +61,12 @@ Note: L'objectif c'est qu'à la fin de ce cours vous compreniez ce que représen
 
 ===
 
-#### Langages
+## Langages
 
 * JavaScript
 * Python
 * Clojure
 * Ruby
-
-===
-
-<!-- .slide: data-background="img/medialab.jpg" reversed="true" -->
-
-## Le médialab
-
-Laboratoire de recherche rassemblant les profils suivants:
-
-* Des **chercheurs** en sciences humaines
-* Des **designers**
-* Des **ingénieurs**
 
 ===
 
@@ -2065,6 +2067,10 @@ On appelle cela un "hyperparamètre".
 Parfois, le machine learning ressemble un peu à une forme d'artisanat.
 
 C'est d'autant plus vrai avec le deep learning.
+
+===
+
+## Les arbres de décisions
 
 ===
 
