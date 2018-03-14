@@ -12,6 +12,14 @@
 
 ===
 
+## Notes collaboratives
+
+Groupe n°1: [http://bit.ly/hetic-data-2018-notes2-1](http://bit.ly/hetic-data-2018-notes2-1)
+
+Groupe n°2: [http://bit.ly/hetic-data-2018-notes2-2](http://bit.ly/hetic-data-2018-notes2-2)
+
+===
+
 ## Préparatifs
 
 Télécharger [LibreOffice](https://fr.libreoffice.org/download/libreoffice-stable/) et [OpenRefine](http://openrefine.org/download.html).
@@ -176,11 +184,6 @@ Données **structurées**: données correctement définies par leur format. Un f
 
 ===
 
-
-<!-- .slide: data-background="img/tal.jpg" -->
-
-===
-
 ## Le TAL
 
 Was ist das?
@@ -285,9 +288,9 @@ Combinaison de lexicométrie et de cryptanalyse.
 
 ## Que sait-on?
 
-La distribution des mots suit la loi de Zipf.
+La distribution des mots suit la loi de Zipf (spoiler).
 
-La lexicométrie qu'il existe des sujets par section.
+La lexicométrie montre qu'il existe des sujets par section.
 
 Il n'y a pas vraiment de ponctuation.
 
@@ -299,7 +302,9 @@ L'ordre des mots semble de faible importance.
 
 ## Pour aller plus loin
 
-Un bref état de l'art [ici](http://www.aclweb.org/anthology/W11-1511?notdup).
+Un bref état de l'art ici:
+
+[http://www.aclweb.org/anthology/W11-1511](http://www.aclweb.org/anthology/W11-1511)
 
 ===
 
@@ -330,9 +335,7 @@ Première étape nécessaire pour le POS tagging.
 
 ## Le Punkt Tokenizer
 
-Je vous avais promis qu'on évoquerait des algos de machine learning non-supervisés.
-
-Le Punkt en est un.
+Machine learning non supervisé.
 
 Algo de tokénisation de phrases qui prend en entrée la totalité d'un corpus (ou un échantillon représentatif) et entraîne un modèle statistique capable de savoir si, dans du texte, on est en présence d'une fin de phrase ou d'une abbréviation etc.
 
@@ -374,7 +377,7 @@ Il est extrêmement difficile de trouver des règles tout à fait générales en
 
 Même en combinant des règles à des dictionnaires on n’arrive pas toujours à des solutions satisfaisantes.
 
-Cependant, il est possible d'arriver à des résultats satisfaisants sur des typologies de corpus (pluriel?) précis.
+Cependant, il est possible d'arriver à des résultats satisfaisants sur des typologies de corpus précis.
 
 Pour résumer, il est difficile de s'abstraire complètement du matériau analysé pour devenir purement générique.
 
@@ -384,9 +387,9 @@ Pour résumer, il est difficile de s'abstraire complètement du matériau analys
 
 Aujourd’hui, on utilise donc énormément le machine learning en TAL.
 
-On fait ce que l’on appelle de l’apprentissage, en taggant à la main beaucoup des corpora (la solution) existants et on laisse la machine apprendre d’elle même les règles ou du moins les appliquer sur les corpora suivants.
+On fait de l’apprentissage, en taggant à la main beaucoup des corpora existants et on laisse la machine apprendre d’elle même les règles ou du moins les appliquer sur les corpora suivants.
 
-Un perceptron marche par exemple très bien pour créer un POS Tagger.
+Un perceptron marche par exemple très bien pour créer un POS Tagger. Les arbres de décision aussi.
 
 ===
 
@@ -475,7 +478,7 @@ Normaliser une chaîne de charactère pour faciliter les comparaisons.
 
 Encore plus aggressif que la normalisation.
 
-* Tokénisation (spoiler)
+* Tokénisation
 * Déduplication
 * Tri des tokens
 
@@ -1027,6 +1030,12 @@ Ceci est justifié empiriquement *a posteriori* par la loi de Zipf.
 
 ===
 
+## Détecteur de langue
+
+Combinaison de TF/IDF et des trigrammes.
+
+===
+
 # Le data mining
 
 ===
@@ -1121,7 +1130,7 @@ Très pratique pour récupérer des données structurées sur Internet là où i
 
 Processus un peu "fourbe" qui procède d’une forme de rétro-ingénierie (désassembleur inversé) (encore une heuristique).
 
-Hide yo data, bitches! Des données ne sont JAMAIS à l’abri si l’on peut y accéder depuis son navigateur Internet (on ne peut que pourrir la vie des scrapers mais on ne les empêchera que très rarement de fonctionner).
+Hide yo data, bitches! Des données ne sont **JAMAIS** à l’abri si l’on peut y accéder depuis son navigateur Internet (on ne peut que pourrir la vie des scrapers mais on ne les empêchera que très rarement de fonctionner).
 
 ===
 
@@ -1203,13 +1212,37 @@ Les serveurs peuvent tenter de vous empêcher de les scraper en détectant votre
 
 ===
 
+## Digression: les DDOS
+
+Fonctionnement d'un serveur apache.
+
+Fonctionnement d'un serveur nginx.
+
+===
+
+<!-- .slide: data-background="img/loris.jpg" -->
+
+===
+
 ## Les écueils
 
 Scraping statique vs. dynamique: Emuler un navigateur n’est pas simple.
 
 L’authentification (essayez de scraper Google ou Facebook, juste pour voir).
 
-**Solution**: phantomjs, electron, jsdom etc.
+**Solution**: puppeteer, phantomjs, electron, selenium, jsdom etc.
+
+===
+
+## La rétro-ingénierie d'API
+
+Parfois, plus besoin de scraper grâce au web moderne.
+
+PWA HN [https://angular2-hn.firebaseapp.com/news/1](https://angular2-hn.firebaseapp.com/news/1)
+
+vs.
+
+Google Trends [https://trends.google.fr/trends/](https://trends.google.fr/trends/)
 
 ===
 
@@ -1293,6 +1326,16 @@ Deux oppositions différentes:
 Juste une convention...
 
 Personne ne vous oblige à le respecter.
+
+astuce: souvent les gens listent ce qu'il cherchent à cacher dedans
+
+Exemples: lemonde.fr + un autre
+
+===
+
+## [rel=nofollow]
+
+Pareil...
 
 ===
 
