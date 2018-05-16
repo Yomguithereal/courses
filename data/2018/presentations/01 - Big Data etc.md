@@ -182,6 +182,8 @@ Groupe n°1: [http://bit.ly/hetic-data-2018-notes1-1](http://bit.ly/hetic-data-2
 
 Groupe n°2: [http://bit.ly/hetic-data-2018-notes1-2](http://bit.ly/hetic-data-2018-notes1-2)
 
+PMD: [http://bit.ly/hetic-data-2018-notes1-pmd](http://bit.ly/hetic-data-2018-notes1-pmd)
+
 ===
 
 ## Verre à moitié vide/plein
