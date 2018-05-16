@@ -920,7 +920,7 @@ Analogie développement:  une collection JavaScript (array d'objets)
 
 ## Interlude - Le graphe
 
-Le graphe est une structure structure de données.
+Le graphe est une structure de données.
 
 Noeuds & arcs.
 
