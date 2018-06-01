@@ -172,7 +172,7 @@ Il parait que j'ai un partiel à vous donner?
 
 ## Interlude musical
 
-(Vous pouvez la main plusieurs fois)
+(Vous pouvez lever la main plusieurs fois)
 
 * Combien de **développeurs** (langages)?
 * Combien de **designers**?
