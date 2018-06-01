@@ -161,7 +161,7 @@ Une API est juste un moyen technique.
 
 Les fondements théoriques de l’Open data sont anciens.
 
-Article XV de la DDHC (seul à être aménagé dans la consitution, sigh).
+Article XV de la DDHC (seul à être aménagé dans la constitution, sigh).
 
 "La Société a le droit de demander compte à tout Agent public de son administration."
 
