@@ -316,7 +316,7 @@ Objet d’analyse retors.
 
 Comment découper le texte brut en éléments analysables?
 
-1. La tokenization 
+1. La tokenization
 2. Le POS Tagging
 
 ===
