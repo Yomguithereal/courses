@@ -13,3 +13,7 @@ title: Summary
 *Webmining (HETIC Mastère data)*
 
 * [Webmining 2018]({{ site.baseurl }}/webmining/2018/)
+
+*Record Linkage & Information Retrieval*
+
+* [Record Linkage 2019]({{ site.baseurl }}/record-linkage/2019)

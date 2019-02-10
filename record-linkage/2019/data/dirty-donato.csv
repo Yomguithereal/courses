@@ -1,0 +1,823 @@
+weight,Y,concept,LABEL T,typology,occ,X_max_tot
+-2,21,airquallity,@blanchecameron,user,4,-334
+2,21,airquallity,cooling,hash,4,334
+2,23,airquallity,greeninfrastructure,hash,16,334
+2,22,airquallity,resilience,hash,6,334
+-5,79,arbre,@a_arbres,user,10,-133,6
+-5,78,arbre,@anne_hidalgo,user,262,-133,6
+-16,72,arbre,@baratti_elbaz,user,29,-41,75
+-6,,arbre,@biodiver_cite,user,26,-111,3333333
+-2,71,arbre,@chrystelou,user,5,-334
+-2,72,arbre,@cosyworking,user,2,-334
+-2,,arbre,@emmabir,user,3,-334
+-2,77,arbre,@enedis_paris,user,15,-334
+-2,79,arbre,@getchtchern,user,2,-334
+-7,75,arbre,@hugoclement,user,11,-95,42857143
+-6,76,arbre,@la_breche,user,27,-111,3333333
+-2,76,arbre,@matuemisako,user,2,-334
+-2,75,arbre,@oliviercompes,user,2,-334
+-2,,arbre,@paris,user,1013,-334
+-5,77,arbre,@paris,user,1013,-133,6
+-3,,arbre,@parisnature,user,26,-222,6666667
+-6,78,arbre,@parisnature,user,26,-111,3333333
+-17,71,arbre,@pkomites,user,170,-39,29411765
+-2,,arbre,@riegisabelle,user,3,-334
+-2,74,arbre,@scoopit,user,14,-334
+-2,73,arbre,@sebastien_lucas,user,2,-334
+-2,78,arbre,@ssocratique,user,2,-334
+-6,79,arbre,@tweety_doc,user,18,-111,3333333
+-3,,arbre,@vigienature,user,3,-222,6666667
+-2,,arbre,@yvespdb,user,3,-334
+2,,arbre,abattage,hash,5,334
+5,78,arbre,anne hidalgo,hash,271,133,6
+3,,arbre,arbresparis,hash,3,222,6666667
+2,,arbre,arbustes,hash,3,334
+2,,arbre,archaïsme,hash,4,334
+28,77,arbre,auteur,hash,28,23,85714286
+5,77,arbre,automne,hash,143,133,6
+16,78,arbre,baratti,hash,27,41,75
+3,74,arbre,berche,hash,3,222,6666667
+6,74,arbre,breche,hash,23,111,3333333
+4,74,arbre,breche,hash,23,167
+2,,arbre,buttes,hash,2,334
+2,,arbre,cest,hash,2,334
+6,76,arbre,cite,hash,17,111,3333333
+3,72,arbre,citoyen,hash,133,222,6666667
+2,,arbre,coeur,hash,34,334
+2,,arbre,colors,hash,329,334
+2,,arbre,cop21,hash,35,334
+2,78,arbre,couleurs dautomne,hash,14,334
+13,79,arbre,cour,hash,15,51,38461538
+6,75,arbre,doc,hash,17,111,3333333
+4,79,arbre,environnement,hash,55,167
+9,71,arbre,équilibre écologique,hash,9,74,22222222
+51,72,arbre,érable,hash,52,13,09803922
+2,79,arbre,fall,hash,34,334
+2,,arbre,flickr,hash,4,334
+3,,arbre,fourmis,hash,9,222,6666667
+2,,arbre,ginkgo,hash,6,334
+6,73,arbre,grâce,hash,7,111,3333333
+3,,arbre,grand public,hash,3,222,6666667
+9,73,arbre,haies,hash,9,74,22222222
+2,,arbre,halle,hash,3,334
+2,,arbre,heart,hash,2,334
+56,71,arbre,immeuble,hash,63,11,92857143
+2,,arbre,incohérence,hash,2,334
+4,73,arbre,jardin,hash,1228,167
+2,,arbre,jardin,hash,1228,334
+2,,arbre,jardin du luxembourg,hash,766,334
+2,,arbre,landscape,hash,10,334
+2,,arbre,luko,hash,4,334
+7,78,arbre,m2,hash,8,95,42857143
+28,76,arbre,mairie de paris,hash,213,23,85714286
+9,72,arbre,moineau,hash,23,74,22222222
+3,77,arbre,mois,hash,6,222,6666667
+4,76,arbre,nature,hash,872,167
+3,76,arbre,nature,hash,872,222,6666667
+2,74,arbre,normandie,hash,4,334
+3,,arbre,oiseaux,hash,20,222,6666667
+2,,arbre,or,hash,3,334
+2,,arbre,parc,hash,33,334
+4,72,arbre,parisien,hash,61,167
+2,,arbre,park,hash,23,334
+2,,arbre,pdb,hash,2,334
+2,72,arbre,perspective,hash,6,334
+6,72,arbre,pied,hash,6,111,3333333
+2,,arbre,pluriel,hash,4,334
+51,74,arbre,poirier,hash,52,13,09803922
+51,73,arbre,pommier,hash,52,13,09803922
+2,,arbre,productivisme,hash,4,334
+2,,arbre,ps,hash,5,334
+2,,arbre,quaideseine,hash,2,334
+2,73,arbre,racine,hash,10,334
+2,,arbre,robert,hash,2,334
+2,,arbre,roots,hash,2,334
+2,76,arbre,rouen,hash,5,334
+2,,arbre,sanctuaire,hash,7,334
+2,,arbre,scoopit,hash,13,334
+2,,arbre,seine,hash,16,334
+2,,arbre,serres chaudes,hash,25,334
+2,77,arbre,socialiste,hash,4,334
+2,,arbre,street art,hash,19,334
+2,,arbre,streetphotography,hash,12,334
+2,,arbre,transitionenergetique,hash,16,334
+6,71,arbre,tree,hash,335,111,3333333
+4,75,arbre,treestory,hash,4,167
+2,75,arbre,urbanisme,hash,29,334
+2,,arbre,urgence,hash,2,334
+2,71,arbre,végétal,hash,103,334
+4,71,arbre,vegetalisonsparis,hash,72,167
+6,79,arbre,vert,hash,41,111,3333333
+34,75,arbre,verte,hash,37,19,64705882
+2,,arbre,yves,hash,2,334
+-7,73,arbres fruitiers,@biodiver_cite,user,26,-95,42857143
+-7,74,arbres fruitiers,@paris,user,1013,-95,42857143
+7,75,arbres fruitiers,cite,hash,17,95,42857143
+7,76,arbres fruitiers,google street view,hash,8,95,42857143
+7,77,arbres fruitiers,graine,hash,19,95,42857143
+7,74,arbres fruitiers,vincennes,hash,18,95,42857143
+2,,arbres remarquables,fft,hash,59,334
+2,,arbres remarquables,serres d auteuil,hash,182,334
+-3,,arbresparis,@parisnature,user,26,-222,6666667
+-3,77,arbresparis,@vigienature,user,3,-222,6666667
+3,,arbresparis,arbre,hash,217,222,6666667
+3,73,arbresparis,fourmis,hash,9,222,6666667
+3,78,arbresparis,grand public,hash,3,222,6666667
+3,79,arbresparis,mois,hash,6,222,6666667
+3,75,arbresparis,nature,hash,872,222,6666667
+3,71,arbresparis,oiseaux,hash,20,222,6666667
+-2,96,biodiversité,@angelabolis,user,4,-334
+-2,,biodiversité,@annuaireparis,user,6,-334
+-2,99,biodiversité,@antonin,user,2,-334
+-6,96,biodiversité,@biodiville,user,11,-111,3333333
+-7,94,biodiversité,@blogaujardin,user,62,-95,42857143
+-3,92,biodiversité,@businessimmo,user,7,-222,6666667
+-2,,biodiversité,@c40cities,user,122,-334
+-3,95,biodiversité,@celia_blauel,user,51,-222,6666667
+-2,91,biodiversité,@centretvb,user,24,-334
+-2,94,biodiversité,@construction21f,user,11,-334
+-2,93,biodiversité,@ecolosig,user,3,-334
+-17,91,biodiversité,@edouardfrancois,user,19,-39,29411765
+-2,,biodiversité,@grain_a_moudre,user,2,-334
+-2,,biodiversité,@gresb…,user,2,-334
+-2,96,biodiversité,@hervemmoal,user,7,-334
+-2,,biodiversité,@humabio,user,3,-334
+-3,94,biodiversité,@inra_idf,user,4,-222,6666667
+-8,93,biodiversité,@jeunesradicauxg,user,8,-83,5
+-2,98,biodiversité,@karim_el_hadj,user,2,-334
+-5,98,biodiversité,@l_amf,user,8,-133,6
+-3,93,biodiversité,@le_museum,user,25,-222,6666667
+-6,97,biodiversité,@lemonde,user,7,-111,3333333
+-2,92,biodiversité,@noemie_louet,user,3,-334
+-2,95,biodiversité,@nthierry,user,3,-334
+-2,,biodiversité,@paoegilles,user,3,-334
+-4,91,biodiversité,@paris,user,1013,-167
+-5,99,biodiversité,@paris19e,user,5,-133,6
+-2,,biodiversité,@pierredarmet,user,2,-334
+-2,97,biodiversité,@pkomites,user,170,-334
+-8,92,biodiversité,@prg_75,user,8,-83,5
+-7,95,biodiversité,@prg_idf,user,7,-95,42857143
+-2,,biodiversité,@sergeorru,user,7,-334
+4,98,biodiversité,abeille,hash,10,167
+2,,biodiversité,acteur,hash,14,334
+2,,biodiversité,agriculture urbaine,hash,296,334
+7,97,biodiversité,amf,hash,7,95,42857143
+3,,biodiversité,aparis,hash,14,222,6666667
+5,99,biodiversité,breche,hash,23,133,6
+3,,biodiversité,budget participatif,hash,31,222,6666667
+3,92,biodiversité,centre,hash,20,222,6666667
+2,98,biodiversité,changement climatique,hash,2,334
+2,97,biodiversité,cite,hash,17,334
+2,,biodiversité,citoyen,hash,133,334
+2,96,biodiversité,climat,hash,52,334
+2,,biodiversité,co,hash,28,334
+3,94,biodiversité,conquête,hash,40,222,6666667
+2,99,biodiversité,conseil de paris,hash,13,334
+3,91,biodiversité,conservation,hash,6,222,6666667
+4,99,biodiversité,durable,hash,51,167
+2,,biodiversité,éclairage,hash,2,334
+16,91,biodiversité,edouardfrancois,hash,17,41,75
+13,93,biodiversité,en ligne,hash,13,51,38461538
+3,,biodiversité,environnement,hash,55,222,6666667
+7,95,biodiversité,franciliens,hash,8,95,42857143
+4,96,biodiversité,gdie,hash,4,167
+3,96,biodiversité,génie écologique,hash,4,222,6666667
+2,,biodiversité,grain,hash,4,334
+2,93,biodiversité,hôtel de ville,hash,301,334
+3,,biodiversité,idf,hash,101,222,6666667
+4,94,biodiversité,info,hash,28,167
+3,,biodiversité,inra,hash,3,222,6666667
+3,95,biodiversité,inscrits,hash,4,222,6666667
+6,98,biodiversité,jardin,hash,1228,111,3333333
+7,96,biodiversité,jeunesradicaux,hash,7,95,42857143
+2,,biodiversité,jourdelanuit,hash,2,334
+5,91,biodiversité,le monde,hash,12,133,6
+2,,biodiversité,lundi,hash,2,334
+4,95,biodiversité,m6,hash,5,167
+4,97,biodiversité,m6b2,hash,4,167
+2,,biodiversité,mais,hash,3,334
+2,,biodiversité,maruca,hash,8,334
+3,93,biodiversité,menagerie,hash,5,222,6666667
+4,92,biodiversité,miel,hash,44,167
+2,,biodiversité,moineau,hash,23,334
+3,,biodiversité,museum,hash,34,222,6666667
+3,,biodiversité,nature,hash,872,222,6666667
+3,97,biodiversité,nature en ville,hash,42,222,6666667
+3,,biodiversité,notrebudget,hash,16,222,6666667
+2,,biodiversité,nuit,hash,35,334
+2,92,biodiversité,parc national,hash,14,334
+2,,biodiversité,parcs,hash,62,334
+3,,biodiversité,paris séveille,hash,5,222,6666667
+8,94,biodiversité,paris12,hash,9,83,5
+3,98,biodiversité,près,hash,10,222,6666667
+14,92,biodiversité,prg,hash,14,47,71428571
+3,,biodiversité,quiétude,hash,3,222,6666667
+2,,biodiversité,respect,hash,2,334
+2,91,biodiversité,ruche,hash,20,334
+2,94,biodiversité,sergeorru,hash,10,334
+3,,biodiversité,toiture végétalisée,hash,8,222,6666667
+3,99,biodiversité,trame verte et bleue,hash,4,222,6666667
+3,,biodiversité,urbaine,hash,24,222,6666667
+4,93,biodiversité,villes,hash,10,167
+-2,,biodiversity,@envhumanities,user,2,-334
+-2,,biodiversity,@michelmaruca,user,20,-334
+2,95,biodiversity,civilisation,hash,4,334
+2,,biodiversity,env,hash,3,334
+2,,biodiversity,honorary citizenship,hash,2,334
+2,,biodiversity,humanities,hash,2,334
+2,,biodiversity,maruca,hash,8,334
+2,,biodiversity,michel,hash,2,334
+2,33,cours d eau,onema,hash,2,334
+-4,31,eau,@eau_et_bio_fnab,user,3,-167
+2,37,eau,bio,hash,51,334
+2,33,eau,bretagne,hash,3,334
+14,31,eau,nature en ville,hash,42,47,71428571
+2,35,eau,onema,hash,2,334
+14,32,eau,villette,hash,311,47,71428571
+-2,32,eau de paris,@agrapresse,user,2,-334
+2,31,eau de paris,agriculture bio,hash,9,334
+-2,33,eau douce,@guyane_ctg,user,2,-334
+2,32,eau douce,aquariophile,hash,4,334
+2,36,eau douce,conférence,hash,6,334
+2,34,eau douce,ctg,hash,2,334
+2,39,eau douce,expo,hash,9,334
+2,38,eau douce,guyane,hash,6,334
+2,34,eau douce,poisson,hash,4,334
+-2,61,mur végétal,@artetvegetal,user,2,-334
+2,69,mur végétal,192ruedetolbiac,hash,2,334
+2,68,mur végétal,artetvegetalparis,hash,2,334
+2,61,mur végétal,flowerporn,hash,2,334
+2,62,mur végétal,forêt,hash,23,334
+2,67,mur végétal,instaflower,hash,2,334
+2,63,mur végétal,officine,hash,2,334
+6,62,mur végétalisé,anne hidalgo,hash,271,111,3333333
+6,69,mur végétalisé,bastiat,hash,6,111,3333333
+20,64,mur végétalisé,camps,hash,20,33,4
+6,61,mur végétalisé,cnn,hash,7,111,3333333
+2,66,mur végétalisé,eco,hash,14,334
+20,65,mur végétalisé,enfant,hash,29,33,4
+6,68,mur végétalisé,kimkardashian,hash,14,111,3333333
+20,63,mur végétalisé,migrants,hash,36,33,4
+20,61,mur végétalisé,salles,hash,20,33,4
+6,67,mur végétalisé,sécurité,hash,7,111,3333333
+6,66,mur végétalisé,sens,hash,8,111,3333333
+20,62,mur végétalisé,tags,hash,23,33,4
+2,64,murvegetal,contemporaine,hash,4,334
+2,85,murvegetal,contemporaine,hash,4,334
+2,,murvegetal,officine,hash,2,334
+2,89,murvegetal,officine,hash,2,334
+2,65,murvegetal,pharmacie,hash,4,334
+2,82,murvegetal,pharmacie,hash,4,334
+-7,106,nature,@ahmdsl,user,14,-95,42857143
+-4,106,nature,@alerodriguescom,user,4,-167
+-3,102,nature,@aliniaspasso,user,4,-222,6666667
+-2,,nature,@angelikarudzka,user,2,-334
+-6,108,nature,@biodiville,user,11,-111,3333333
+-2,104,nature,@blanchecameron,user,4,-334
+-2,,nature,@bouygues_c,user,11,-334
+-2,,nature,@c20paola,user,2,-334
+-3,108,nature,@cookingscarlet,user,3,-222,6666667
+-5,101,nature,@dardar_paris,user,6,-133,6
+-2,,nature,@ecobalade,user,3,-334
+-2,105,nature,@ecolosig,user,3,-334
+-2,,nature,@elcheval_,user,2,-334
+-2,,nature,@ericlhelguen,user,3,-334
+-2,,nature,@firststepsya,user,2,-334
+-2,,nature,@france3tv,user,2,-334
+-3,101,nature,@getthetrip,user,5,-222,6666667
+-4,107,nature,@golflongchamp,user,4,-167
+-3,107,nature,@grainedejardins,user,5,-222,6666667
+-2,,nature,@hcclpd_2,user,2,-334
+-2,,nature,@highviewart,user,2,-334
+-3,106,nature,@hikikomint,user,3,-222,6666667
+-4,108,nature,@hilary_farr,user,5,-167
+-3,104,nature,@jdangofficial,user,3,-222,6666667
+-5,103,nature,@julien_klein20,user,5,-133,6
+-2,,nature,@lovelornbelle,user,2,-334
+-2,,nature,@marta_lina26,user,2,-334
+-2,,nature,@mikaforster,user,2,-334
+-3,105,nature,@mo3rosewhite,user,3,-222,6666667
+-3,,nature,@mondeecologie,user,8,-222,6666667
+-2,,nature,@mutfaell1,user,2,-334
+-2,101,nature,@natureparif,user,6,-334
+-2,,nature,@noemie_louet,user,3,-334
+-3,109,nature,@paris,user,1013,-222,6666667
+-7,107,nature,@parisnature,user,26,-95,42857143
+-2,,nature,@photofahlman,user,2,-334
+-2,102,nature,@piggyd,user,7,-334
+-2,109,nature,@pluralium,user,2,-334
+-3,103,nature,@projetvu,user,6,-222,6666667
+-2,108,nature,@regardsurlimage,user,8,-334
+-2,103,nature,@revolutiongull,user,3,-334
+-6,109,nature,@sandypourcent,user,12,-111,3333333
+-2,,nature,@soniaperrin,user,2,-334
+-2,107,nature,@tatianamm_tym,user,2,-334
+-2,106,nature,@thetrendmix,user,2,-334
+-4,104,nature,@tit_tonio,user,4,-167
+-2,,nature,@tomelbez,user,2,-334
+-5,102,nature,@toonkerssemaker,user,5,-133,6
+-2,,nature,@tvnature,user,2,-334
+-4,105,nature,@tysolg,user,4,-167
+-2,,nature,@un_gusanito,user,3,-334
+-3,,nature,@vigienature,user,3,-222,6666667
+4,,nature,14e,hash,5,167
+3,,nature,333stephy333,hash,3,222,6666667
+12,108,nature,500px,hash,19,55,66666667
+2,,nature,740d,hash,2,334
+2,,nature,acteur,hash,14,334
+2,,nature,adventure,hash,10,334
+2,,nature,ag,hash,7,334
+3,,nature,agw,hash,6,222,6666667
+3,,nature,aimuranami,hash,3,222,6666667
+3,,nature,aliceonelmst,hash,3,222,6666667
+2,,nature,amazing,hash,9,334
+2,,nature,animallover,hash,2,334
+2,,nature,anthropocene,hash,8,334
+4,,nature,arbre,hash,217,167
+3,,nature,arbre,hash,217,222,6666667
+3,,nature,arbresparis,hash,3,222,6666667
+9,101,nature,architecture,hash,40,74,22222222
+5,106,nature,art,hash,268,133,6
+2,,nature,artifleurs,hash,5,334
+3,,nature,atuanexhas2,hash,3,222,6666667
+2,,nature,automn,hash,4,334
+6,102,nature,automne,hash,143,111,3333333
+182,101,nature,autumn,hash,272,3,67032967
+4,,nature,beautiful,hash,30,167
+7,109,nature,beauty,hash,22,95,42857143
+3,,nature,biodiversité,hash,333,222,6666667
+3,,nature,birds,hash,5,222,6666667
+2,,nature,black tower,hash,2,334
+2,,nature,bois,hash,9,334
+3,,nature,bois de boulogne,hash,7,222,6666667
+3,,nature,bois de vincennes,hash,6,222,6666667
+2,,nature,bonvampire,hash,2,334
+2,,nature,bouquet,hash,3,334
+2,,nature,bouygues,hash,8,334
+4,105,nature,bulbes,hash,11,167
+7,101,nature,butterflies,hash,14,95,42857143
+6,,nature,canon,hash,7,111,3333333
+4,,nature,canon600d,hash,4,167
+4,,nature,canonphotography,hash,4,167
+2,,nature,chills,hash,2,334
+6,,nature,cite,hash,17,111,3333333
+2,,nature,citoyen,hash,133,334
+9,102,nature,city,hash,75,74,22222222
+2,,nature,cliche,hash,4,334
+3,,nature,climate,hash,9,222,6666667
+2,,nature,climate change,hash,10,334
+5,105,nature,close,hash,5,133,6
+4,,nature,clouds,hash,9,167
+2,,nature,co,hash,28,334
+2,,nature,cold,hash,2,334
+153,107,nature,colorful,hash,307,4,366013072
+155,105,nature,colors,hash,329,4,309677419
+2,,nature,cork,hash,2,334
+3,,nature,cowtape,hash,3,222,6666667
+6,,nature,day,hash,6,111,3333333
+3,,nature,daysimaria7,hash,3,222,6666667
+2,,nature,delauneysophie,hash,2,334
+2,,nature,delhi,hash,2,334
+2,,nature,design,hash,13,334
+3,,nature,dragdraws,hash,3,222,6666667
+3,,nature,dragonowlie,hash,3,222,6666667
+3,,nature,ecologie,hash,69,222,6666667
+2,,nature,edithfonseca28,hash,2,334
+2,,nature,édition,hash,4,334
+2,,nature,election,hash,4,334
+2,,nature,environnement,hash,55,334
+2,,nature,eole,hash,6,334
+2,,nature,evangile,hash,5,334
+5,107,nature,fall,hash,34,133,6
+2,,nature,feuilles,hash,7,334
+2,,nature,fixie,hash,2,334
+3,,nature,flower,hash,6,222,6666667
+6,,nature,flowers,hash,17,111,3333333
+12,103,nature,followback,hash,12,55,66666667
+3,,nature,fondation cartier,hash,17,222,6666667
+2,,nature,force,hash,2,334
+5,108,nature,forest,hash,8,133,6
+3,,nature,fourmis,hash,9,222,6666667
+2,,nature,frança,hash,7,334
+58,103,nature,france,hash,340,11,51724138
+2,,nature,france3,hash,10,334
+4,,nature,french,hash,19,167
+3,,nature,fun,hash,5,222,6666667
+3,,nature,garden,hash,70,222,6666667
+4,,nature,gdie,hash,4,167
+3,,nature,golf,hash,9,222,6666667
+2,,nature,good news,hash,3,334
+2,,nature,gorgeous,hash,2,334
+6,,nature,grâce,hash,7,111,3333333
+3,102,nature,graine,hash,19,222,6666667
+2,,nature,grand paris,hash,15,334
+3,,nature,grand public,hash,3,222,6666667
+7,102,nature,green,hash,30,95,42857143
+3,,nature,greeninfrastructure,hash,16,222,6666667
+3,,nature,hannabrsb,hash,3,222,6666667
+2,,nature,heimao3,hash,2,334
+4,,nature,hilaryfarr,hash,4,167
+2,,nature,hipermee,hash,2,334
+6,,nature,hôtel de ville,hash,301,111,3333333
+2,,nature,house,hash,2,334
+2,,nature,housesitter,hash,3,334
+2,,nature,housesitting,hash,2,334
+12,102,nature,ilovethisplace,hash,12,55,66666667
+3,,nature,inspiration,hash,6,222,6666667
+2,,nature,iphoneography,hash,2,334
+12,104,nature,jardin,hash,1228,55,66666667
+2,,nature,jardin des plantes,hash,542,334
+2,,nature,jardin des tuileries,hash,407,334
+2,,nature,jardin du luxembourg,hash,766,334
+4,109,nature,jardiner,hash,5,167
+2,,nature,jerkbcnt,hash,2,334
+3,,nature,karolscherry,hash,3,222,6666667
+4,,nature,kev,hash,4,167
+3,,nature,ladybugg155,hash,3,222,6666667
+4,,nature,lake,hash,5,167
+4,,nature,landscape,hash,10,167
+148,102,nature,lavillette,hash,302,4,513513514
+158,103,nature,leaves,hash,321,4,227848101
+3,,nature,leekonfleek,hash,3,222,6666667
+3,,nature,lefigaro,hash,22,222,6666667
+3,,nature,leica,hash,7,222,6666667
+3,,nature,leicalenses,hash,3,222,6666667
+2,,nature,lenôtre,hash,2,334
+4,,nature,lifestyle,hash,9,167
+3,,nature,longchamp,hash,3,222,6666667
+4,,nature,love,hash,48,167
+2,,nature,love nature,hash,2,334
+12,101,nature,lovetravel,hash,12,55,66666667
+3,,nature,lumix,hash,5,222,6666667
+2,,nature,luzzyshu,hash,2,334
+3,,nature,maggot310,hash,3,222,6666667
+3,,nature,marinettedupa12,hash,3,222,6666667
+3,,nature,martineloudpl,hash,3,222,6666667
+2,,nature,meroflb,hash,2,334
+3,,nature,mois,hash,6,222,6666667
+2,,nature,moment,hash,2,334
+3,,nature,mondaymorning,hash,3,222,6666667
+3,,nature,mondaymotivation,hash,3,222,6666667
+3,,nature,monde,hash,48,222,6666667
+2,,nature,mondeecologie,hash,2,334
+2,,nature,monokromerabbit,hash,2,334
+4,,nature,natura,hash,4,167
+3,,nature,naturalbeauty,hash,3,222,6666667
+3,109,nature,nature en ville,hash,42,222,6666667
+2,,nature,natureexplorer4,hash,2,334
+2,102,nature,naturelover,hash,6,334
+5,103,nature,night,hash,10,133,6
+2,,nature,nocoil,hash,2,334
+3,,nature,nofilter,hash,12,222,6666667
+2,,nature,nôtre,hash,15,334
+2,,nature,notre dame,hash,8,334
+2,,nature,oboisson,hash,2,334
+3,,nature,october,hash,6,222,6666667
+2,,nature,oiseaux,hash,20,334
+151,108,nature,onickz,hash,158,4,42384106
+156,104,nature,orange,hash,313,4,282051282
+4,,nature,ouest,hash,5,167
+2,,nature,pachamama,hash,4,334
+148,101,nature,paname,hash,150,4,513513514
+4,102,nature,parc,hash,33,167
+2,,nature,parc zoologique de paris,hash,3,334
+4,,nature,parigi,hash,8,167
+4,104,nature,paris 15e,hash,7,167
+4,103,nature,paris je taime,hash,60,167
+2,,nature,paris14,hash,2,334
+8,104,nature,park,hash,23,83,5
+3,,nature,paysage,hash,13,222,6666667
+6,106,nature,père lachaise cemetery,hash,7,111,3333333
+2,,nature,perfect,hash,3,334
+2,106,nature,perspective,hash,6,334
+2,,nature,pfw,hash,7,334
+5,101,nature,photo,hash,122,133,6
+3,107,nature,photoftheday,hash,7,222,6666667
+2,,nature,photographer,hash,11,334
+2,,nature,photographie,hash,5,334
+25,104,nature,photography,hash,157,26,72
+2,,nature,photos,hash,61,334
+2,,nature,picoftheday,hash,6,334
+6,101,nature,pied,hash,6,111,3333333
+6,105,nature,piggyd,hash,6,111,3333333
+3,,nature,pikaruchi,hash,3,222,6666667
+6,108,nature,potager,hash,355,111,3333333
+2,105,nature,presidentielle,hash,4,334
+2,,nature,quaideseine,hash,2,334
+2,,nature,rain,hash,3,334
+154,106,nature,red,hash,309,4,337662338
+2,,nature,resilience,hash,6,334
+3,101,nature,river,hash,4,222,6666667
+2,,nature,rose,hash,3,334
+2,,nature,running,hash,3,334
+3,,nature,salomegertrude,hash,3,222,6666667
+4,107,nature,sauvage,hash,4,167
+2,,nature,seine,hash,16,334
+4,,nature,selvaggio,hash,4,167
+2,,nature,sepsibrownie,hash,2,334
+9,107,nature,sky,hash,17,74,22222222
+6,107,nature,sortie,hash,7,111,3333333
+4,106,nature,sous un autre jour,hash,4,167
+2,,nature,special,hash,6,334
+3,,nature,speed,hash,3,222,6666667
+11,105,nature,spring,hash,13,60,72727273
+2,,nature,stockholm,hash,4,334
+2,,nature,streetphotography,hash,12,334
+3,103,nature,summer,hash,11,222,6666667
+6,104,nature,sun,hash,26,111,3333333
+2,,nature,sunflower,hash,2,334
+2,109,nature,sunny,hash,7,334
+2,107,nature,sunrise,hash,7,334
+2,,nature,sunset,hash,24,334
+2,,nature,sweden,hash,4,334
+2,,nature,sweetpotatolil,hash,2,334
+2,,nature,sylvanoth,hash,2,334
+3,,nature,the way we were,hash,4,222,6666667
+2,,nature,thegreatoutdoors,hash,2,334
+3,,nature,theraikume,hash,3,222,6666667
+3,,nature,thomasastruc,hash,3,222,6666667
+3,,nature,tomates,hash,3,222,6666667
+4,108,nature,torreeiffel,hash,4,167
+4,,nature,tour eiffel,hash,25,167
+22,105,nature,travel,hash,102,30,36363636
+2,,nature,travelgram,hash,3,334
+12,109,nature,traveltheworld,hash,12,55,66666667
+3,,nature,treaty,hash,3,222,6666667
+166,102,nature,tree,hash,335,4,024096386
+10,106,nature,trees,hash,33,66,8
+2,,nature,trevel,hash,2,334
+5,102,nature,trip,hash,10,133,6
+2,,nature,tv,hash,7,334
+2,103,nature,urbanisme,hash,29,334
+2,104,nature,vacation,hash,4,334
+3,108,nature,végétalisation,hash,223,222,6666667
+2,,nature,vesinetlepecq,hash,2,334
+6,109,nature,vigne,hash,124,111,3333333
+4,101,nature,ville,hash,271,167
+4,,nature,villes,hash,10,167
+148,109,nature,villette,hash,311,4,513513514
+5,104,nature,vincennes,hash,18,133,6
+3,,nature,virii21,hash,3,222,6666667
+2,,nature,vivant,hash,4,334
+3,106,nature,vsco,hash,6,222,6666667
+7,108,nature,vscocam,hash,16,95,42857143
+2,,nature,walk,hash,5,334
+3,105,nature,weekend,hash,27,222,6666667
+3,,nature,wendinella,hash,3,222,6666667
+2,,nature,weneednature,hash,2,334
+6,103,nature,wild,hash,8,111,3333333
+3,,nature,wildernesculture,hash,3,222,6666667
+2,,nature,winter,hash,2,334
+2,,nature,world,hash,11,334
+3,104,nature,worldnaturelle,hash,5,222,6666667
+2,,nature,worldtour,hash,2,334
+2,108,nature,yellow,hash,8,334
+2,,nature,zoo,hash,7,334
+-14,101,nature en ville,@anne_hidalgo,user,262,-47,71428571
+-14,102,nature en ville,@celia_blauel,user,51,-47,71428571
+-9,104,nature en ville,@federationcinov,user,9,-74,22222222
+-3,,nature en ville,@grainedejardins,user,5,-222,6666667
+-9,105,nature en ville,@greenationsas,user,11,-74,22222222
+-13,103,nature en ville,@jfmartins,user,20,-51,38461538
+-3,,nature en ville,@projetvu,user,6,-222,6666667
+3,,nature en ville,biodiversité,hash,333,222,6666667
+8,106,nature en ville,cop21,hash,35,83,5
+14,107,nature en ville,eau,hash,28,47,71428571
+2,101,nature en ville,écologiste,hash,3,334
+8,107,nature en ville,federationcinov,hash,8,83,5
+3,,nature en ville,graine,hash,19,222,6666667
+3,,nature en ville,jardin,hash,1228,222,6666667
+3,,nature en ville,nature,hash,872,222,6666667
+8,105,nature en ville,sas,hash,9,83,5
+14,106,nature en ville,villette,hash,311,47,71428571
+-3,,nature et découvertes,@eyparis,user,15,-222,6666667
+9,109,nature et découvertes,artistique,hash,10,74,22222222
+9,103,nature et découvertes,extramuros,hash,9,74,22222222
+9,108,nature et découvertes,weekend,hash,27,74,22222222
+3,,nature et découvertes,weenbanlieue,hash,3,222,6666667
+-65,81,permisdevegetaliser,@paris,user,1013,-10,27692308
+64,,permisdevegetaliser,chouette,hash,75,10,4375
+65,81,permisdevegetaliser,vegetalisonsparis,hash,72,10,27692308
+-6,42,pied,@biodiver_cite,user,26,-111,3333333
+-6,41,pied,@la_breche,user,27,-111,3333333
+-6,45,pied,@paris,user,1013,-111,3333333
+-6,44,pied,@parisnature,user,26,-111,3333333
+-6,43,pied,@tweety_doc,user,18,-111,3333333
+6,44,pied,arbre,hash,217,111,3333333
+6,43,pied,breche,hash,23,111,3333333
+6,41,pied,cite,hash,17,111,3333333
+6,46,pied,doc,hash,17,111,3333333
+6,42,pied,grâce,hash,7,111,3333333
+6,45,pied,nature,hash,872,111,3333333
+11,11,sols,min,hash,26,60,72727273
+-6,55,toit,@amif_asso,user,6,-111,3333333
+-3,52,toit,@aucoeurdelimmo,user,3,-222,6666667
+-2,59,toit,@berthoguillaume,user,3,-334
+-2,58,toit,@boursedcredits,user,2,-334
+-3,51,toit,@businessimmo,user,7,-222,6666667
+-5,58,toit,@busom_femenia,user,11,-133,6
+-2,,toit,@c40cities,user,122,-334
+-2,51,toit,@construction21f,user,11,-334
+-10,53,toit,@egregoire,user,15,-66,8
+-2,57,toit,@france3tv,user,2,-334
+-4,51,toit,@le_moniteur,user,12,-167
+-6,54,toit,@le_parisien,user,42,-111,3333333
+-3,53,toit,@mlcattoire,user,11,-222,6666667
+-2,53,toit,@montreal110,user,2,-334
+-3,59,toit,@mr_matth,user,14,-222,6666667
+-4,52,toit,@mtl_ville,user,9,-167
+-2,54,toit,@ouchikhkarim,user,2,-334
+-3,54,toit,@paris,user,1013,-222,6666667
+-11,52,toit,@parisvisites,user,95,-60,72727273
+-11,51,toit,@pkomites,user,170,-60,72727273
+-2,52,toit,@sciences_avenir,user,4,-334
+-4,53,toit,@siplasticopal,user,18,-167
+-4,59,toit,@urbagriculture,user,7,-167
+11,51,toit,agriculture urbaine,hash,296,60,72727273
+85,52,toit,bâtiment,hash,94,7,858823529
+11,,toit,cc,hash,32,60,72727273
+17,54,toit,cities4climate,hash,19,39,29411765
+2,,toit,croisés,hash,2,334
+12,57,toit,ecolo,hash,88,55,66666667
+85,53,toit,façade,hash,88,7,858823529
+2,57,toit,france3,hash,10,334
+2,58,toit,île de france,hash,77,334
+4,56,toit,jardin potager,hash,28,167
+4,55,toit,mairie de paris,hash,213,167
+2,59,toit,montreal,hash,3,334
+2,,toit,newvp,hash,3,334
+2,,toit,noël,hash,2,334
+4,53,toit,parisculteur,hash,12,167
+3,59,toit,potager,hash,355,222,6666667
+2,,toit,sabots,hash,2,334
+2,,toit,sciencesavenir,hash,4,334
+12,56,toit,tourism,hash,61,55,66666667
+12,55,toit,tourisme,hash,174,55,66666667
+2,54,toit,tv,hash,7,334
+85,51,toit,végétalisation,hash,223,7,858823529
+2,52,toit,végétalisation,hash,223,334
+4,51,toit,veilledecm,hash,4,167
+11,58,toit,vert,hash,41,60,72727273
+2,51,toit,vigne,hash,124,334
+-3,58,toit terrasse,@groupeloiseleur,user,17,-222,6666667
+-3,56,toit terrasse,@pkomites@anne_hidalgo,user,4,-222,6666667
+-3,57,toit terrasse,@siplasticopal@urbagri,user,4,-222,6666667
+3,58,toit terrasse,coeur,hash,34,222,6666667
+3,57,toit terrasse,potager,hash,355,222,6666667
+7,52,toits de paris,agriculture,hash,301,95,42857143
+7,,toits de paris,agriculture urbaine,hash,296,95,42857143
+4,52,toits de paris,arts,hash,4,167
+7,54,toits de paris,bon weekend,hash,7,95,42857143
+4,54,toits de paris,gastronomie,hash,6,167
+7,55,toits de paris,urbaine,hash,24,95,42857143
+-6,56,toiture,@apur_75,user,7,-111,3333333
+-6,57,toiture,@artefr,user,8,-111,3333333
+-3,,toiture,@charles_magnier,user,3,-222,6666667
+-3,55,toiture,@paris,user,1013,-222,6666667
+-2,55,toiture,@unafapiculture,user,4,-334
+2,56,toiture,abeille,hash,10,334
+6,58,toiture,apur,hash,7,111,3333333
+3,54,toiture,charles,hash,3,222,6666667
+2,,toiture,charlesmagnier,hash,2,334
+3,53,toiture,forme,hash,6,222,6666667
+6,59,toiture,hectares,hash,44,111,3333333
+2,,toiture,jardin potager,hash,28,334
+2,55,toiture,qualipaysage,hash,11,334
+2,,toiture,ruches,hash,13,334
+6,57,toiture,végétalisation,hash,223,111,3333333
+2,53,toiture,vigne,hash,124,334
+6,56,toiture,xenius,hash,8,111,3333333
+-2,56,toiture végétalisée,@hervemmoal,user,7,-334
+3,56,toiture végétalisée,biodiversité,hash,333,222,6666667
+3,55,toiture végétalisée,idf,hash,101,222,6666667
+3,52,toiture végétalisée,moineau,hash,23,222,6666667
+0,25,,air,,2,0
+0,75,,arbre,,228,0
+0,95,,boidiv,,335,0
+0,35,,eau,,34,0
+0,65,,mur,,44,0
+,105,,nature,,923,0
+0,45,,pied,,6,0
+0,15,,sol,,22,0
+0,55,,toit,,151,0
+0,85,,végét,,502,0
+-52,81,végétal,@pdemoux,user,53,-12,84615385
+-52,82,végétal,@l214,user,53,-12,84615385
+-52,83,végétal,@lesechos,user,55,-12,84615385
+-18,84,végétal,@veganimpact,user,44,-37,11111111
+-9,85,végétalisation,@greenationsas,user,11,-74,22222222
+-9,86,végétalisation,@federationcinov,user,9,-74,22222222
+-8,87,végétalisation,@artefr,user,8,-83,5
+-7,88,végétalisation,@apur_75,user,7,-95,42857143
+-4,89,végétal,@paris,user,1013,-167
+-4,81,végétalisation,@mtl_ville,user,9,-167
+-3,82,végétalisation,@projetvu,user,6,-222,6666667
+-3,83,végétalisation,@grainedejardins,user,5,-222,6666667
+-3,84,végétalisation,@klorydryk,user,5,-222,6666667
+-2,85,végétal,@boccadileone49,user,9,-334
+-2,86,végétal,@cyborgvegetal,user,4,-334
+-2,87,végétation,@o_environnement,user,3,-334
+-2,88,toiture végétalisée,@hervemmoal,user,7,-334
+-2,89,mur végétal,@artetvegetal,user,2,-334
+-2,81,végétalisation,@parisjecoute,user,12,-334
+-2,82,végétalisation,@construction21f,user,11,-334
+-2,83,végétalisation,@annuaireparis,user,6,-334
+-2,84,vegetables,@designindaba,user,6,-334
+-2,,vegetalisee,@unafapiculture,user,4,-334
+-2,,vegetaliser,@greenpeace,user,2,-334
+-2,,vegetaliser,@julien_menez,user,2,-334
+-2,,vegetaliser,@missionvegetal,user,2,-334
+85,81,végétalisation,toit,hash,100,7,858823529
+85,82,végétalisation,façade,hash,88,7,858823529
+65,83,vegetalisonsparis,permisdevegetaliser,hash,65,10,27692308
+64,84,vegetalisonsparis,chouette,hash,75,10,4375
+52,85,végétal,alimentation,hash,116,12,84615385
+52,86,végétal,salon,hash,63,12,84615385
+52,87,végétal,lesechos,hash,55,12,84615385
+20,88,mur végétalisé,salles,hash,20,33,4
+20,89,mur végétalisé,tags,hash,23,33,4
+20,81,mur végétalisé,migrants,hash,36,33,4
+20,82,mur végétalisé,camps,hash,20,33,4
+20,83,mur végétalisé,enfant,hash,29,33,4
+18,84,végétal,adresse,hash,20,37,11111111
+17,85,végétalisation,lien social,hash,30,39,29411765
+16,86,végétalisation,baratti,hash,27,41,75
+13,87,végétalisation,cour,hash,15,51,38461538
+13,88,végétalisation,mairie,hash,74,51,38461538
+10,89,végétation,œil,hash,11,66,8
+8,81,végétalisation,xenius,hash,8,83,5
+8,82,végétalisation,cop21,hash,35,83,5
+8,83,végétalisation,federationcinov,hash,8,83,5
+7,84,végétalisation,apur,hash,7,95,42857143
+6,85,mur végétalisé,sens,hash,8,111,3333333
+6,86,mur végétalisé,sécurité,hash,7,111,3333333
+6,87,végétalisation,toiture,hash,23,111,3333333
+6,88,végétal,jardin,hash,1228,111,3333333
+6,89,mur végétalisé,kimkardashian,hash,14,111,3333333
+6,81,mur végétalisé,bastiat,hash,6,111,3333333
+6,82,mur végétalisé,cnn,hash,7,111,3333333
+6,83,mur végétalisé,anne hidalgo,hash,271,111,3333333
+4,84,vegetables,city,hash,75,167
+4,85,vegetables,food,hash,11,167
+4,86,vegetables,omnivores,hash,4,167
+4,87,vegetables,staircase,hash,6,167
+4,88,vegetables,tower,hash,7,167
+4,89,vegetables,urban farms,hash,4,167
+4,81,vegetalisonsparis,arbre,hash,217,167
+4,82,vegetalisonsparis,environnement,hash,55,167
+4,,vegetalisonsparis,jardin,hash,1228,167
+4,,vegetalisonsparis,parisien,hash,61,167
+4,,vegetalisonsparis,treestory,hash,4,167
+4,83,vegetalisonsparis,vert,hash,41,167
+4,,végétal,végétalisation,hash,223,167
+4,,végétal,plante,hash,126,167
+4,,végétalisation,végétal,hash,103,167
+4,,végétalisation,comité,hash,2,167
+3,81,toiture végétalisée,oiseaux,hash,20,222,6666667
+3,82,vegetalisonsparis,berche,hash,3,222,6666667
+3,83,végétalisation,semaine,hash,11,222,6666667
+3,,végétalisation,graine,hash,19,222,6666667
+3,85,végétalisation,agriculture,hash,301,222,6666667
+3,86,toiture végétalisée,oiseaux,hash,20,222,6666667
+3,87,végétalisation,parisculteur,hash,12,222,6666667
+3,88,végétalisation,nature,hash,872,222,6666667
+3,89,toiture végétalisée,moineau,hash,23,222,6666667
+3,84,végétalisation,ville,hash,271,222,6666667
+3,,toiture végétalisée,idf,hash,101,222,6666667
+3,,toiture végétalisée,biodiversité,hash,333,222,6666667
+2,81,vegetalisee,abeille,hash,10,334
+2,82,vegetalisee,qualipaysage,hash,11,334
+2,83,vegetalisee,ruches,hash,13,334
+2,84,vegetalisonsparis,blogaujardin,hash,4,334
+2,85,mur végétal,officine,hash,2,334
+2,86,végétation,master,hash,4,334
+2,87,végétation,stage,hash,3,334
+2,88,mur végétalisé,eco,hash,14,334
+2,89,végétation,environnement,hash,55,334
+2,,végétalisation,lille,hash,2,334
+2,,végétation,ecologie,hash,69,334
+2,,végétation,étudiant,hash,4,334
+2,,végétalisation,points,hash,3,334
+2,,végétalisation,agriculture urbaine,hash,296,334
+2,,végétalisation,savethedate,hash,20,334
+2,,végétation,marseille,hash,7,334
+2,,mur végétal,instaflower,hash,2,334
+2,,mur végétal,artetvegetalparis,hash,2,334
+2,,mur végétal,192ruedetolbiac,hash,2,334
+2,,mur végétal,flowerporn,hash,2,334
+2,,végétaux,or,hash,3,334
+2,,végétalisation,toit,hash,100,334
+2,,végétal,arbre,hash,217,334
+2,,végétalisation,climat,hash,52,334
+2,,végétaux,arbustes,hash,3,334
+2,,mur végétal,forêt,hash,23,334
+2,,végétal,urbanisme,hash,29,334
+2,,végétalisation,sarkozy,hash,4,334
+2,,végétaux,tronçonneuse,hash,4,334
+2,,végétaux,sanctuaire,hash,7,334
+2,,végétaux,serres chaudes,hash,25,334
+2,,végétalisation,construction,hash,30,334
+2,,végétalisation,climate change,hash,10,334
+2,,végétalisation,grenelle de lenvironnement,hash,2,334
+2,,végétalisation,croisés,hash,2,334
+2,,végétalisation,arrondissement,hash,9,334
