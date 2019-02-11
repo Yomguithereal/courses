@@ -151,7 +151,7 @@ N'hésitez pas à ouvrir une PR pour le corriger ou ajouter des précisions si v
 
 ===
 
-## Des question?
+## Des questions?
 
 Avant que l'on commence?
 
