@@ -715,3 +715,112 @@ Plusieurs approches:
 
 # 2. L'Information Retrieval
 
+===
+
+## Information retrieval?
+
+Discipline consistant en l'organisation de données peu ou pas structurées (surtout du langage naturel) dans des structures permettant de les requêter efficacement et de manière pertinente.
+
+Donc surtout:
+
+1. l'indexation
+2. les algorithmes de requêtage.
+
+Moteurs de recherche, indexation *full-text*.
+
+Lucene, ElasticSearch, Solr etc.
+
+===
+
+## L'index inversé
+
+Comment fonctionnent les moteurs de recherche *full-text*.
+
+Ce sont en général des `MultiMap`.
+
+1. On tokenize le texte.
+2. On filtre certains tokens (stopwords, par exemple)
+3. On floute les tokens (stemmers, phonétique, normalisation etc.)
+4. Pour chaque token, on associe le document au token dans l'index.
+
+===
+
+```js
+// Documents
+{id: 1, text: 'Le chat mange la souris.'}
+{id: 2, text: 'La souris mange le fromage.'}
+{id: 3, text: 'Le gateau au fromage'}
+
+// Index
+{
+  chat: {1},
+  mange: {1, 2},
+  souris: {1, 2},
+  fromage: {2, 3},
+  gateau: {3}
+}
+```
+
+===
+
+## Comment requêter?
+
+On applique les mêmes transformations à la requête et on fait l'intersection des documents.
+
+Exemple sur le cas précédent.
+
+Possibilité de stocker plus d'information comme des positions (pour le highlight et les requêtes d'expression) ou des scores de pertinence (que l'on va voir un peu plus tard).
+
+===
+
+## Requêtes floues
+
+On a une `MultiMap` avec des accès en `O(1)`.
+
+Comme on l'a vu précédemment, dès qu'on veut calculer des distances cela se complique, surtout lorsque l'on veut éviter de coûteux calculs en `O(n)`.
+
+Structures de données dédiées que l'on va interroger en amont de l'index inversé (BK-Tree, SymSpell, Levenshtein automata etc.).
+
+===
+
+## La loi de Zipf
+
+Observation sur la distribution des mots d'un texte.
+
+Comptons les occurrences (James Joyce, Ulysses).
+
+Le mot le plus courant revient ~8000 fois.
+
+Le dixième mot le plus courant ~800 fois.
+
+Le centième ~80 fois. etc.
+
+===
+
+<p align="center">
+  <img src="img/zipf.png" class="plain" />
+</p>
+
+===
+
+## TF / IDF
+
+*Term Frequency - Inverse Document Frequency*
+
+Considérons un corpus de textes composé de plusieurs documents.
+
+`TF` = nombre d'occurence d'un terme dans le texte considéré.
+
+`IDF` = logarithme de l'inverse du nombre de documents du corpus contenant le terme.
+
+===
+
+## TF / IDF
+
+Pour simplifier: plus un terme est fréquent dans un document mais moins il est fréquent dans le corpus, plus son importance et sa pertinence pour la compréhension de ce document est grande.
+
+Ceci est justifié empiriquement *a posteriori* par la loi de Zipf.
+
+**Exemple**: les articles et les mots de liaison (la notion de *stopwords*).
+
+
