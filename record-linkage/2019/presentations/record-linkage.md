@@ -823,4 +823,16 @@ Ceci est justifié empiriquement *a posteriori* par la loi de Zipf.
 
 **Exemple**: les articles et les mots de liaison (la notion de *stopwords*).
 
+===
 
+## Dataset: Amazon reviews
+
+[http://jmcauley.ucsd.edu/data/amazon/](http://jmcauley.ucsd.edu/data/amazon/)
+
+===
+
+## Contact
+
+**Mail**: guillaume.plique // sciencespo.fr
+
+**Github**: [Yomguithereal](https://github.com/Yomguithereal)
