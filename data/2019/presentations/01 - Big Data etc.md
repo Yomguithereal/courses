@@ -8,7 +8,7 @@
 
 ## Url du cours
 
-[http://bit.ly/hetic-data-2018](http://bit.ly/hetic-data-2018)
+[[http://bit.ly/hetic-data-2018](https://yomguithereal.github.io/courses/data/2019/1)]([http://bit.ly/hetic-data-2018](https://yomguithereal.github.io/courses/data/2019/1))
 
 ===
 
@@ -52,7 +52,7 @@ Ingénieur de recherche
 ## Domaines
 
 * Analyse statistique & visuelle des graphes
-* Algorithmie et structures de données  
+* Algorithmie et structures de données
 * Traitement automatique du langage & logique floue
 * Web mining (crawling & scraping)
 * Machine learning
@@ -1795,7 +1795,7 @@ Individu male, 43 ans, 35k de revenu annuel
 
 Vecteur 3 dimensions.
 
-=== 
+===
 
 ## Vectorisation: le texte
 
