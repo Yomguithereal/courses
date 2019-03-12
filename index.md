@@ -9,6 +9,7 @@ title: Summary
 * [Data 2017]({{ site.baseurl }}/data/2017/) (P2018)
   * [Perfectionnement 2017]({{ site.baseurl }}/perfectionnement/2017/)
 * [Data 2018]({{ site.baseurl }}/data/2018/) (P2019)
+* [Data 2019]({{ site.baseurl }}/data/2019/) (P2020)
 
 *Webmining (HETIC Mastère data)*
 
