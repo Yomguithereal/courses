@@ -511,7 +511,7 @@ Une méthode issue de la cryptographie: les rainbow tables.
 
 Comment un script perl de deux lignes peut casser vos mots de passe?
 
-Vive les condiments!
+Vivent les condiments!
 
 ===
 
