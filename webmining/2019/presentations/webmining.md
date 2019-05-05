@@ -131,6 +131,12 @@ Pratique pour moi pour faire la revue de votre code si besoin.
 
 ===
 
+## Notebooks
+
+Cette année, nous allons formaliser le résultat de chaque étape par des notebooks Jupyter.
+
+===
+
 ## Un cours marmoréen?
 
 Le déroulé du cours n'est pas gravé dans le marbre.
