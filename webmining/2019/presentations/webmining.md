@@ -292,7 +292,7 @@ Au menu:
 
 1. Etape 1: [EchoJS](http://www.echojs.com/)
 2. Etape 2: [HackerNews](https://news.ycombinator.com/)
-3. Etape 3: [HackerNews PWA](https://react-hn.kristoferbaxter.com/)
+3. Etape 3: [HackerNews PWA](https://angular2-hn.firebaseapp.com)
 4. Etape 4: [Le cinéma français](http://www.cinema-francais.fr/)
 5. Etape 5: L'OGP
 6. Etape 6: Fiabilité et scalabilité
