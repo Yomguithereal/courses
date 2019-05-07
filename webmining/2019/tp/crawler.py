@@ -68,7 +68,10 @@ while len(queue):
     print('Level [%i]: %s' % (depth, url))
 
     # Récupérons le HTML de la page avec requests
-    r = requests.get(url)
+    try:
+        r = requests.get(url)
+    except:
+        print('Could not fetch page!')
 
     # Peut-être que ceci a échoué (code 400, 500 etc.), auquel cas, continuons
     # la boucle. Le mot-clé `continue` permet de passer directement à la
@@ -102,7 +105,7 @@ while len(queue):
 
         # Si le lien commence par 'javascript:' ou 'mailto:', nous n'en voulons
         # pas. Il existe d'autres exceptions, ce ne sont que deux exemples
-        if href.startswith('javascript:') or href.startswith('mailto'):
+        if href.startswith('javascript:') or href.startswith('mailto:'):
             continue
 
         # Maintenant, nous avons besoin de résoudre l'url cible car celle-ci
@@ -117,7 +120,7 @@ while len(queue):
         # Ajoutons l'url à la queue de traitement si nous pouvons encore
         # descendre en profondeur et si elle n'existe pas déjà crawlée dans
         # notre réseau
-        already_crawled = target_url in graph and graph.out_degree(target_url) > 0
+        already_crawled = graph.out_degree(target_url) > 0
 
         if depth < MAX_DEPTH and not already_crawled:
             queue.append((target_url, depth + 1))
