@@ -1696,7 +1696,7 @@ Ce qu'on vient de faire c'est un travail de classification.
 
 On a des données qui sont classifiées (acère ou pas).
 
-Le machine learning, c'est utiliser un algorithme pour entraîner un modèle statistique capable de répondre à la question: "Ce nouvel animal, que tu ne connais pas, est-il acéreux?".
+Le machine learning, c'est utiliser un algorithme pour entraîner un modèle statistique capable de répondre à la question: "Ce nouvel animal, que tu ne connais pas, est-il acère?".
 
 ===
 
