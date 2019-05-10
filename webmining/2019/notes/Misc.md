@@ -6,7 +6,3 @@
 * Utilisation de dragnet.
 * Fiabilité et scalabilité. Insérer dans une base. Pouvoir recommencer.
 * Focus Crawler
-
----
-
-Faire les contre-mesures vendredi.
