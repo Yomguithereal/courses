@@ -17,3 +17,9 @@ title: Un Monde de Données 2019
 * [Le web mining](2.html#/85)
 * [Dataviz](./3.html)
 * [Open Data](./4.html)
+
+---
+
+**Links**
+
+* Concernant le manuscrit de Voynich: [Réfutation](https://arstechnica.com/science/2019/05/no-someone-hasnt-cracked-the-code-of-the-mysterious-voynich-manuscript/)
