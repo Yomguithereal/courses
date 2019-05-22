@@ -22,4 +22,4 @@ title: Un Monde de Données 2019
 
 **Links**
 
-* Concernant le manuscrit de Voynich: [Réfutation](https://arstechnica.com/science/2019/05/no-someone-hasnt-cracked-the-code-of-the-mysterious-voynich-manuscript/)
+* Concernant le manuscrit de Voynich: [Réfutation](https://arstechnica.com/science/2019/05/no-someone-hasnt-cracked-the-code-of-the-mysterious-voynich-manuscript/), [Vidéo de Linguisticae](https://www.youtube.com/watch?v=ve-_OX3dEL0)
