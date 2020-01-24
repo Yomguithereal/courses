@@ -1010,7 +1010,7 @@ Le NoSQL est un monde fabuleux. N’ayez pas peur de l’explorer pour découvri
 
 Un ordinateur a au minimum un processeur.
 
-Un processeur ne peut jamais faire plus d'un cacul à la fois.
+Un processeur ne peut jamais faire plus d'un calcul à la fois.
 
 C'est une limitation physique.
 
